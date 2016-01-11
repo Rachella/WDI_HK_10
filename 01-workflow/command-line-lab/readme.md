@@ -59,10 +59,10 @@ Be sure to use the cheatsheets in the "Additional Resources" section in case you
   - move to the my-favorite-things folder and copy the "media" folder, then, rename it "2015-media"
   - in the 2015-media folder, rename each folder to have "2015-" before the title
   - delete the contents of "2015-music", "2015-movies", and "2015-books"
-  - create a file called "top-ten-movies.html" in "2015-movies"
-  - create a file called "top-ten-songs.html" in "2015-music"
-  - create a file called "top-ten-books.html" in "2015-books"
-  - create an ordered list - using HTML! - of the top 10 movies, songs, and books in each of the appropriate files
+  - create a file called "top-ten-movies.txt" in "2015-movies"
+  - create a file called "top-ten-songs.txt" in "2015-music"
+  - create a file called "top-ten-books.txt" in "2015-books"
+  - create a list of the top 10 movies, songs, and books in each of the appropriate files
 
 **Bonus**
 
