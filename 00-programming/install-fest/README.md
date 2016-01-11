@@ -129,7 +129,7 @@ $ sudo chown -R your-username ~/.gem
 
 You can check your username with `$ whoami`.
 
-- Check if it works:
+- Check if it works by opening a new terminal:
 ```
 $ rails -v
 rails 4.2.4
