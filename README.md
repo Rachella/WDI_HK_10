@@ -75,7 +75,8 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
     - [CSS: An Overview](https://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b)
     - [CSS Selectors](https://www.codecademy.com/courses/web-beginner-en-WF0CF/1/5?curriculum_id=50579fb998b470000202dc8b)
     - [CSS Positioning](https://www.codecademy.com/courses/web-beginner-en-6merh/0/1?curriculum_id=50579fb998b470000202dc8b)
-
+- References
+  - [Code Style Best Practices](http://mdo.github.io/code-guide/)
 
 #### Later
 - Other Topics
