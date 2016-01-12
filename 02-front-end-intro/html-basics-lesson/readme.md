@@ -109,7 +109,7 @@ In other words, **metadata** is a set of data that describes and gives informati
   <div>
     <h1>How to write good HTML?</h1>
     <p>Make sure you close the tags and use indentations properly.</p>
-  </section>
+  </div>
 </div>
 ```
 ```html
@@ -154,7 +154,7 @@ In other words, **metadata** is a set of data that describes and gives informati
 - Bonus: 
   - Try to display the headers of the assessment page in the HTML file.
   - Try to present Question 7 using HTML tags.
-  - Try to copy and paste this line and add this to the top of your html file. What would happen?
+  - Try to copy and paste this line and add this to the line after the &lt;body&gt; tag. What would happen?
   ```html
 <p>It is true that 2 > 1</p>
 ```
