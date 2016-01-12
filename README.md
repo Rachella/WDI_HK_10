@@ -35,7 +35,7 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
 [1-2C]: 01-workflow/chrome-dev-tools-lesson                             "Chrome Dev Tools"
 [1-2D]: 02-front-end-intro/css-selector-basics                          "CSS Selector Basics"
 [1-2E]: http://flukeout.github.io                                       "CSS Selector Game"
-[1-2F]: https://github.com/wdi-hk-9/lab-html-css-website                "Lab: Build a website Lab"
+[1-2F]: https://github.com/wdi-hk-10/lab-html-css-website               "Lab: Build a website Lab"
 
 [1-3A]: 14-assessments/w01d3.md                                         "Assessment"
 [1-3B]: 14-assessments/w01d3-solution.html                              "Assessment-Solution"
