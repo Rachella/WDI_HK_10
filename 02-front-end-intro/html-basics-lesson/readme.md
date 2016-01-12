@@ -154,4 +154,7 @@ In other words, **metadata** is a set of data that describes and gives informati
 - Bonus: 
   - Try to display the headers of the assessment page in the HTML file.
   - Try to present Question 7 using HTML tags.
-
+  - Try to add copy and paste this line and add this to the top of your html file. What would happen?
+```html
+<p>It is true that 2 &gt; 1</p>
+```
