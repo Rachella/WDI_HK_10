@@ -119,11 +119,11 @@ If a _single page_ has a unique style, you could use an internal style sheet - t
     body {
       background: black
     }
-   </style
-	 <title>Intro to CSS</title>
+   </style>
+   <title>Intro to CSS</title>
    </head>
- <body>
- </body>
+   <body>
+   </body>
  </html>
 
 ```
@@ -375,39 +375,7 @@ Sweet!
 
 ## Style using Classes and IDs - Independent Practice (10 mins)
 
-Using what we've done in class, fork this [repo](https://github.com/wdi-hk-10/lesson-css-selector-basic) provided and see how far you can get through these exercises in 10 minutes:
-
-- make an unordered HTML list of the following animals:
-
-	- mouse
-	- canary
-	- penguin
-	- salmon
-	- cat
-	- goldfish
-	- dog
-	- sheep
-	- parakeet
-	- tuna
-
-- make all the mammals red, all the birds blue, and all the fish orange using CSS classes
-- apply the following colors to the list using IDs:
-
-    - mouse - <span style = "color: gray">gray</span>
-    - canary - <span style = "color: orangeRed">orangeRed</span>
-    - penguin - <span style = "color: black">black</span>
-    - salmon - <span style = "color: salmon">salmon</span>
-    - cat - <span style = "color: sienna">sienna</span>
-    - goldfish - <span style = "color: gold">gold</span>
-    - dog - <span style = "color: tan">tan</span>
-    - sheep - <span style = "color: steelBlue">steelBlue</span>
-    - parakeet - <span style = "color: lime">lime</span>
-    - tuna - <span style = "color: purple">purple</span>
-
-- add the following background colors to your existing classes:
-    - mammal - lavenderBlush
-    - bird - lightGray
-    - fish - lightYellow
+Using what we've done in class, fork this [repo](https://github.com/wdi-hk-10/lesson-css-selector-basic) provided and see how far you can get through these exercises in 10 minutes.
 
 #### Multiple classes and multiple elements - Codealong (10 mins)
 
