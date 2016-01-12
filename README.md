@@ -42,7 +42,7 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
 [1-3B]: 14-assessments/w01d3-solution.html                              "Assessment-Solution"
 [1-3C]: 02-front-end-intro/css-box-model-and-positioning                "Box Model And Positioning"
 [1-3D]: 00-programming/js-data-types-variables-and-arrays               "Data Types, Variables, Arrays"
-[1-3E]: https://github.com/wdi-hk-9/lab-css-site-replication            "Lab: CSS Web Replication"
+[1-3E]: https://github.com/wdi-hk-10/lab-css-site-replication           "Lab: CSS Web Replication"
 
 [1-4A]: 14-assessments/w01d4.md                                         "Assessment"
 [1-4B]: 02-front-end-intro/css-bootstrap-lesson                         "Bootstrap CSS Lesson"
