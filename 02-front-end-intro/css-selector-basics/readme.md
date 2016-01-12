@@ -377,7 +377,7 @@ Sweet!
 
 Using what we've done in class, fork this [repo](https://github.com/wdi-hk-10/lesson-css-selector-basic) provided and see how far you can get through these exercises in 10 minutes.
 
-#### Multiple classes and multiple elements - Codealong (10 mins)
+## Multiple classes and multiple elements - Codealong (10 mins)
 
 You can also chain classes together, applying several classes to one element:
 
