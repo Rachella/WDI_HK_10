@@ -156,5 +156,5 @@ In other words, **metadata** is a set of data that describes and gives informati
   - Try to present Question 7 using HTML tags.
   - Try to copy and paste this line and add this to the line after the &lt;body&gt; tag. What would happen?
   ```html
-<p>It is true that 1 < 2 and 2 > 1</p>
+<p>This is a the <div> tag</p>
 ```
