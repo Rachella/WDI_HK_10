@@ -107,10 +107,20 @@ In other words, **metadata** is a set of data that describes and gives informati
 - Uses **semantic** tags to give meaning to the document for webcrawlers and screen readers for the blind
 - **Semantic** - gives **meaning** in language or logic
 ```html
-<section>
-  <h1>How to cook the perfect hard-boiled egg</h1>
-  <p>This is a paragraph related to the heading above and this section.</p>
-</section>
+<div>
+  <div>
+    <h1>How to write good HTML?</h1>
+    <p>Make sure you close the tags and use indentations properly.</p>
+  </section>
+</div>
+```
+```html
+<article>
+  <section>
+    <header>How to write good HTML?</header>
+    <p>Make sure you close the tags and use indentations properly.</p>
+  </section>
+</article>
 ```
 
 | Tag | Description |
@@ -143,14 +153,3 @@ In other words, **metadata** is a set of data that describes and gives informati
 - Open up in Sublime
 - Code the HTML skeleton for this, but have **two** sections and additional articles
 
-
-#### Codeacademy Homework
-- HTML
-    - http://www.codecademy.com/courses/web-beginner-en-HZA3b/0/1?curriculum_id=50579fb998b470000202dc8b
-    - http://www.codecademy.com/courses/web-beginner-en-y2Yjd/0/2?curriculum_id=50579fb998b470000202dc8b
-    - http://www.codecademy.com/courses/web-beginner-en-f8mcL/0/1?curriculum_id=50579fb998b470000202dc8b
-- CSS
-    - http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/2?curricu...
-    - http://www.codecademy.com/courses/web-beginner-en-WF0CF/1/5?curricu...
-    - http://www.codecademy.com/courses/web-beginner-en-6merh/0/1?curriculum_id=50579fb998b470000202dc8b
-- Code Style Best Practices: http://mdo.github.io/code-guide/
