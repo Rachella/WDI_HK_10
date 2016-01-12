@@ -14,23 +14,24 @@
 <a name="week1"></a>
 ### Week 1 | Front-end Fundamentals
 
-Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                    | [Wednesday](#w1d3)                      | [Thursday](#w1d4)                          | [Friday](#w1d5)                               |
------- | ---------------------------------- | ----------------------------------- | --------------------------------------- | ------------------------------------------ | --------------------------------------------- |
-09:00  | KICKOFF!!                          | [Assessment][1-2A]                  | [Assessment][1-3A] & [Solution][1-3B]   | [Assessment][1-4A]                         | [Assessment][1-5A] & +Solution                |
-10:00  | -                                  | [Review-Lab: Command line][1-1C]    | [R-Lab: Build a Website][1-2F]          | [R-Lab: CSS Website Replication][1-3E]     | [R-Lab: Bootstrap Website Replication][1-4E]  |
-11:00  | [Install-fest][1-1A]               | [HTML Basics][1-2B]                 | [Box Model And Positioning][1-3C]       | [Bootstrap CSS Lesson][1-4B]               | [Functions and Scope][1-5B]                   |
-12:00  | LUNCH                              | LUNCH                               | LUNCH                                   | LUNCH                                      | LUNCH                                         |
-13:00  | [Install-fest][1-1A]               | [Chrome Dev Tools][1-2C]            | -                                       | [Bootstrap CSS Slides][1-4C]               | -                                             |
-14:00  | [Navigating the file system][1-1B] | [CSS selector basics][1-2D]         | [Data Types, Variables, Arrays][1-3D]   | [Mastering The Flow][1-4D]                 | [Rock, Paper, Scissors][1-5C]                 |
-15:00  |                                    | [CSS Selector Game][1-2E]           | -                                       | -                                          | -                                             |
-16:00  | [Lab: Command line][1-1C]          | [Lab: Build a website][1-2F]        | [Lab: CSS Website Replication][1-3E]    | [Lab: Bootstrap Website Replication][1-4E] | [Labs: Functions][1-5D]                       |
-17:00  | Done for Day                       | Done for Day                        | Done for Day                            | Done for Day                               | Go for a drink?                               |
+Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                      | [Wednesday](#w1d3)                      | [Thursday](#w1d4)                          | [Friday](#w1d5)                               |
+------ | ---------------------------------- | ------------------------------------- | --------------------------------------- | ------------------------------------------ | --------------------------------------------- |
+09:00  | KICKOFF!!                          | [Assessment][1-2A] & [Solution][1-2Z] | [Assessment][1-3A] & [Solution][1-3B]   | [Assessment][1-4A]                         | [Assessment][1-5A] & +Solution                |
+10:00  | -                                  | [Review-Lab: Command line][1-1C]      | [R-Lab: Build a Website][1-2F]          | [R-Lab: CSS Website Replication][1-3E]     | [R-Lab: Bootstrap Website Replication][1-4E]  |
+11:00  | [Install-fest][1-1A]               | [HTML Basics][1-2B]                   | [Box Model And Positioning][1-3C]       | [Bootstrap CSS Lesson][1-4B]               | [Functions and Scope][1-5B]                   |
+12:00  | LUNCH                              | LUNCH                                 | LUNCH                                   | LUNCH                                      | LUNCH                                         |
+13:00  | [Install-fest][1-1A]               | [Chrome Dev Tools][1-2C]              | -                                       | [Bootstrap CSS Slides][1-4C]               | -                                             |
+14:00  | [Navigating the file system][1-1B] | [CSS selector basics][1-2D]           | [Data Types, Variables, Arrays][1-3D]   | [Mastering The Flow][1-4D]                 | [Rock, Paper, Scissors][1-5C]                 |
+15:00  |                                    | [CSS Selector Game][1-2E]             | -                                       | -                                          | -                                             |
+16:00  | [Lab: Command line][1-1C]          | [Lab: Build a website][1-2F]          | [Lab: CSS Website Replication][1-3E]    | [Lab: Bootstrap Website Replication][1-4E] | [Labs: Functions][1-5D]                       |
+17:00  | Done for Day                       | Done for Day                          | Done for Day                            | Done for Day                               | Go for a drink?                               |
 
 [1-1A]: 00-programming/install-fest/README.md                           "Install-Fest!"
 [1-1B]: 01-workflow/terminal-navigating-the-file-system-lesson          "Navigating the file system"
 [1-1C]: 01-workflow/command-line-lab                                    "Lab: Command Line"
 
 [1-2A]: 14-assessments/w01d2.md                                         "Assessment"
+[1-2Z]: 14-assessments/w01d2-solution.md                                "Assessment Solution"
 [1-2B]: 02-front-end-intro/html-basics-lesson                           "HTML Basics"
 [1-2C]: 01-workflow/chrome-dev-tools-lesson                             "Chrome Dev Tools"
 [1-2D]: 02-front-end-intro/css-selector-basics                          "CSS Selector Basics"
