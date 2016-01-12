@@ -134,7 +134,7 @@ In other words, **metadata** is a set of data that describes and gives informati
 | `<mark>` | Defines marked/highlighted text |
 | `<nav>` | Defines navigation links |
 | `<section>` | Defines a section in a document |
-| `<summary>` | Defines a visible heading for a <details> element |
+| `<summary>` | Defines a visible heading for a &lt;details&gt; element |
 | `<time>` | Defines a date/time |
 
 #### Thought Experiment
@@ -145,9 +145,13 @@ In other words, **metadata** is a set of data that describes and gives informati
 - **How do you figure out what sections of the website are for?**
 
 
-#### Exercise
-- Create a new folder called `SemanticWebsite`
+#### Independent Practices
+- Create a new folder called `MyWebsite`
 - Create a file called `index.html`
 - Open up in Sublime
-- Code the HTML skeleton for this, but have **two** sections and additional articles
+- Refer to this morning's assessment, present 2 of the questions and YOUR answers using HTML.
+  - Present one question using HTML tags and then present the other using semantic tags.
+- Bonus: 
+  - Try to display the headers of the assessment page in the HTML file.
+  - Try to present Question 7 using HTML tags.
 
