@@ -101,8 +101,6 @@ In other words, **metadata** is a set of data that describes and gives informati
 #### Secret to type beautfiul HTML: Indentations
 - Use precise indentation - Be a neat freak!
 
-## Road to HTML5
-
 #### Semantic Tags
 - Uses **semantic** tags to give meaning to the document for webcrawlers and screen readers for the blind
 - **Semantic** - gives **meaning** in language or logic
