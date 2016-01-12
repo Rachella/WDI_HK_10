@@ -66,6 +66,17 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
   - Try the typing exercises on [typing.io](https://www.typing.io/) and see how fast you type code
   - (Optional) Watch [Computer Programming](https://www.youtube.com/watch?v=OWsyrnOBsJs)
 
+#### Week 1 | Tuesday
+<a name="w1d2"></a>
+- Homework
+    - [HTML 1](http://www.codecademy.com/courses/web-beginner-en-HZA3b/0/1?curriculum_id=50579fb998b470000202dc8b)
+    - [HTML 2](http://www.codecademy.com/courses/web-beginner-en-y2Yjd/0/2?curriculum_id=50579fb998b470000202dc8b)
+    - [HTML 3](http://www.codecademy.com/courses/web-beginner-en-f8mcL/0/1?curriculum_id=50579fb998b470000202dc8b)
+    - [CSS: An Overview](https://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b)
+    - [CSS Selectors](https://www.codecademy.com/courses/web-beginner-en-WF0CF/1/5?curriculum_id=50579fb998b470000202dc8b)
+    - [CSS Positioning](https://www.codecademy.com/courses/web-beginner-en-6merh/0/1?curriculum_id=50579fb998b470000202dc8b)
+
+
 #### Later
 - Other Topics
   - Watch [DNS Explained](https://www.youtube.com/watch?v=72snZctFFtA) to how DNS works
