@@ -375,7 +375,7 @@ Sweet!
 
 ## Style using Classes and IDs - Independent Practice (10 mins)
 
-Using what we've done in class, open the [starter code](starter-code) provided and see how far you can get through these exercises in 10 minutes:
+Using what we've done in class, fork this [repo](https://github.com/wdi-hk-10/lesson-css-selector-basic) provided and see how far you can get through these exercises in 10 minutes:
 
 - make an unordered HTML list of the following animals:
 
