@@ -79,6 +79,12 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
 - References
   - [Code Style Best Practices](http://mdo.github.io/code-guide/)
 
+#### Week 1 | Wednesday
+<a name="w2d3"></a>
+- [MDN CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors)
+  - [Attribute Selectors](https://developer.mozilla.org/en/docs/Web/CSS/Attribute_selectors)
+  - [Pseudo-class Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+
 #### Later
 - Other Topics
   - Watch [DNS Explained](https://www.youtube.com/watch?v=72snZctFFtA) to how DNS works
