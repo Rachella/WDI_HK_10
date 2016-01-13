@@ -511,7 +511,7 @@ Here are some other iterator methods for you to research and practice with:
 
 > ***Note:*** _This can be a pair programming activity or done independently._
 
-Take a look at the [starter-code](starter-code) and work through each exercise using the comments provided to console log the correct information.
+Fork this [repo](https://github.com/wdi-hk-10/lesson-js-data-types-variables-and-arrays) and work through each exercise using the comments provided to console log the correct information.
 
 
 ## Conclusion (5 mins)
