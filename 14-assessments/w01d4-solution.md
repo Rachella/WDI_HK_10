@@ -11,22 +11,36 @@
 1. String, Integer, Float, Boolean
 1. `Math.pow(2, 2)` and `Math.sqrt(4)`
 1. `Math.floor(n)` and `Math.ceil(n)`
-1. `.indexOf()`, `.length`, `.split()` more at [here](http://www.w3schools.com/jsref/jsref_obj_string.asp)
-1. `.length()`, `.join()` more at [here](http://www.w3schools.com/jsref/jsref_obj_array.asp)
+1. `.indexOf()`, `.split()` more at [here](http://www.w3schools.com/jsref/jsref_obj_string.asp)
+1. `.pop()`, `.join()` more at [here](http://www.w3schools.com/jsref/jsref_obj_array.asp)
 1. `undefined` means that a value was not declared, while `null` is defined specifically to equal to nothing.
 
 ## Bonus
 
 ```js
-var cuteAnimals = ["cat", "dog", "hedgehog"]
+// question 1
+  var cuteAnimals = ["cat", "dog", "hedgehog"]
 
-// forEach
-cuteAnimals.forEach(function(animal){
-  console.log("I love " + animal);
-})
+  // forEach
+  cuteAnimals.forEach(function(animal){
+    console.log("I love " + animal);
+  })
 
-// Classic for loop
-for (var i=0; i<cuteAnimals.length; i++){
-  console.log("I love " + cuteAnimals[i]);
-}
+  // Classic for loop
+  for (var i=0; i<cuteAnimals.length; i++){
+    console.log("I love " + cuteAnimals[i]);
+  }
+
+
+// question 2
+  var x = [1,2,3,4,5];
+  var swap = function (array, index1, index2) {
+    var tmp = array[index1];
+    array[index1] = array[index2];
+    array[index2] = tmp;
+  };
+
+  swap(x, 0, 4);
+
+  console.log(x);  // should be evaluated as [5,2,3,4,1]
 ```
