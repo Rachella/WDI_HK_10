@@ -16,7 +16,7 @@
 
 Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                      | [Wednesday](#w1d3)                      | [Thursday](#w1d4)                          | [Friday](#w1d5)                               |
 ------ | ---------------------------------- | ------------------------------------- | --------------------------------------- | ------------------------------------------ | --------------------------------------------- |
-09:00  | KICKOFF!!                          | [Assessment][1-2A] & [Solution][1-2Z] | [Assessment][1-3A] & [Solution][1-3B]   | [Assessment][1-4A]                         | [Assessment][1-5A] & +Solution                |
+09:00  | KICKOFF!!                          | [Assessment][1-2A] & [Solution][1-2Z] | [Assessment][1-3A] & [Solution][1-3B]   | [Assessment][1-4A] & [Solution][1-4Z]      | [Assessment][1-5A] & [Solution][1-5Z]         |
 10:00  | -                                  | [Review-Lab: Command line][1-1C]      | [R-Lab: Build a Website][1-2F]          | [R-Lab: CSS Website Replication][1-3E]     | [R-Lab: Bootstrap Website Replication][1-4E]  |
 11:00  | [Install-fest][1-1A]               | [HTML Basics][1-2B]                   | [Box Model And Positioning][1-3C]       | [Bootstrap CSS Lesson][1-4B]               | [Functions and Scope][1-5B]                   |
 12:00  | LUNCH                              | LUNCH                                 | LUNCH                                   | LUNCH                                      | LUNCH                                         |
@@ -39,18 +39,20 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
 [1-2F]: https://github.com/wdi-hk-10/lab-html-css-website               "Lab: Build a website Lab"
 
 [1-3A]: 14-assessments/w01d3.md                                         "Assessment"
-[1-3B]: 14-assessments/w01d3-solution.html                              "Assessment-Solution"
+[1-3B]: 14-assessments/w01d3-solution.html                              "Assessment Solution"
 [1-3C]: 02-front-end-intro/css-box-model-and-positioning                "Box Model And Positioning"
 [1-3D]: 00-programming/js-data-types-variables-and-arrays               "Data Types, Variables, Arrays"
 [1-3E]: https://github.com/wdi-hk-10/lab-css-site-replication           "Lab: CSS Web Replication"
 
 [1-4A]: 14-assessments/w01d4.md                                         "Assessment"
+[1-4Z]: 14-assessments/w01d4-solution.md                                "Assessment Solution"
 [1-4B]: 02-front-end-intro/css-bootstrap-lesson                         "Bootstrap CSS Lesson"
 [1-4C]: https://presentations.generalassemb.ly/649ce6766e83f246e122     "Bootstrap CSS Slides"
 [1-4D]: 00-programming/js-control-flow-lesson                           "Mastering The Flow"
 [1-4E]: https://github.com/wdi-hk-9/lab-css-site-replication            "Lab: Bootstrap Web Replication"
 
 [1-5A]: 14-assessments/w01d5.md                                         "Assessment"
+[1-5Z]: 14-assessments/w01d5-solution.md                                "Assessment Solution"
 [1-5B]: 00-programming/js-functions-and-scope                           "Function and Scope"
 [1-5C]: 00-programming/js-rock-paper-scissors                           "Rock, Paper, Scissors"
 [1-5D]: https://github.com/wdi-hk-9/lab-js-functions                    "Labs: Functions"
