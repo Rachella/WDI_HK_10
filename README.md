@@ -49,13 +49,13 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
 [1-4B]: 02-front-end-intro/css-bootstrap-lesson                         "Bootstrap CSS Lesson"
 [1-4C]: https://presentations.generalassemb.ly/649ce6766e83f246e122     "Bootstrap CSS Slides"
 [1-4D]: 00-programming/js-control-flow-lesson                           "Mastering The Flow"
-[1-4E]: https://github.com/wdi-hk-9/lab-css-site-replication            "Lab: Bootstrap Web Replication"
+[1-4E]: https://github.com/wdi-hk-10/lab-css-site-replication           "Lab: Bootstrap Web Replication"
 
 [1-5A]: 14-assessments/w01d5.md                                         "Assessment"
 [1-5Z]: 14-assessments/w01d5-solution.md                                "Assessment Solution"
 [1-5B]: 00-programming/js-functions-and-scope                           "Function and Scope"
 [1-5C]: 00-programming/js-rock-paper-scissors                           "Rock, Paper, Scissors"
-[1-5D]: https://github.com/wdi-hk-9/lab-js-functions                    "Labs: Functions"
+[1-5D]: https://github.com/wdi-hk-10/lab-js-functions                    "Labs: Functions"
 
 [1-X1]: 00-programming/js-debugging-lesson                              "JS Debugging"
 [1-X2]: http://www.w3resource.com/javascript-exercises/                 "Javascript Exercises"
