@@ -21,7 +21,7 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
 11:00  | [Install-fest][1-1A]               | [HTML Basics][1-2B]                   | [Box Model And Positioning][1-3C]       | [Bootstrap CSS Lesson][1-4B]               | [Functions and Scope][1-5B]                   |
 12:00  | LUNCH                              | LUNCH                                 | LUNCH                                   | LUNCH                                      | LUNCH                                         |
 13:00  | [Install-fest][1-1A]               | [Chrome Dev Tools][1-2C]              | -                                       | [Bootstrap CSS Slides][1-4C]               | -                                             |
-14:00  | [Navigating the file system][1-1B] | [CSS selector basics][1-2D]           | [Data Types, Variables, Arrays][1-3D]   | [Mastering The Flow][1-4D]                 | [Rock, Paper, Scissors][1-5C]                 |
+14:00  | [Navigating the file system][1-1B] | [CSS selector basics][1-2D]           | [Data Types, Variables, Arrays][1-3D]   | [Mastering The Flow][1-4D]                 | [Review - Rock, Paper, Scissors][1-5C]        |
 15:00  |                                    | [CSS Selector Game][1-2E]             | -                                       | -                                          | -                                             |
 16:00  | [Lab: Command line][1-1C]          | [Lab: Build a website][1-2F]          | [Lab: CSS Website Replication][1-3E]    | [Lab: Bootstrap Website Replication][1-4E] | [Labs: Functions][1-5D]                       |
 17:00  | Done for Day                       | Done for Day                          | Done for Day                            | Done for Day                               | Go for a drink?                               |
@@ -54,8 +54,8 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
 [1-5A]: 14-assessments/w01d5.md                                         "Assessment"
 [1-5Z]: 14-assessments/w01d5-solution.md                                "Assessment Solution"
 [1-5B]: 00-programming/js-functions-and-scope                           "Function and Scope"
-[1-5C]: 00-programming/js-rock-paper-scissors                           "Rock, Paper, Scissors"
-[1-5D]: https://github.com/wdi-hk-10/lab-js-functions                    "Labs: Functions"
+[1-5C]: https://github.com/wdi-hk-10/lesson-js-rock-paper-scissors      "Rock, Paper, Scissors - Review"
+[1-5D]: https://github.com/wdi-hk-10/lab-js-functions                   "Labs: Functions"
 
 [1-X1]: 00-programming/js-debugging-lesson                              "JS Debugging"
 [1-X2]: http://www.w3resource.com/javascript-exercises/                 "Javascript Exercises"
