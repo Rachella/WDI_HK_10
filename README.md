@@ -113,17 +113,17 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 
 [2-3A]: 00-programming/js-problems-arrays-objects/readme-solution.md    "R-Lab: JS Arrays Problems"
 [2-3B]: 02-front-end-intro/js-dom-manipulation-lesson                   "Dom Manipulation"
-[2-3C]: https://github.com/wdi-hk-9/lab-js-dom-manipulation             "Lab: Dom Manipulation"
-[2-3D]: https://github.com/wdi-hk-9/lab-js-tic-tac-toe                  "Lab: Tic-Tac-Toe Lab"
+[2-3C]: https://github.com/wdi-hk-10/lab-js-dom-manipulation            "Lab: Dom Manipulation"
+[2-3D]: https://github.com/wdi-hk-10/lab-js-tic-tac-toe                 "Lab: Tic-Tac-Toe Lab"
 
 [2-4A]: 02-front-end-intro/js-jquery-lesson                             "jQuery Lesson"
 [2-4B]: http://jqexercise.droppages.com/                                "jQuery Game"
-[2-4C]: https://github.com/wdi-hk-9/shoppingCart                        "Lab: Shopping Cart"
+[2-4C]: https://github.com/wdi-hk-10/shoppingCart                       "Lab: Shopping Cart"
 
-[2-5A]: https://github.com/wdi-hk-9/shoppingCart-solution               "R-Lab: Shopping Cart"
+[2-5A]: https://github.com/wdi-hk-10/shoppingCart-solution              "R-Lab: Shopping Cart"
 [2-5B]: projects/project-01.md                                          "Project Spec"
 [2-5C]: 00-programming/js-closures-scope-context/readme.md              "JS Closures, Scope, Context"
-[2-5D]: https://github.com/wdi-hk-9/ten-seconds-math                    "Lab: 10 Seconds Math"
+[2-5D]: https://github.com/wdi-hk-10/ten-seconds-math                    "Lab: 10 Seconds Math"
 
 [1-X1]: 00-programming/js-debugging-lesson                              "JS Debugging"
 [1-X2]: http://www.w3resource.com/javascript-exercises/                 "Javascript Exercises"
