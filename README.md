@@ -100,12 +100,13 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 13:00  | -                                        | [JS Arrays Lesson][2-2B]                | [Lab: Dom Manipulation][2-3C]           | [jQuery Game][2-4B]                     | -                                       |
 14:00  | [Lab: Github][2-1C]                      | [Lab-JS Arrays Problems][2-2C]          | Guest Speaker: Oliver Hass              | -                                       | [Lab: 10 Seconds Math][2-5D]            |
 15:00  | -                                        | [Lab-Tower of Hanoi][2-2D]              | [Lab: Tic-Tac-Toe][2-3D]                | [Lab-Shoppoing Cart][2-4C]              | -                                       |
-16:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
+16:00  | [HW: JS Koans][2-1D]                     | -                                       | -                                       | -                                       | -                                       |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Social Night: Room Escape               |
 
 [2-1A]: 01-workflow/agile-user-stories-wireframes-lesson                "Agile Framework"
 [2-1B]: 01-workflow/git-github-lesson                                   "Github Lesson"
 [2-1C]: https://github.com/wdi-hk-10/lab-git-github                     "Lab: Github"
+[2-1D]: https://github.com/wdi-hk-10/JavaScript-Koans                    "JS Koans"
 
 [2-2A]: 00-programming/js-functions-and-scope                           "Function and Scope"
 [2-2B]: 00-programming/js-arrays-advanced/readme.md                     "JS Arrays Lesson"
@@ -131,7 +132,6 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 [2-X1]: 00-programming/js-objects-lesson                                "JS Objects"
 [2-X2]: 00-programming/js-jquery-intermediate-lesson/readme.md          "Intermediate jQuery"
 [2-X3]: 00-programming/js-callbacks-lesson/readme.md                    "JS Callbacks"
-[2-X4]: https://github.com/wdi-hk-9/JavaScript-Koans                    "JS Koans"
 [2-X5]: 00-programming/js-debugging-lesson                              "JS Debugging"
 
 #### Week 2 | Monday
