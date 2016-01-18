@@ -99,7 +99,7 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 12:00  | LUNCH                                    | LUNCH                                   | LUNCH                                   | LUNCH                                   | LUNCH                                   |
 13:00  | -                                        | [JS Arrays Lesson][2-2B]                | [Lab: Dom Manipulation][2-3C]           | [jQuery Game][2-4B]                     | -                                       |
 14:00  | [Lab: Github][2-1C]                      | [Lab-JS Arrays Problems][2-2C]          | Guest Speaker: Oliver Hass              | -                                       | [Lab: 10 Seconds Math][2-5D]            |
-15:00  | -                                        | -                                       | [Lab: Tic-Tac-Toe][2-3D]                | [Lab-Shoppoing Cart][2-4C]              | -                                       |
+15:00  | -                                        | [Lab-Tower of Hanoi][2-2D]              | [Lab: Tic-Tac-Toe][2-3D]                | [Lab-Shoppoing Cart][2-4C]              | -                                       |
 16:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Social Night: Room Escape               |
 
@@ -110,6 +110,7 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 [2-2A]: 00-programming/js-functions-and-scope                           "Function and Scope"
 [2-2B]: 00-programming/js-arrays-advanced/readme.md                     "JS Arrays Lesson"
 [2-2C]: 00-programming/js-problems-arrays-objects/readme.md             "Lab: JS Arrays Problems"
+[2-2D]: https://github.com/wdi-hk-10/lab-tower-of-hanoi                 "Lab: Tower of Hanoi"
 
 [2-3A]: 00-programming/js-problems-arrays-objects/readme-solution.md    "R-Lab: JS Arrays Problems"
 [2-3B]: 02-front-end-intro/js-dom-manipulation-lesson                   "Dom Manipulation"
