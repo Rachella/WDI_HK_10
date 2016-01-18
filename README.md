@@ -133,6 +133,11 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 [2-X4]: https://github.com/wdi-hk-9/JavaScript-Koans                    "JS Koans"
 [2-X5]: 00-programming/js-debugging-lesson                              "JS Debugging"
 
+#### Week 2 | Monday
+<a name="w2d1"></a>
+- **FREE** [Pro Git Book](https://git-scm.com/book/en/v2)
+  - The first 3 chapters are good enough, seriously. :)
+
 #### Later
 - Other Topics
   - Watch [DNS Explained](https://www.youtube.com/watch?v=72snZctFFtA) to how DNS works
