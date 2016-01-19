@@ -93,7 +93,7 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
 
 Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)                        | [Wednesday](#w2d3)                      | [Thursday](#w2d4)                       | [Friday](#w2d5)                         |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-09:00  | [R-Lab: Functions][1-5E]                 | [R-Lab: Github][2-1C]                   | [R-Lab: Array Problems][2-2C]           | [R-Lab: Tic-Tac-Toe][2-3D]              | [R-Lab: Shopping Cart][2-5A]            |
+09:00  | [R-Lab: Functions][1-5E]                 | [R-Lab: Github][2-1C]                   | [R-Lab: Array Problems][2-2C]           | [R-Lab: Tic-Tac-Toe][2-3C]              | [R-Lab: Shopping Cart][2-5A]            |
 10:00  | [Agile Framework][2-1A]                  | [Function and Scope][2-2A]              | [Dom Manipulation][2-3A]                | [jQuery Lesson][2-4A]                   | [Project Spec][2-5B]                    |
 11:00  | [Github Lesson][2-1B]                    | -                                       | -                                       | -                                       | [JS Closures, Scope, Context][2-5C]     |
 12:00  | LUNCH                                    | LUNCH                                   | LUNCH                                   | LUNCH                                   | LUNCH                                   |
