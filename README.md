@@ -138,6 +138,10 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 - **FREE** [Pro Git Book](https://git-scm.com/book/en/v2)
   - The first 3 chapters are good enough, seriously. :)
 
+#### Week 2 | Tuesday
+<a name="w2d2"></a>
+- [Function & Scope examples](https://github.com/ga-students/WDI_HK_10/tree/master/00-programming/js-functions-and-scope/examples)
+
 #### Later
 - Other Topics
   - Watch [DNS Explained](https://www.youtube.com/watch?v=72snZctFFtA) to how DNS works
