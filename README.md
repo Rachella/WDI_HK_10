@@ -93,20 +93,20 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
 
 Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)                        | [Wednesday](#w2d3)                      | [Thursday](#w2d4)                       | [Friday](#w2d5)                         |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-09:00  | [R-Lab: Functions][1-5E]                 | [R-Lab: Github][2-1C]                   | [R-Lab: Array Problems][2-2C]           | [R-Lab: Tic-Tac-Toe][2-3C]              | [R-Lab: Shopping Cart][2-5A]            |
+09:00  | [R-Lab: Functions][1-5E]                 | [R-Lab: Github][2-1C]                   | [R-Lab: Array Problems][2-2C]           | [R-Lab: Dom Manipulation][2-3B]         | [R-Lab: Shopping Cart][2-5A]            |
 10:00  | [Agile Framework][2-1A]                  | [Function and Scope][2-2A]              | [Dom Manipulation][2-3A]                | [jQuery Lesson][2-4A]                   | [Project Spec][2-5B]                    |
-11:00  | [Github Lesson][2-1B]                    | -                                       | -                                       | -                                       | [JS Closures, Scope, Context][2-5C]     |
+11:00  | [Github Lesson][2-1B]                    | -                                       | -                                       | -                                       | [Lab: Tic-Tac-Toe][2-5C]                |
 12:00  | LUNCH                                    | LUNCH                                   | LUNCH                                   | LUNCH                                   | LUNCH                                   |
 13:00  | -                                        | [JS Arrays Lesson][2-2B]                | [Lab: Dom Manipulation][2-3B]           | [jQuery Game][2-4B]                     | -                                       |
-14:00  | [Lab: Github][2-1C]                      | [Lab-JS Arrays Problems][2-2C]          | Guest Speaker: Oliver Hass              | -                                       | [Lab: 10 Seconds Math][2-5D]            |
-15:00  | -                                        | [Lab-Tower of Hanoi][2-2D]              | [Lab: Tic-Tac-Toe][2-3C]                | [Lab-Shoppoing Cart][2-4C]              | -                                       |
+14:00  | [Lab: Github][2-1C]                      | [Lab-JS Arrays Problems][2-2C]          | Guest Speaker: Oliver Hass              | -                                       | -                                       |
+15:00  | -                                        | [Lab-Tower of Hanoi][2-2D]              | [Lab: Dom Manipulation][2-3B]           | [Lab-Shoppoing Cart][2-4C]              | [Lab: 10 Seconds Math][2-5D]            |
 16:00  | [HW: JS Koans][2-1D]                     | -                                       | -                                       | -                                       | -                                       |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Social Night: Room Escape               |
 
 [2-1A]: 01-workflow/agile-user-stories-wireframes-lesson                "Agile Framework"
 [2-1B]: 01-workflow/git-github-lesson                                   "Github Lesson"
 [2-1C]: https://github.com/wdi-hk-10/lab-git-github                     "Lab: Github"
-[2-1D]: https://github.com/wdi-hk-10/JavaScript-Koans                    "JS Koans"
+[2-1D]: https://github.com/wdi-hk-10/JavaScript-Koans                   "JS Koans"
 
 [2-2A]: 00-programming/js-functions-and-scope                           "Function and Scope"
 [2-2B]: 00-programming/js-arrays-advanced                               "JS Arrays Lesson"
@@ -115,7 +115,6 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 
 [2-3A]: 02-front-end-intro/js-dom-manipulation-lesson                   "Dom Manipulation"
 [2-3B]: https://github.com/wdi-hk-10/lab-js-dom-manipulation            "Lab: Dom Manipulation"
-[2-3C]: https://github.com/wdi-hk-10/lab-js-tic-tac-toe                 "Lab: Tic-Tac-Toe Lab"
 
 [2-4A]: 02-front-end-intro/js-jquery-lesson                             "jQuery Lesson"
 [2-4B]: http://jqexercise.droppages.com/                                "jQuery Game"
@@ -123,15 +122,16 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 
 [2-5A]: https://github.com/wdi-hk-10/shoppingCart-solution              "R-Lab: Shopping Cart"
 [2-5B]: projects/project-01.md                                          "Project Spec"
-[2-5C]: 00-programming/js-closures-scope-context/readme.md              "JS Closures, Scope, Context"
-[2-5D]: https://github.com/wdi-hk-10/ten-seconds-math                    "Lab: 10 Seconds Math"
+[2-5C]: https://github.com/wdi-hk-10/lab-js-tic-tac-toe                 "Lab: Tic-Tac-Toe Lab"
+[2-5D]: https://github.com/wdi-hk-10/ten-seconds-math                   "Lab: 10 Seconds Math"
 
 [1-X1]: 00-programming/js-debugging-lesson                              "JS Debugging"
 [1-X2]: http://www.w3resource.com/javascript-exercises/                 "Javascript Exercises"
 [2-X1]: 00-programming/js-objects-lesson                                "JS Objects"
 [2-X2]: 00-programming/js-jquery-intermediate-lesson/readme.md          "Intermediate jQuery"
 [2-X3]: 00-programming/js-callbacks-lesson/readme.md                    "JS Callbacks"
-[2-X5]: 00-programming/js-debugging-lesson                              "JS Debugging"
+[2-X4]: 00-programming/js-debugging-lesson                              "JS Debugging"
+[2-X5]: 00-programming/js-closures-scope-context/readme.md              "JS Closures, Scope, Context"
 
 #### Week 2 | Monday
 <a name="w2d1"></a>
