@@ -119,7 +119,7 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 
 [2-4A]: 02-front-end-intro/js-jquery-lesson                             "jQuery Lesson"
 [2-4B]: http://jqexercise.droppages.com/                                "jQuery Game"
-[2-4C]: https://github.com/wdi-hk-10/shoppingCart                       "Lab: Shopping Cart"
+[2-4C]: https://github.com/wdi-hk-10/lab-shopping-cart                  "Lab: Shopping Cart"
 
 [2-5A]: https://github.com/wdi-hk-10/shoppingCart-solution              "R-Lab: Shopping Cart"
 [2-5B]: projects/project-01.md                                          "Project Spec"
