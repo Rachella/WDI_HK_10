@@ -124,7 +124,7 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 [2-5B]: projects/project-01.md                                          "Project Spec"
 [2-5C]: projects/presentation_guideline.md                              "Presentation Guidelines"
 [2-5D]: https://github.com/wdi-hk-10/lab-js-tic-tac-toe                 "Lab: Tic-Tac-Toe Lab"
-[2-5E]: https://github.com/wdi-hk-10/ten-seconds-math                   "Lab: 10 Seconds Math"
+[2-5E]: https://github.com/wdi-hk-10/lab-ten-seconds-math               "Lab: 10 Seconds Math"
 
 [1-X1]: 00-programming/js-debugging-lesson                              "JS Debugging"
 [1-X2]: http://www.w3resource.com/javascript-exercises/                 "Javascript Exercises"
