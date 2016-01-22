@@ -1,9 +1,9 @@
 # Presentation Guideline and Criteria
 
 ### Format
-- Presentation Time (var presentationTime=600000): 10 minutes
+- Presentation Time (var presentationTime=300000): 5 minutes
 - Q & A (var qaTime=300000): 5 minutes
-- Total Time (var totalTime=900000): 15 minutes
+- Total Time (var totalTime=600000): 10 minutes
 
 ### Attire
 - DRESS TO IMPRESS
