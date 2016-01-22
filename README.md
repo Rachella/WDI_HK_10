@@ -142,6 +142,13 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 <a name="w2d2"></a>
 - [Function & Scope examples](https://github.com/ga-students/WDI_HK_10/tree/master/00-programming/js-functions-and-scope/examples)
 
+#### Week 2 | Friday
+<a name="w2d5"></a>
+- *jQuery in Action Third Edition* 
+  - There are *free* sample code available in the book's web site or the corresponding github repo:
+    - [Official Web Site](https://www.manning.com/books/jquery-in-action-third-edition)
+    - [github](https://github.com/AurelioDeRosa/jquery-in-action)
+
 #### Later
 - Other Topics
   - Watch [DNS Explained](https://www.youtube.com/watch?v=72snZctFFtA) to how DNS works
