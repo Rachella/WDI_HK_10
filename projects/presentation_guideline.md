@@ -2,8 +2,8 @@
 
 ### Format
 - Presentation Time (var presentationTime=300000): 5 minutes
-- Q & A (var qaTime=300000): 5 minutes
-- Total Time (var totalTime=600000): 10 minutes
+- Q & A (var qaTime=300000): 3 minutes
+- Total Time (var totalTime=600000): 8 minutes
 
 ### Attire
 - DRESS TO IMPRESS
