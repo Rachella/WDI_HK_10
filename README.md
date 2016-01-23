@@ -150,6 +150,21 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
     - [Official Web Site](https://www.manning.com/books/jquery-in-action-third-edition)
     - [github](https://github.com/AurelioDeRosa/jquery-in-action)
 
+<a name="week3"></a>
+### Week 3 | Project 1
+
+Time   | [Monday](#w3d1)                          | [Tuesday](#w3d2)                        | [Wednesday](#w3d3)                      | [Thursday](#w3d4)                       | [Friday](#w3d5)                         |
+------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
+09:00  | [R-Lab: 10 Seconds Math][2-5E]           | Daily Standup                           | Daily Standup                           | Daily Standup                           | Daily Standup                           |
+10:00  | Project Pitch                            |                                         |                                         |                                         |                                         |
+11:00  | WireFrame + Coding Begins                |                                         |                                         |                                         |                                         |
+12:00  | LUNCH                                    | LUNCH                                   | LUNCH                                   | LUNCH                                   | *JS CHANGE FREEZE* + LUNCH              |
+13:00  | WireFrame + Coding Begins                |                                         |                                         |                                         | Final touch up (HTML & CSS)             |
+14:00  |                                          |                                         |                                         |                                         |                                         |
+15:00  |                                          |                                         |                                         |                                         |                                         |
+16:00  | Demo                                     | Demo                                    | Demo                                    | Demo                                    | Presentation                            |
+17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
+
 #### Later
 - Other Topics
   - Watch [DNS Explained](https://www.youtube.com/watch?v=72snZctFFtA) to how DNS works
