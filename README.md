@@ -4,9 +4,9 @@
 | Unit                 | Topic                              | Topic                              | Project
 |------------          |------------------------------------|------------------------------------|--------------------------------------
 | **[UNIT 1](#unit1)** | [1. Front-end Intro](#week1)       | [2. Dynamic Frontend](#week2)      | [3. Project 1: Build a game](#week3)
-| **[UNIT 2](#unit2)** | [4. Ruby, OOP, Sinatra](#week4)    | [5. Ruby on Rails](#week5)         | [6. Project 2: Rails App](#week6)
-| **[UNIT 3](#unit3)** | [7. Rails APIs, Express](#week7)   | [8. User & Authe in APIs](#week8)  | [9. Project 3: Rails/MEAN App](#week9)
-| **UNIT 4**           | [10. MV* with Angular](#week10)    | [11. Advanced topics](#week11)     | [12. Final Project](#week12)
+| **[UNIT 2](#unit2)** | [4. AJAX, Hapi.js](#week4)         | [5. MongoDB](#week5)               | [6. Project 2: Web API App](#week6)
+| **[UNIT 3](#unit3)** | [7. Ruby on Rails](#week7)         | [8. User & Authe in APIs](#week8)  | [9. Project 3: Rails App](#week9)
+| **[UNIT 4](#unit4)** | [10. MV* with Angular](#week10)    | [11. Advanced Topics](#week11)     | [12. Final Project](#week12)
 
 <a name="unit1"></a>
 ## Unit 1
@@ -155,15 +155,17 @@ Time   | [Monday](#w2d1)                          | [Tuesday](#w2d2)            
 
 Time   | [Monday](#w3d1)                          | [Tuesday](#w3d2)                        | [Wednesday](#w3d3)                      | [Thursday](#w3d4)                       | [Friday](#w3d5)                         |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-09:00  | [R-Lab: 10 Seconds Math][2-5E]           | Daily Standup                           | Daily Standup                           | Daily Standup                           | Daily Standup                           |
+09:00  | [R-Lab: Shopping Cart][2-5A]             | Daily Standup                           | Daily Standup                           | Daily Standup                           | Daily Standup                           |
 10:00  | Project Pitch                            |                                         |                                         |                                         |                                         |
 11:00  | WireFrame + Coding Begins                |                                         |                                         |                                         |                                         |
 12:00  | LUNCH                                    | LUNCH                                   | LUNCH                                   | LUNCH                                   | *JS CHANGE FREEZE* + LUNCH              |
 13:00  | WireFrame + Coding Begins                |                                         |                                         |                                         | Final touch up (HTML & CSS)             |
 14:00  |                                          |                                         |                                         |                                         |                                         |
-15:00  |                                          |                                         |                                         |                                         |                                         |
-16:00  | Demo                                     | Demo                                    | Demo                                    | Demo                                    | Presentation                            |
+15:00  |                                          |                                         |                                         |                                         | Presentation                            |
+16:00  | Demo                                     | Demo                                    | Demo                                    | Demo                                    | [Project 1 Code Review][3-5A]           |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
+
+[3-5A]: projects/project_1_code_review.md                   "Project 1 Code Review"
 
 #### Later
 - Other Topics
