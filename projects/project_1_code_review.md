@@ -17,13 +17,14 @@ Your task is to review one of your WDI classmate's project and please present yo
 
 This is the review assignment:
 
-| Student | Repo |
-| Jon | https://github.com/wdi-hk-10/project-bomberman |
-| Sean | https://github.com/wdi-hk-10/project-frogger |
-| Shawn | https://github.com/wdi-hk-10/project-dominion |
-| Judah | https://github.com/wdi-hk-10/project-typing-game |
-| Jinny | https://github.com/wdi-hk-10/project-blobs |
-| Daryl | https://github.com/wdi-hk-10/project-quiz-master |
-| Rob | https://github.com/wdi-hk-10/project-hk-adventure |
-| Carmen | https://github.com/wdi-hk-10/project-num-guess |
-| Jules | https://github.com/wdi-hk-10/project-visual-novel |
+| Student | Review Assignment                                 |
+| ------- | ------------------------------------------------- |
+| Jon     | https://github.com/wdi-hk-10/project-bomberman    |
+| Sean    | https://github.com/wdi-hk-10/project-frogger      |
+| Shawn   | https://github.com/wdi-hk-10/project-dominion     |
+| Judah   | https://github.com/wdi-hk-10/project-typing-game  |
+| Jinny   | https://github.com/wdi-hk-10/project-blobs        |
+| Daryl   | https://github.com/wdi-hk-10/project-quiz-master  |
+| Rob     | https://github.com/wdi-hk-10/project-hk-adventure |
+| Carmen  | https://github.com/wdi-hk-10/project-num-guess    |
+| Jules   | https://github.com/wdi-hk-10/project-visual-novel |
