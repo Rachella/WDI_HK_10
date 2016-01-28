@@ -4,7 +4,7 @@
 | Unit                 | Topic                              | Topic                              | Project
 |------------          |------------------------------------|------------------------------------|--------------------------------------
 | **[UNIT 1](#unit1)** | [1. Front-end Intro](#week1)       | [2. Dynamic Frontend](#week2)      | [3. Project 1: Build a game](#week3)
-| **[UNIT 2](#unit2)** | [4. AJAX, Hapi.js](#week4)         | [5. MongoDB](#week5)               | [6. Project 2: Web API App](#week6)
+| **[UNIT 2](#unit2)** | [4. AJAX & MongoDB](#week4)        | [5. MongoDB & Hapi.js](#week5)     | [6. Project 2: Web API App](#week6)
 | **[UNIT 3](#unit3)** | [7. Ruby on Rails](#week7)         | [8. User & Authe in APIs](#week8)  | [9. Project 3: Rails App](#week9)
 | **[UNIT 4](#unit4)** | [10. MV* with Angular](#week10)    | [11. Advanced Topics](#week11)     | [12. Final Project](#week12)
 
