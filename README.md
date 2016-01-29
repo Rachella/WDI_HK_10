@@ -185,7 +185,7 @@ Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)            
 16:00  | -                                        | [Lab: AJAX][4-2E]                       | -                                       | [Lab: Mongo Restaurants][4-4E]          | [Lab: makemehapi][4-5E]                 |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
 
-[4-1A]: 15-retrospectives/Retrospectoves-guide.md                 "Week 1-3 Retrospective"
+[4-1A]: 15-retrospectives/Retrospectives-guide.md                 "Week 1-3 Retrospective"
 [4-1B]: 00-programming/js-closures-scope-context/readme.md        "JS Closures, Scope & Context"
 [4-1C]: 00-programming/js-objects-lesson                          "JS Objects"
 [4-1D]: http://exercism.io/languages/javascript                   "Exercism - JavaScript"
