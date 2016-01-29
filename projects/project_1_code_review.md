@@ -19,6 +19,7 @@ Criteria:
 - Is the code DRY (Don't Repeat Yourself) enough?
 - Is the code too complex? Is there an easier way to do that?
 - Indentation
+- Naming of functions and variables: are they meaningful or confusing?
 - Correct usage of jQuery event listeners (e.g. are there any multiple listeners unecessarily defined for the same event)
 - Any nice programming technique you want to highlight?
 - ... etc
