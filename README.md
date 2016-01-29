@@ -186,6 +186,32 @@ Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)            
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
 
 [4-1A]: 15-retrospectives/Retrospectoves-guide.md                 "Week 1-3 Retrospective"
+[4-1B]: 00-programming/js-closures-scope-context/readme.md        "JS Closures, Scope & Context"
+[4-1C]: 00-programming/js-objects-lesson                          "JS Objects"
+[4-1D]: http://exercism.io/languages/javascript                   "Exercism - JavaScript"
+
+[4-2A]: #                                                         "Assessment"
+[4-2B]: 00-programming/js-callbacks-lesson/readme.md              "JS Callbacks"
+[4-2C]: 00-programming/internet-fundamentals-lesson               "Internet fundamentals"
+[4-2D]: 00-programming/js-ajax-lesson                             "AJAX"
+[4-2E]: https://github.com/wdi-hk-9/lab-js-ajax                   "Lab: AJAX"
+
+[4-3A]: #                                                         "Assessment"
+[4-3B]: 00-programming/js-ajax-crud-lesson                        "AJAX CRUD"
+[4-3C]: 00-programming/js-ajax-crud-lab/ga-wdi-api.md             "GA WDI API"
+[4-3D]: 00-programming/js-ajax-crud-lab                           "Lab: AJAX CRUD"
+
+[4-4A]: #                                                         "Assessment"
+[4-4B]: 05-databases/data-modeling-intro-lesson                   "Database Intro"
+[4-4C]: 05-databases/mongo-notes/mongo-intro.md                   "MongoDB Intro"
+[4-4D]: 05-databases/mongo-notes/mongo-firststeps.md              "MongoDB First Steps"
+[4-4E]: https://github.com/wdi-hk-10/lab-mongo-restaurants        "Lab: Mongo Restaurants"
+
+[4-5A]: #                                                         "Assessment"
+[4-5B]: projects/project-02.md                                    "Project 2 Spec"
+[4-5C]: 04-server-applications/node-hapi-intro                    "node.js, npm, hapi.js"
+[4-5D]: 04-server-applications/node-hapi-twitter/setup.md         "API Building: Set Up"
+[4-5E]: https://github.com/hapijs/makemehapi                      "Make me Hapi"
 
 #### Later
 - Other Topics
