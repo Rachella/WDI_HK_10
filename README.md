@@ -187,11 +187,11 @@ Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)            
 
 [4-1A]: 15-retrospectives/Retrospectives-guide.md                 "Week 1-3 Retrospective"
 [4-1B]: 00-programming/js-objects-lesson                          "JS Objects"
-[4-1C]: 00-programming/js-callbacks-lesson/readme.md              "JS Callbacks"
+[4-1C]: 00-programming/js-callbacks-lesson                        "JS Callbacks"
 [4-1D]: http://exercism.io/languages/javascript                   "Exercism - JavaScript"
 
 [4-2A]: #                                                         "Assessment"
-[4-2B]: 00-programming/js-closures-scope-context/readme.md        "JS Closures, Scope & Context"
+[4-2B]: 00-programming/js-closures-scope-context                  "JS Closures, Scope & Context"
 [4-2C]: 00-programming/internet-fundamentals-lesson               "Internet fundamentals"
 [4-2D]: 00-programming/js-ajax-lesson                             "AJAX"
 [4-2E]: https://github.com/wdi-hk-9/lab-js-ajax                   "Lab: AJAX"
