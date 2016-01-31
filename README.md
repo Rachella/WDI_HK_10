@@ -177,21 +177,21 @@ Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)            
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
 09:00  | [Week 1-3 Retrospective][4-1A]           | [Assessment][4-2A]                      | [Assessment][4-3A]                      | [Assessment][4-4A]                      | [Assessment][4-5A]                      |
 10:00  | [Project 1 Code Review][3-5A]            | [R-Lab: JavaScript Exercism][4-1D]      | [R-Lab: AJAX][4-2E]                     | [R-Lab: AJAX CRUD][4-3D]                | [R-Lab: Mongo Restaurants][4-4E]        |
-11:00  | [JS Closures, Scope & Context][4-1B]     | [JS Callbacks][4-2B]                    | [AJAX CRUD][4-3B]                       | [Database Intro][4-4B]                  | [Project 2 Spec][4-5B]                  |
+11:00  | [Intro: JavaScript Exercism][4-1B]       | [JS Closures, Scope & Context][4-2B]    | [AJAX CRUD][4-3B]                       | [Database Intro][4-4B]                  | [Project 2 Spec][4-5B]                  |
 12:00  | LUNCH                                    | LUNCH + Guest Speaker                   | LUNCH                                   | LUNCH                                   | LUNCH                                   |
-13:00  | -                                        | -                                       | -                                       | -                                       | [node.js, npm & hapi.js][4-5C]          |
-14:00  | [JS Objects][4-1C]                       | [What is the Internet?][4-2C]           | [GA WDI API][4-3C]                      | [MongoDB Intro][4-4C]                   | [API Building: Set Up][4-5D]            |
-15:00  | [Lab: JavaScript Exercism][4-1D]         | [AJAX][4-2D]                            | [Lab: AJAX CRUD][4-3D]                  | [MongoDB First Steps][4-4D]             | -                                       |
-16:00  | -                                        | [Lab: AJAX][4-2E]                       | -                                       | [Lab: Mongo Restaurants][4-4E]          | [Lab: makemehapi][4-5E]                 |
+13:00  | [JS Objects][4-1B]                       | -                                       | -                                       | -                                       | [node.js, npm & hapi.js][4-5C]          |
+14:00  | [JS Callbacks][4-1C]                     | [What is the Internet?][4-2C]           | [GA WDI API][4-3C]                      | [MongoDB Intro][4-4C]                   | [API Building: Set Up][4-5D]            |
+15:00  | -                                        | [AJAX][4-2D]                            | [Lab: AJAX CRUD][4-3D]                  | [MongoDB First Steps][4-4D]             | -                                       |
+16:00  | [Lab: JavaScript Exercism][4-1D]         | [Lab: AJAX][4-2E]                       | -                                       | [Lab: Mongo Restaurants][4-4E]          | [Lab: makemehapi][4-5E]                 |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
 
 [4-1A]: 15-retrospectives/Retrospectives-guide.md                 "Week 1-3 Retrospective"
-[4-1B]: 00-programming/js-closures-scope-context/readme.md        "JS Closures, Scope & Context"
-[4-1C]: 00-programming/js-objects-lesson                          "JS Objects"
+[4-1B]: 00-programming/js-objects-lesson                          "JS Objects"
+[4-1C]: 00-programming/js-callbacks-lesson/readme.md              "JS Callbacks"
 [4-1D]: http://exercism.io/languages/javascript                   "Exercism - JavaScript"
 
 [4-2A]: #                                                         "Assessment"
-[4-2B]: 00-programming/js-callbacks-lesson/readme.md              "JS Callbacks"
+[4-2B]: 00-programming/js-closures-scope-context/readme.md        "JS Closures, Scope & Context"
 [4-2C]: 00-programming/internet-fundamentals-lesson               "Internet fundamentals"
 [4-2D]: 00-programming/js-ajax-lesson                             "AJAX"
 [4-2E]: https://github.com/wdi-hk-9/lab-js-ajax                   "Lab: AJAX"
