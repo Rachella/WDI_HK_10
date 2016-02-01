@@ -173,45 +173,40 @@ Time   | [Monday](#w3d1)                          | [Tuesday](#w3d2)            
 <a name="week4"></a>
 ### Week 4 | Backend Development 
 
-Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)                        | [Wednesday](#w4d3)                      | [Thursday](#w4d4)                       | [Friday](#w4d5)                         |
+Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)                        | [Wednesday](#w3d3)                      | [Thursday](#w4d4)                       | [Friday](#w4d5)                         |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-09:00  | [Week 1-3 Retrospective][4-1A]           | [Assessment][4-2A]                      | [Assessment][4-3A]                      | [Assessment][4-4A]                      | [Assessment][4-5A]                      |
-10:00  | [Project 1 Code Review][3-5A]            | [R-Lab: JavaScript Exercism][4-1D]      | [R-Lab: AJAX][4-2E]                     | [R-Lab: AJAX CRUD][4-3D]                | [R-Lab: Mongo Restaurants][4-4E]        |
-11:00  | [Intro: JavaScript Exercism][4-1B]       | [JS Closures, Scope & Context][4-2B]    | [AJAX CRUD][4-3B]                       | [Database Intro][4-4B]                  | [Project 2 Spec][4-5B]                  |
+09:00  | [Week 1-3 Retrospective][4-1A]           | [R-Lab: JavaScript Exercism][4-1D]      | [R-Lab: JavaScript Exercism][4-2C]      | [R-Lab: AJAX][4-3C]                     | [R-Lab: AJAX CRUD][4-4C]                |
+10:00  | -                                        | [JS Objects][4-2A]                      | [What is the Internet?][4-3A]           | [AJAX CRUD][4-4A]                       | [Database Intro][4-5A]                  |
+11:00  | [Project 1 Code Review][3-5A]            | -                                       | -                                       | -                                       | -                                       |
 12:00  | LUNCH                                    | Guest Speaker: George Papanikolaou      | LUNCH                                   | LUNCH                                   | LUNCH                                   |
-13:00  | [JS Objects][4-1B]                       | -                                       | -                                       | -                                       | [node.js, npm & hapi.js][4-5C]          |
-14:00  | [JS Callbacks][4-1C]                     | [What is the Internet?][4-2C]           | [GA WDI API][4-3C]                      | [MongoDB Intro][4-4C]                   | [API Building: Set Up][4-5D]            |
-15:00  | -                                        | [AJAX][4-2D]                            | [Lab: AJAX CRUD][4-3D]                  | [MongoDB First Steps][4-4D]             | -                                       |
-16:00  | [Lab: JavaScript Exercism][4-1D]         | [Lab: AJAX][4-2E]                       | -                                       | [Lab: Mongo Restaurants][4-4E]          | [Lab: makemehapi][4-5E]                 |
+13:00  | [JS Closures, Scope & Context][4-1B]     | [JS Callbacks][4-2B]                    | [AJAX][4-3B]                            | [GA WDI API][4-4B]                      | [MongoDB Intro][4-5B]                   |
+14:00  | [Intermediate JavaScript][4-1C]          | -                                       | -                                       | -                                       | -                                       |
+15:00  | -                                        | [Lab: JavaScript Exercism][4-2C]        | [Lab: AJAX][4-3C]                       | [Lab: AJAX CRUD][4-4C]                  | [MongoDB First Steps][4-5C]             |
+16:00  | [Lab: JavaScript Exercism][4-1D]         | -                                       | -                                       | -                                       | [Lab: Mongo Restaurants][4-5D]          |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
 
 [4-1A]: 15-retrospectives/Retrospectives-guide.md                 "Week 1-3 Retrospective"
-[4-1B]: 00-programming/js-objects-lesson                          "JS Objects"
-[4-1C]: 00-programming/js-callbacks-lesson                        "JS Callbacks"
+[4-1B]: 00-programming/js-closures-scope-context                  "JS Closures, Scope & Context"
+[4-1C]: 00-programming/js-intermediate-javascript                 "Intermediate JavaScript"
 [4-1D]: http://exercism.io/languages/javascript                   "Exercism - JavaScript"
 
-[4-2A]: #                                                         "Assessment"
-[4-2B]: 00-programming/js-closures-scope-context                  "JS Closures, Scope & Context"
-[4-2C]: 00-programming/internet-fundamentals-lesson               "Internet fundamentals"
-[4-2D]: 00-programming/js-ajax-lesson                             "AJAX"
-[4-2E]: https://github.com/wdi-hk-9/lab-js-ajax                   "Lab: AJAX"
+[4-2A]: 00-programming/js-objects-lesson                          "JS Objects"
+[4-2B]: 00-programming/js-callbacks-lesson                        "JS Callbacks"
+[4-2C]: http://exercism.io/languages/javascript                   "Exercism - JavaScript"
 
-[4-3A]: #                                                         "Assessment"
-[4-3B]: 00-programming/js-ajax-crud-lesson                        "AJAX CRUD"
-[4-3C]: 00-programming/js-ajax-crud-lab/ga-wdi-api.md             "GA WDI API"
-[4-3D]: 00-programming/js-ajax-crud-lab                           "Lab: AJAX CRUD"
+[4-3A]: 00-programming/internet-fundamentals-lesson               "Internet fundamentals"
+[4-3B]: 00-programming/js-ajax-lesson                             "AJAX"
+[4-3C]: https://github.com/wdi-hk-9/lab-js-ajax                   "Lab: AJAX"
 
-[4-4A]: #                                                         "Assessment"
-[4-4B]: 05-databases/data-modeling-intro-lesson                   "Database Intro"
-[4-4C]: 05-databases/mongo-notes/mongo-intro.md                   "MongoDB Intro"
-[4-4D]: 05-databases/mongo-notes/mongo-firststeps.md              "MongoDB First Steps"
-[4-4E]: https://github.com/wdi-hk-10/lab-mongo-restaurants        "Lab: Mongo Restaurants"
+[4-4A]: 00-programming/js-ajax-crud-lesson                        "AJAX CRUD"
+[4-4B]: 00-programming/js-ajax-crud-lab/ga-wdi-api.md             "GA WDI API"
+[4-4C]: 00-programming/js-ajax-crud-lab                           "Lab: AJAX CRUD"
 
-[4-5A]: #                                                         "Assessment"
-[4-5B]: projects/project-02.md                                    "Project 2 Spec"
-[4-5C]: 04-server-applications/node-hapi-intro                    "node.js, npm, hapi.js"
-[4-5D]: 04-server-applications/node-hapi-twitter/setup.md         "API Building: Set Up"
-[4-5E]: https://github.com/hapijs/makemehapi                      "Make me Hapi"
+[4-5A]: 05-databases/data-modeling-intro-lesson                   "Database Intro"
+[4-5B]: 05-databases/mongo-notes/mongo-intro.md                   "MongoDB Intro"
+[4-5C]: 05-databases/mongo-notes/mongo-firststeps.md              "MongoDB First Steps"
+[4-5D]: https://github.com/wdi-hk-10/lab-mongo-restaurants        "Lab: Mongo Restaurants"
+
 
 #### Later
 - Other Topics
