@@ -56,7 +56,7 @@ var willie = {
   food: "ramen",
   eat: eat
 };
-willie.eat();  // "I am wating ramen"
+willie.eat();  // "I am eating ramen"
 ```
 
 Inside the `eat` function, there is still no explicit `this` value defined. But this time, `eat` was called as a function of the object `willie`, so JavaScript *implicitly* used the `willie` as the `this` value. So in this case, `this.food` is effectively `willie.food`.
@@ -173,6 +173,31 @@ lunch.call(willie, "Shoyu Ramen", "Kitakata Ramen", "Miso Ramen", "Tonkotsu Rame
 In JavaScript, you can use `apply` and `call` to run a function and explicitly mention which object you want to use. The main difference between `apply` and `call` is that `call` can take an arbitrary number of parameters and `apply` take an array of parameters.
 
 ### Hard Binding
+
+```javascript
+// Hard Binding
+var willieChoice = {
+  food: "Ramen"
+}
+
+function eat(person) {
+  console.log(person + " eats " + this.food);
+}
+
+eat.call(willieChoice, "Willie");  // Willie eats Ramen
+
+var sarahChoice = {
+  food: "Sushi"
+}  
+eat.call(sarahChoice, "Sarah");  // Sarah eats Sushi
+
+// How can Willie force Sarah to have ramen with him?
+function willieChooseLunch(person) {
+  eat.call(willieChoice, person);
+}
+
+willieChooseLunch.call(sarahChoice, "Sarah");  // Sarah eats Ramen
+```
 
 ## The New Operator
 

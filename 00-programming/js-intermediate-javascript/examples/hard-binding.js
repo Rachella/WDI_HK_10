@@ -9,7 +9,7 @@ function eat(person) {
 
 eat("Willie");
 
-eat.call(willie, "Willie");
+eat.call(willieChoice, "Willie");
 
 var sarahChoice = {
   food: "Sushi"
