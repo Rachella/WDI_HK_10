@@ -196,7 +196,7 @@ Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)            
 
 [4-3A]: 00-programming/internet-fundamentals-lesson               "Internet fundamentals"
 [4-3B]: 00-programming/js-ajax-lesson                             "AJAX"
-[4-3C]: https://github.com/wdi-hk-9/lab-js-ajax                   "Lab: AJAX"
+[4-3C]: https://github.com/wdi-hk-10/lab-js-ajax                   "Lab: AJAX"
 
 [4-4A]: 00-programming/js-ajax-crud-lesson                        "AJAX CRUD"
 [4-4B]: 00-programming/js-ajax-crud-lab/ga-wdi-api.md             "GA WDI API"
