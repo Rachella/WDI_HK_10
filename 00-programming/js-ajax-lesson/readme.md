@@ -44,11 +44,11 @@ While we're going to be tackling some advanced front-end frameworks in the next 
 
 ## Setup - Codealong (5 mins)
 
-While we're still learning the ins-and-outs of building APIs, lets use an already-made API for today. We'll use on that works a lot like Mongo and Express and comes with RESTful resources out of the box.
+While we're still learning the ins-and-outs of building APIs, let's use an already-made API for today. We'll use one that works a lot like Mongo and Hapi.js and comes with RESTful resources out of the box.
 
 That handy thing lives at https://api.doughnuts.ga/doughnuts – it's a simple dummy data service that'll let us do GETs & POSTs quickly. You can quickly check out https://www.doughnuts.ga/ to see what it's about.
 
-While you're at it, in this [repo](https://github.com/wdi-hk-9/lesson-js-ajax), we've got a super basic index and a CSS file to get started. Nothing fancy.
+While you're at it, in this [repo](https://github.com/wdi-hk-10/lesson-js-ajax), we've got a super basic index and a CSS file to get started. Nothing fancy.
 
 Open up your `index.html` in a browser, and you'll see:
 
