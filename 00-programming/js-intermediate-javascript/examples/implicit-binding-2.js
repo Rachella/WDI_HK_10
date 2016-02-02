@@ -8,11 +8,11 @@ var willie = {
   eat: eat
 };
 
-var eat = willie.eat;  // function reference/alias only
+var lunch = willie.eat;  // function reference/alias only
 
 var food = "sushi";
 
-eat(); // what are you eating?
+lunch(); // what are you eating?
 
 
 

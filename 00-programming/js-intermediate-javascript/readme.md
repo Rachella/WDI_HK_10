@@ -29,7 +29,7 @@ The Mysteries of THIS
 ## The 4 Basic Binding Rules
 
 ### Default Binding
-The default binding is the catch-all of all rules. It means that, when none of them other rules apply, this is what JavaScript will fall back to. Here is a simple example:
+The default binding is the catch-all of all rules. It means that, when none of the other rules apply, this is what JavaScript will fall back to. Here is a simple example:
 
 ```javascript
 function eat() {
@@ -38,14 +38,139 @@ function eat() {
 
 var food = "an apple";
 
-eat();  // should print "I am eating an apple"
+eat();  // "I am eating an apple"
 ```
 
-Inside the `eat` function, there is no explicit `this` value defined so JavaScript falls back to use the default one, which is the global context (the `windows` object).
+Inside the `eat` function, there is no explicit `this` value defined so JavaScript falls back to use the default one, which is the global context (the `windows` object). The variable `food` defined in the global scope is the *exact* same global object property with the same name (try `window.food` if you are running this code in Chrome Dev Tool).
 
 ### Implicit Binding
 
+If a function is called *as a function of* a context object, then the `this` value inside the function will refer to this object. Here is a simple example:
+
+```javascript
+function eat() {
+  console.log("I am eating " + this.food);
+}
+
+var willie = {
+  food: "ramen",
+  eat: eat
+};
+willie.eat();  // "I am wating ramen"
+```
+
+Inside the `eat` function, there is still no explicit `this` value defined. But this time, `eat` was called as a function of the object `willie`, so JavaScript *implicitly* used the `willie` as the `this` value. So in this case, `this.food` is effectively `willie.food`.
+
+Let's extend the previous example with the following code snippet:
+
+```javascript
+var sarah = {
+  food: "sushi",
+  husband: willie
+}
+sarah.husband.eat(); // "I am eating ramen"
+```
+Even though the last statement begins with another object `sarah`, it is in fact the `eat` function of `sarah.husband` which is called. Since `sarah.husband` is just another reference to the `willie` object, so the result of this new code snippet is the same as the previous.
+
+#### How to lose a binding implicitly?
+
+The key concept about Implicit Binding is how a function is called. If a function is called without a context object, then *Default Binding* will be used. Take a look at the example below:
+
+```javascript
+function eat() {
+  console.log("I am eating " + this.food);
+}
+
+var willie = {
+  food: "ramen",
+  eat: eat
+};
+
+var lunch = willie.eat;  // function reference/alias only
+
+var food = "sushi";
+
+lunch(); // "I am eating sushi"
+```
+
+When we run the `lunch` function, it shows `I am eating sushi` rather than `I am eating ramen`. The reason is that even though we have run this line `var lunch = willie.eat;`, both `lunch` and `willie.eat` are simply two references pointing to the same function, `eat`. `lunch` does not refer to any part of the `willie` object so when we run `lunch()` as a standalone function, the `this` value inside is refer to the global context. In the global scope, there is a varaible called `food` defined with a value of `sushi`. That's why we are seeing "I am eating sushi" instead.
+
+#### Lost in the callback
+
+A common pitfall of relying on the Implicit Binding of the `this` value is that it will get lost inside a callback function. Consider the following example:
+
+```javascript
+function eat() {
+  this.food.forEach(function(food){
+    console.log(this.name + " is eating " + food);
+  });
+}
+
+var willie = {
+  name: 'Willie',
+  food: ["Shoyu Ramen", "Kitakata Ramen", "Miso Ramen", "Tonkotsu Ramen"],
+  eat: eat
+};
+
+willie.eat(); // Who's having the ramens?
+```
+
+If you run the code, the result will look like this
+```
+undefined is eating Shoyu Ramen
+undefined is eating Kitakata Ramen
+undefined is eating Miso Ramen
+undefined is eating Tonkotsu Ramen
+```
+
+Apparently, the `this` inside the callback function of `forEach` is no longer `willie`. When a callback function is run, JavaScript *cannot* implicitly determine the value of `this` so it falls back to use the global context. *BE CAREFUL*!! There are actually two `this` in the function `eat`. `this.food` still works because the `eat` function is called from the `willie` object so for `this.food` the Implicit Binding still applies.
+
+To fix this problem, we can *assign* the `this` value to `forEach` as an optional parameter:
+```javascript
+function eat() {
+  this.food.forEach(function(food){
+    console.log(this.name + " is eating " + food);
+  }, this);   // Explicitly assign the value of this!!!
+}
+```
+
 ### Explicit Binding
+
+Explicit Binding is very straightforward. You just tell JavaScript exactly which object it should use as the `this` value. No more ambiguoity.
+
+```javascript
+function eat(food) {
+  console.log(this.name + " is eating " + food);
+}
+
+// The lunch function can take any number of paramers 
+// To do this, we can the parameter using the hidden variable 'arguments'
+function lunch() {
+  var food = [];
+  for (var i in arguments) {
+    food.push(arguments[i]);
+  }
+  food.forEach(eat, this);
+}
+
+var willie = {
+  name: 'Willie'
+};
+var sarah = {
+  name: 'Sarah'
+};
+var ramens = ["Shoyu Ramen", "Kitakata Ramen", "Miso Ramen", "Tonkotsu Ramen"];
+
+// using sarah as 'this' in 'eat'
+eat.call(sarah, "sushi");
+eat.apply(sarah, ["milkshake"]);
+
+// using willie as 'this' in 'eat'
+lunch.apply(willie, ramens);
+lunch.call(willie, "Shoyu Ramen", "Kitakata Ramen", "Miso Ramen", "Tonkotsu Ramen");
+
+```
+In JavaScript, you can use `apply` and `call` to run a function and explicitly mention which object you want to use. The main difference between `apply` and `call` is that `call` can take an arbitrary number of parameters and `apply` take an array of parameters.
 
 ### Hard Binding
 
