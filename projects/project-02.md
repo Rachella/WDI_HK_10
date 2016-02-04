@@ -19,7 +19,7 @@ Your app must:
 * **Have at _least_ 3 documents** (more if they make sense) – one representing a User of your application, and two that represents the main functional idea for your app.
 * **Include sign up/log in/log out functionality**, with encrypted passwords & an authorization flow.
 * **Have complete RESTful routes** for at least one of your resources with GET, POST, PUT, PATCH, and DELETE.
-* **Utilize an ORM to perform **CRUD** operations on your data.
+* **Utilize an ORM to perform** CRUD operations on your data.
 * **Include wireframes** that you designed during the planning process.
 * **Have a [Responsive Design](https://en.wikipedia.org/wiki/Responsive_web_design)**, we recommend you start `mobile-first` and then build up for larger screen sizes!
 * Have **semantically clean HTML and CSS**
