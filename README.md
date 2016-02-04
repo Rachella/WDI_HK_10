@@ -167,7 +167,7 @@ Time   | [Monday](#w3d1)                          | [Tuesday](#w3d2)            
 
 Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)                        | [Wednesday](#w3d3)                      | [Thursday](#w4d4)                       | [Friday](#w4d5)                         |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-09:00  | [Week 1-3 Retrospective][4-1A]           | [R-Lab: JavaScript Exercism][4-1D]      | [R-Lab: JavaScript Exercism][4-2B]      | [R-Lab: AJAX][4-3D]                     | [R-Lab: Flickr][4-4C]                   |
+09:00  | [Week 1-3 Retrospective][4-1A]           | [R-Lab: JavaScript Exercism][4-1D]      | [R-Lab: JavaScript Exercism][4-2B]      | [R-Lab: AJAX][4-3D]                     | [R-Lab: Flickr][4-4B]                   |
 10:00  | -                                        | [JS Objects][4-2A]                      | [What is the Internet?][4-3A]           | -                                       | [Project 2 Spec][4-5A]                  |
 11:00  | [Project 1 Code Review][3-5A]            | -                                       | [AJAX][4-3B]                            | [HighCharts][4-4A]                      | [Database Intro][4-5B]                  |
 12:00  | LUNCH                                    | Guest Speaker: George Papanikolaou      | LUNCH                                   | LUNCH                                   | LUNCH                                   |
@@ -188,7 +188,7 @@ Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)            
 [4-3A]: 00-programming/internet-fundamentals-lesson               "Internet fundamentals"
 [4-3B]: 00-programming/js-ajax-lesson                             "AJAX"
 [4-3C]: 00-programming/js-callbacks-lesson                        "JS Callbacks"
-[4-3C]: https://github.com/wdi-hk-10/lab-js-ajax                  "Lab: AJAX"
+[4-3D]: https://github.com/wdi-hk-10/lab-js-ajax                  "Lab: AJAX"
 
 [4-4A]: http://www.highcharts.com/                                "HighCharts"
 [4-4B]: https://github.com/wdi-hk-10/lab-flickr-photo-search      "Lab: Flickr Photo Search"
