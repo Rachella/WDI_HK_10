@@ -4,7 +4,7 @@
 *After this lesson, students will be able to:*
 
 - Understand the basics of Default Binding and Implicit Binding of the `this` value in JavaScript functions.
-- Use the 4 basic binding rules to determine the correct value of `this`.
+- Use the 3 basic binding rules to determine the correct value of `this`.
 - Use Explicit Binding of the `this` value while using Callback function, such as `forEach` in `Array`.
 - Explain the behind-the-scene actions performed by the `new` operator.
 - Explain how a function can use `closures` to maintain a scope reference to where it was originally declared.
