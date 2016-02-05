@@ -197,7 +197,7 @@ Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)            
 [4-5B]: 05-databases/data-modeling-intro-lesson                   "Database Intro"
 [4-5C]: 05-databases/mongo-notes/mongo-intro.md                   "MongoDB Intro"
 [4-5D]: 05-databases/mongo-notes/mongo-firststeps.md              "MongoDB First Steps"
-[4-5E]: #                                                         "Lab: Game of Life"
+[4-5E]: https://github.com/wdi-hk-10/lab-electronic-life          "Lab: Game of Life"
 
 
 #### Later
