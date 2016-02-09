@@ -4,7 +4,7 @@
 *After this lesson, students will be able to:*
 
 - Understand the basics of Default Binding and Implicit Binding of the `this` value in JavaScript functions.
-- Use the 3 basic binding rules to determine the correct value of `this`.
+- Use the 4 basic binding rules to determine the correct value of `this`.
 - Use Explicit Binding of the `this` value while using Callback function, such as `forEach` in `Array`.
 - Explain the behind-the-scene actions performed by the `new` operator.
 - Explain how a function can use `closures` to maintain a scope reference to where it was originally declared.
@@ -170,9 +170,14 @@ lunch.apply(willie, ramens);
 lunch.call(willie, "Shoyu Ramen", "Kitakata Ramen", "Miso Ramen", "Tonkotsu Ramen");
 
 ```
-In JavaScript, you can use `apply` and `call` to run a function and explicitly mention which object you want to use. The main difference between `apply` and `call` is that `call` can take an arbitrary number of parameters and `apply` take an array of parameters.
+In JavaScript, you can use `apply` and `call` to run a function and explicitly mention which object you want to use as the value of `this`, i.e. the context. The main difference between `apply` and `call` is that `call` can take an arbitrary number of parameters and `apply` take an array of parameters.
 
-### Hard Binding
+When we use functions that take a callback function as a parameter, such as `forEach`, sometimes we need to pass in `this` as an optional parameter too. In the above example, since we are passing `eat` as a callback and inside `eat` we are referring to `this.namr`, so in this case, we also need to pass in `this` (which is either `willie` or `sarah` in the example) othetwise we will get an `undefined` value.
+
+#### Hard Binding
+**Hard Binging** is just a variation of **Explicit Binding** where the binding can be enforced as a function. In the example below, we can invoke the function `eat` using `eat.call()` and set `sarahChoice` as the context so that `sarah` can eat sushi. To force `sarah` to pick ramen, we can invoke the function `eat` and set `willieChoice` as the context instead. Or we can invoke `eat.call()` from within a function. 
+
+Inside `willieChooseLunch`, the context to `eat.call()` is **HARD** bound to `willieChoice`. Therefore, even though we set th context of calling `willieChooseLunch` as `sarahChoice`, the result is still `Sarah eats Ramen`. 
 
 ```javascript
 // Hard Binding
@@ -199,9 +204,33 @@ function willieChooseLunch(person) {
 willieChooseLunch.call(sarahChoice, "Sarah");  // Sarah eats Ramen
 ```
 
-## The New Operator
+### The new Binding
 
-## Closures
+The `new` operator in JavaScript is used to creat objects from an Object Constructor function and it is the fourth form of `this` value binding in JavaScript. 
+
+```javascript
+var Person = function(option) {
+  this.firstName = option.f;
+  this.lastName = option.l;
+};
+
+var willie = new Person({
+  f: "Willie",
+  l: "Tong"
+});
+```
+
+In this example, we have a Object Constructor function called `Person`. It is just a regular function and the usual convention is to give it a name with the first letter capitalised. Again, this is just a naming convention but not required by the JavaScript syntax. When the `new` operator is used in conjuction with an Object Constructor function, this is what happened behind the scene:
+1. A brand new object is created (constructed). Think: `{}` an empty object.
+1. The newly constructed object is set as the value of `this` in the function call.
+1. Inside the Object Constructor fucntion, we are actually setting properties to the newly constructed object.
+1. Unless the Object Constructor function returnes an alternate object, the `new`-invoked function call with return the newly constructed object.
+
+### And One More Thing...
+
+Before we go, it is worth mentioning that the **Default Binding** has the lowest priority of the 4 rules we have discussed. So whenever you are reading JavaScript code and are wondering what does the `this` value mean, always think about the other 3 rules first. If none of the 3 applies, then apply the **Defauly Binding**.
 
 ## Object Constructor and Prototype: The Simple Approach
+
+## Closures
 
