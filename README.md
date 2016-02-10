@@ -222,7 +222,7 @@ Time   | [Monday](#w5d1)                          | [Tuesday](#w5d2)            
 
 [5-5A]: 04-server-applications/node-hapi-twitter/getting_started.md      "API Building: Getting Started"
 [5-5B]: 04-server-applications/node-hapi-twitter/users.md                "API Building: Users"
-[5-5C]: https://github.com/WDI-HK-7/hapi-twitter                         "Lab: Users Front-End"
+[5-5C]: https://github.com/wdi-hk-10/hapi-twitter                         "Lab: Users Front-End"
 
 
 <a name="week6"></a>
@@ -241,10 +241,10 @@ Time   | [Monday](#w6d1)                          | [Tuesday](#w6d2)            
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
 
 [6-1A]: 04-server-applications/node-hapi-twitter/sessions.md            "API Building: Sessions"
-[6-1B]: https://github.com/WDI-HK-7/hapi-twitter                        "Lab: Sessions Front-End"
+[6-1B]: https://github.com/wdi-hk-10/hapi-twitter                        "Lab: Sessions Front-End"
 
 [6-2A]: 04-server-applications/node-hapi-twitter/tweets.md              "API Building: Tweets"
-[6-2B]: https://github.com/WDI-HK-7/hapi-twitter                        "Lab: Tweets Front-End"
+[6-2B]: https://github.com/wdi-hk-10/hapi-twitter                        "Lab: Tweets Front-End"
 
 
 #### Later
