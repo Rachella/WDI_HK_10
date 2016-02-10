@@ -206,7 +206,7 @@ willieChooseLunch.call(sarahChoice, "Sarah");  // Sarah eats Ramen
 
 ### The new Binding
 
-The `new` operator in JavaScript is used to creat objects from an Object Constructor function and it is the fourth form of `this` value binding in JavaScript. 
+The `new` operator in JavaScript is used to create objects from an Object Constructor function and it is the fourth form of `this` value binding in JavaScript. 
 
 ```javascript
 var Person = function(option) {
@@ -221,10 +221,11 @@ var willie = new Person({
 ```
 
 In this example, we have a Object Constructor function called `Person`. It is just a regular function and the usual convention is to give it a name with the first letter capitalised. Again, this is just a naming convention but not required by the JavaScript syntax. When the `new` operator is used in conjuction with an Object Constructor function, this is what happened behind the scene:
-1. A brand new object is created (constructed). Think: `{}` an empty object.
-1. The newly constructed object is set as the value of `this` in the function call.
-1. Inside the Object Constructor fucntion, we are actually setting properties to the newly constructed object.
-1. Unless the Object Constructor function returnes an alternate object, the `new`-invoked function call with return the newly constructed object.
+
+  1. A brand new object is created (constructed). Think: `{}` an empty object.
+  1. The newly constructed object is set as the value of `this` in the function call.
+  1. Inside the Object Constructor fucntion, we are actually setting properties to the newly constructed object.
+  1. Unless the Object Constructor function returnes an alternate object, the `new`-invoked function call with return the newly constructed object.
 
 ### And One More Thing...
 
@@ -232,5 +233,106 @@ Before we go, it is worth mentioning that the **Default Binding** has the lowest
 
 ## Object Constructor and Prototype: The Simple Approach
 
+Prototype is one of the most confusing aspects of the JavaScript language. For the purpose of this lesson we **WILL NOT** delve too deep into the mysteries surrounding it. Instead, we will simply use Prototype as a way to define behaviors of the objects created via a Object Constructor function using the `new` operator.
+
+```javascript
+var Person = function(option) {
+  this.firstName = option.f;
+  this.lastName = option.l;
+};
+
+Person.prototype.hey = function() {
+  console.log('Hey!! I am ' + this.firstName + " " + this.lastName);
+};
+
+var willie = new Person({
+  f: "Willie",
+  l: "Tong"
+});
+willie.hey();          // Hey!! I am Willie Tong
+console.log(willie);
+
+var sarah = new Person({
+  f: "Sarah",
+  l: "Chow"
+});
+sarah.hey();           // Hey!! I am Sarah Chow
+console.log(sarah);
+```
+
+In the above simple example we have created two objects using the `Person` Object Constructor function via the `new` operator. These two objects have different property values (`firstName` and `lastName`) but they both have a reference to the function `hey`. We can invoke the `hey` function on both objects via the `prototype` of the `Person` Object Constructor function. If you run the above code in Chrome JavaScrpt console, you can examine the `prototype` object by printing `willie` and `sarah` using `console.log`.
+
+Note that you can define other function in the `prototype` **AFTER** object creation and expect these objects to be able to reference the newly added function. Try to run these code after you have run the previous example:
+
+```javascript
+Person.prototype.talk = function(person) {
+  console.log(this.firstName + ' is talking to ' + person.firstName + ' right now.');
+};
+
+willie.talk(sarah);
+```
+
+`willie` was created before the `talk` function was defined in the `Person` prototype but we can still run `willie.talk(sarah)` without any error.
+
+### To summarize...
+
+We define common behaviors of a type of Object using functions in `prototype`. For each object's unique property values, we can define them inside the Object Constructor functions (by passing different parameter values to the constructor function). 
+
+These concepts are very similar to the Object-Priented Programming (OOP) paradigm but they are not equivalent to each other. It is dangerous to directly apply OOP concept in JavaScript and we will discuss this in later lessons.
+
 ## Closures
+
+We will end this lesson by introducing one more important concept: Closure. 
+>
+> Closure is when a function is able to remember and access its lexical scope even when that function is executing outside its lexical scope.
+>
+> Scope and Closures, Kyle Simpson
+>
+
+In the example below, we declare a function `eat` inside the function `meal`. When `meal` is invoked it returns the reference to the function `eat`. In the code, we use two variables `lunch` and `dinner` to store the return value from `meal`, which both refer to the function `eat`. When `lunch` and `dinner` are called (remember, they are reference to a function!!), they still "remember" the local variable `willie` which was declared inside the function `meal`. And that's why the name `Willie` will be printed out.
+
+```javascript
+// Eat different kinds of food in different meals, yay!
+var food = "ramen";
+
+function meal() {
+  var willie = {
+    name: 'Willie'
+  };
+  
+  function eat() {
+    console.log(willie.name + " eats " + this.food);
+  }
+  
+  return eat;
+}
+
+var lunch = meal();
+var dinner = meal();
+
+lunch();              // Willie eats ramen
+
+food = "sushi";
+dinner();             // Willie eats sushi
+```
+
+We can combine Closure and Explicit Binding to do something interesting. Let's add some more code to the above example:
+
+```javascript
+// Go to Osaka!!
+var osaka = {
+  food: "okonomiyaki"
+};
+meal().call(osaka);   // Willie eats okonomiyaki
+```
+
+First of all, you should be able to tell what the expression `meal()` means. This returns a reference to the function `eat` (defined inside `meal`) and then we directly invoke this function with an explicit context value (using `call`). When you run the code, you will notice that the value of `food` is now `okonomiyaki`, which is the one defined inside the `osaka` object. Thus, `eat` is no longer using the previous `food` value defined in the Global context due to Explicit Binding.
+
+## Conclusions
+
+It is important to have a solid understanding of the Default Binding and Implicit Binding rules as they are very common in JavaScript programming. Explicit Binding is a useful way to remove the ambiguity of the binding rule. 
+
+The `new` operator, Object Constructor function and Prototype are useful ways associate properties and behaviors of the same type of Objects.
+
+Finally, Closure is a powerful way to fully utilize the power of the JavaScript where we can treat functions as first class citzens. It means that we can use function to create functions which can retain their lexcial scope.
 

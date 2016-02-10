@@ -7,7 +7,7 @@ function meal() {
   };
   
   function eat() {
-    console.log(willie.name + " eats " + food);
+    console.log(willie.name + " eats " + this.food);
   }
   
   return eat;
@@ -25,4 +25,4 @@ dinner();
 var osaka = {
   food: "okonomiyaki"
 };
-meal().call(osaka); // You need to use this.food in eat() above
+meal().call(osaka);
