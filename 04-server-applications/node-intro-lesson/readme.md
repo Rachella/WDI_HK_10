@@ -2,19 +2,17 @@
 
 ### Objectives
 - Explain what Node.js is & why it exists
-- Compare and contrast Node/Express vs. Ruby/Sinatra/Rails
 - Use module.exports and require to organize code
 
 ### Preparation
 - Write basic Javascript
 - Understand backend vs. front-end
-- Have written a Rails or Sinatra application
 
 ## What is Node.js? - Intro (20 mins)
 
 [Node.js](https://nodejs.org/) is a platform built on top of [Chrome's JavaScript runtime](https://code.google.com/p/v8/) that allow us to execute javascript, which normally only runs in the browser.
 
-Keep in mind, Node.js is strictly a tool to run JavaScript on a server – while it's possible to build web applications and APIs directly in NodeJS, we'll actually be using a framework on top of Node called [Express](http://expressjs.com/). It's actually quite similar to Sinatra - you'll like it!
+Keep in mind, Node.js is strictly a tool to run JavaScript on a server – while it's possible to build web applications and APIs directly in NodeJS, we'll actually be using a framework on top of Node called [hapi](http://hapijs.com/).
 
 #### Why are people excited about Node?
 
@@ -30,19 +28,8 @@ Imagine a paper delivery boy riding on his bike delivering papers every morning.
 
 Now imagine the paperboy throwing the newspaper on your porch but never stopping his bicycle; never stopping, he just keeps throwing papers on porches, so that by the time you pick it up he'll be 3 or 4 houses down. That would be _non-blocking_, or _asynchronous_.
 
-While it means you'll have to think & write your code a little differently than you did with a blocking framework like Sinatra or Rails, the benefit of speed is one thing a lot of folks are excited about with the introduction of Node.
+#### Why Node.js?
 
-#### Ruby/Rails/Sinatra vs. JS/Node/Express
-
-While not strictly a competition (one of the skills you have to practice is knowing which frameworks you should use in which situations), let's compare some differences.
-
-__Why Choose Sinatra/Rails?__
-- Quickest path to building app with full CRUD
-- Better at working with complex data relationships - ActiveRecord rocks!
-- When full page refreshes aren't an issue
-- Synchronous programming is probably a little easier to grasp in building a straightforward program
-
-__Why Choose Node/Express?__
 - JavaScript everywhere, one language to rule them all
 - Asynchronous means generally faster performance
 - Better _concurrency_ – it can serve data to more users with fewer computer resources
@@ -58,7 +45,7 @@ If it's not installed, you can install from the Node.js website, or better yet, 
 $ brew install node
 ```
 
-This will install both Node.js and npm, a package manager for Node similar to rubygems for Ruby. One of the advantages of using Homebrew is that you can update your versions easily like this:
+This will install both Node.js and npm. One of the advantages of using Homebrew is that you can update your versions easily like this:
 
 ```
 $ brew upgrade node
@@ -73,7 +60,7 @@ There are two ways to do this – try them both.
 
 #### Interactive Node
 
-If you simply type node in terminal, you will launch Node's REPL (Read-Eval-Print-Loop) interactive utility. Think of REPL as Node's version of Ruby's IRB. Let's test it:
+If you simply type node in terminal, you will launch Node's REPL (Read-Eval-Print-Loop) interactive utility. Think of REPL as Node's version of a shell where you can run JavaScript programs. Let's test it:
 
 ```js
 $ node
@@ -172,18 +159,18 @@ node main.js
 
 Though, it's frequently referred to as a package manager, technically, the founders of Node are quite frank when they say: "[npm] is a recursive bacronymic abbreviation for 'npm is not an acronym'."  Read more [here](https://docs.npmjs.com/misc/faq#if-npm-is-an-acronym-why-is-it-never-capitalized).
 
-Before we practice using npm, you should know a more: Node uses a package management system to distribute open-source modules, just like gems.
+Before we practice using npm, you should know a more: Node uses a package management system to distribute open-source modules.
 
 We can use the **N**ode **P**ackage **M**anager by running its command, `npm`.
 
-`npm` is similar to the `gem` and `bundle` commands from Ruby. But instead of using a `Gemfile`, `npm` uses a file called `package.json`.
+`npm` uses a file called `package.json` to maintain the dependencies among the various packages. 
 
-| Ruby | Node.js |
-| ---- | ------- |
-| `gem install ... ` | `npm install ...` |
-| `bundle` (works when `Gemfile` is found) | `npm` (works when `package.json` is found)|
-| `bundle update` | `npm update` |
-| `rails s` | `npm start` (provided start is defined in `package.json` |
+| Node commands     | Usage                               |
+| ----------------- | ----------------------------------- |
+| `npm install ...` | Install a new module                |
+| `npm`             | Works when `package.json` exists    |
+| `npm update ...`  | Update an already installed module  |
+| `npm start`       | If the `start` value is provided in `package.json`. It is usually the command to run the start script |
 
 You'll use this in a handful of lessons in the coming week. For now, let's focus on you making a quick module of your own!
 

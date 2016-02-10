@@ -205,10 +205,10 @@ Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)            
 Time   | [Monday](#w5d1)                          | [Tuesday](#w5d2)                        | [Wednesday](#w5d3)                      | [Thursday](#w5d4)                       | [Friday](#w5d5)                         |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
 09:00  |                                          |                                         |                                         | [R-Lab: Game of Life][4-5E]             | [R-Lab: makemehapi][5-4C]               |
-10:00  |                                          |                                         |                                         | [node.js, npm, hapi.js][5-4A]           | [API Building: Getting Started][5-5A]   |
+10:00  |                                          |                                         |                                         | [Node.js and NPM][5-4A]                 | [API Building: Getting Started][5-5A]   |
 11:00  |                                          |                                         |                                         | -                                       | -                                       |
 12:00  |                                          |                                         |                                         | LUNCH                                   | LUNCH                                   |
-13:00  |       CHINESE NEW YEAR HOLIDAY           |       CHINESE NEW YEAR HOLIDAY          |       CHINESE NEW YEAR HOLIDAY          | [API Building: Set Up][5-4B]            | [API Building: Users][5-5B]             |
+13:00  |       CHINESE NEW YEAR HOLIDAY           |       CHINESE NEW YEAR HOLIDAY          |       CHINESE NEW YEAR HOLIDAY          | [API Building: Hapi.js][5-4B]           | [API Building: Users][5-5B]             |
 14:00  |                                          |                                         |                                         | -                                       | -                                       |
 15:00  |                                          |                                         |                                         | [Lab: Make Me Hapi][5-4C]               | [Lab: Users Front-end][5-5C]            |
 16:00  |                                          |                                         |                                         | -                                       | -                                       |
@@ -216,8 +216,8 @@ Time   | [Monday](#w5d1)                          | [Tuesday](#w5d2)            
 
 [5-XA]: https://github.com/wdi-hk-10/lab-mongo-restaurants               "Lab: Mongo Restaurants"
 
-[5-4A]: 04-server-applications/node-hapi-intro                           "node.js, npm, hapi.js"
-[5-4B]: 04-server-applications/node-hapi-twitter/setup.md                "API Building: Set Up"
+[5-4A]: 04-server-applications/node-intro-lesson                         "Node.js and NPM"
+[5-4B]: 04-server-applications/node-hapi-twitter/setup.md                "API Building: hapi.js"
 [5-4C]: https://github.com/hapijs/makemehapi                             "Make me Hapi"
 
 [5-5A]: 04-server-applications/node-hapi-twitter/getting_started.md      "API Building: Getting Started"
