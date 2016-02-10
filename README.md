@@ -199,6 +199,53 @@ Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)            
 [4-5D]: 05-databases/mongo-notes/mongo-firststeps.md              "MongoDB First Steps"
 [4-5E]: https://github.com/wdi-hk-10/lab-electronic-life          "Lab: Game of Life"
 
+<a name="week5"></a>
+### Week 5 | Backend Development 
+
+Time   | [Monday](#w5d1)                          | [Tuesday](#w5d2)                        | [Wednesday](#w5d3)                      | [Thursday](#w5d4)                       | [Friday](#w5d5)                         |
+------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
+09:00  |                                          |                                         |                                         | [R-Lab: Game of Life][4-5E]             | [R-Lab: makemehapi][5-4C]               |
+10:00  |                                          |                                         |                                         | [node.js, npm, hapi.js][5-4A]           | [API Building: Getting Started][5-5A]   |
+11:00  |                                          |                                         |                                         | -                                       | -                                       |
+12:00  |                                          |                                         |                                         | LUNCH                                   | LUNCH                                   |
+13:00  |       CHINESE NEW YEAR HOLIDAY           |       CHINESE NEW YEAR HOLIDAY          |       CHINESE NEW YEAR HOLIDAY          | [API Building: Set Up][5-4B]            | [API Building: Users][5-5B]             |
+14:00  |                                          |                                         |                                         | -                                       | -                                       |
+15:00  |                                          |                                         |                                         | [Lab: Make Me Hapi][5-4C]               | [Lab: Users Front-end][5-5C]            |
+16:00  |                                          |                                         |                                         | -                                       | -                                       |
+17:00  |                                          |                                         |                                         | Done for Day                            | Done for Day                            |
+
+[5-XA]: https://github.com/wdi-hk-10/lab-mongo-restaurants               "Lab: Mongo Restaurants"
+
+[5-4A]: 04-server-applications/node-hapi-intro                           "node.js, npm, hapi.js"
+[5-4B]: 04-server-applications/node-hapi-twitter/setup.md                "API Building: Set Up"
+[5-4C]: https://github.com/hapijs/makemehapi                             "Make me Hapi"
+
+[5-5A]: 04-server-applications/node-hapi-twitter/getting_started.md      "API Building: Getting Started"
+[5-5B]: 04-server-applications/node-hapi-twitter/users.md                "API Building: Users"
+[5-5C]: https://github.com/WDI-HK-7/hapi-twitter                         "Lab: Users Front-End"
+
+
+<a name="week6"></a>
+### Week 6 | Backend Development + Project 2
+
+Time   | [Monday](#w6d1)                          | [Tuesday](#w6d2)                        | [Wednesday](#w6d3)                      | [Thursday](#w6d4)                       | [Friday](#w6d5)                         |
+------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
+09:00  | [R-Lab: Users Front-End][5-5C]           | [R-Lab: Sessions Front-End][6-1B]       | Project Pitch                           | Daily Standup                           | Daily Standup                           |
+10:00  | [API Building: Sessions][6-1A]           | [API Building: Tweets][6-2A]            | WireFrame + Coding Begins               |                                         |                                         |
+11:00  | -                                        | -                                       |                                         |                                         |                                         |
+12:00  | LUNCH                                    | LUNCH                                   | LUNCH                                   | LUNCH                                   | LUNCH                                   |
+13:00  | -                                        | -                                       |                                         |                                         |                                         |
+14:00  | [Lab: Sessions Front-end][6-1B]          | [Lab: Tweets Front-End][6-2B]           |                                         |                                         |                                         |
+15:00  | -                                        | -                                       |                                         |                                         |                                         |
+16:00  | -                                        | -                                       | Demo                                    | Demo                                    | Demo                                    |
+17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
+
+[6-1A]: 04-server-applications/node-hapi-twitter/sessions.md            "API Building: Sessions"
+[6-1B]: https://github.com/WDI-HK-7/hapi-twitter                        "Lab: Sessions Front-End"
+
+[6-2A]: 04-server-applications/node-hapi-twitter/tweets.md              "API Building: Tweets"
+[6-2B]: https://github.com/WDI-HK-7/hapi-twitter                        "Lab: Tweets Front-End"
+
 
 #### Later
 - Other Topics
