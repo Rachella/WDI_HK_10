@@ -208,21 +208,29 @@ Time   | [Monday](#w5d1)                          | [Tuesday](#w5d2)            
 10:00  |                                          |                                         |                                         | [Node.js and NPM][5-4A]                 | [API Building: Getting Started][5-5A]   |
 11:00  |                                          |                                         |                                         | -                                       | -                                       |
 12:00  |                                          |                                         |                                         | LUNCH                                   | LUNCH                                   |
-13:00  |       CHINESE NEW YEAR HOLIDAY           |       CHINESE NEW YEAR HOLIDAY          |       CHINESE NEW YEAR HOLIDAY          | [API Building: Hapi.js][5-4B]           | [API Building: Users][5-5B]             |
+13:00  |       CHINESE NEW YEAR HOLIDAY           |       CHINESE NEW YEAR HOLIDAY          |       CHINESE NEW YEAR HOLIDAY          | [API Building: Hapi.js][5-4B]           | [Build Hapi Doughnuts API][5-5B]        |
 14:00  |                                          |                                         |                                         | -                                       | -                                       |
-15:00  |                                          |                                         |                                         | [Lab: Make Me Hapi][5-4C]               | [Lab: Users Front-end][5-5C]            |
-16:00  |                                          |                                         |                                         | -                                       | -                                       |
+15:00  |                                          |                                         |                                         | [Lab: Make Me Hapi][5-4C]               | -                                       |
+16:00  |                                          |                                         |                                         | -                                       | [Lab: Mongo Restaurants][5-5C]          |
 17:00  |                                          |                                         |                                         | Done for Day                            | Done for Day                            |
 
-[5-XA]: https://github.com/wdi-hk-10/lab-mongo-restaurants               "Lab: Mongo Restaurants"
 
 [5-4A]: 04-server-applications/node-intro-lesson                         "Node.js and NPM"
 [5-4B]: 04-server-applications/node-hapi-twitter/setup.md                "API Building: hapi.js"
 [5-4C]: https://github.com/hapijs/makemehapi                             "Make me Hapi"
 
 [5-5A]: 04-server-applications/node-hapi-twitter/getting_started.md      "API Building: Getting Started"
-[5-5B]: 04-server-applications/node-hapi-twitter/users.md                "API Building: Users"
-[5-5C]: https://github.com/wdi-hk-10/hapi-twitter                         "Lab: Users Front-End"
+[5-5B]: https://github.com/wdi-hk-10/lesson-hapi                         "Build Hapi Doughnuts API"
+[5-5C]: https://github.com/wdi-hk-10/lab-mongo-restaurants               "Lab: Mongo Restaurants"
+
+#### Week 5 | Friday
+<a name="w5d5"></a>
+- More Exercism in JavaScript for the weekend!! These exercises are listed in **increasing** order of difficulty (sort of).
+  - [Strain](http://exercism.io/exercises/javascript/strain/readme)
+  - [Accumulate](http://exercism.io/exercises/javascript/accumulate/readme)
+  - [Scrabble Score](http://exercism.io/exercises/javascript/scrabble-score/readme)
+  - [Space Age](http://exercism.io/exercises/javascript/space-age/readme)
+  - [Clock](http://exercism.io/exercises/javascript/clock/readme)
 
 
 <a name="week6"></a>
@@ -230,20 +238,22 @@ Time   | [Monday](#w5d1)                          | [Tuesday](#w5d2)            
 
 Time   | [Monday](#w6d1)                          | [Tuesday](#w6d2)                        | [Wednesday](#w6d3)                      | [Thursday](#w6d4)                       | [Friday](#w6d5)                         |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-09:00  | [R-Lab: Users Front-End][5-5C]           | [R-Lab: Sessions Front-End][6-1B]       | Project Pitch                           | Daily Standup                           | Daily Standup                           |
-10:00  | [API Building: Sessions][6-1A]           | [API Building: Tweets][6-2A]            | WireFrame + Coding Begins               |                                         |                                         |
-11:00  | -                                        | -                                       |                                         |                                         |                                         |
-12:00  | LUNCH                                    | LUNCH                                   | LUNCH                                   | LUNCH                                   | LUNCH                                   |
+09:00  | [R-Lab: Mongo Restaurants][5-5C]         | [R-Lab: Sessions Front-End][6-1D]       | Project Pitch                           | Daily Standup                           | Daily Standup                           |
+10:00  | [API Building: Users][6-1A]              | [API Building: Tweets][6-2A]            | WireFrame + Coding Begins               |                                         |                                         |
+11:00  | [Lab: Users Front-end][6-1B]             | -                                       |                                         |                                         |                                         |
+12:00  | Guest Speaker: Wesley Ng (Casetify)      | LUNCH                                   | LUNCH                                   | LUNCH                                   | LUNCH                                   |
 13:00  | -                                        | -                                       |                                         |                                         |                                         |
-14:00  | [Lab: Sessions Front-end][6-1B]          | [Lab: Tweets Front-End][6-2B]           |                                         |                                         |                                         |
-15:00  | -                                        | -                                       |                                         |                                         |                                         |
+14:00  | [API Building: Sessions][6-1C]           | [Lab: Tweets Front-End][6-2B]           |                                         |                                         |                                         |
+15:00  | [Lab: Sessions Front-end][6-1D]          | -                                       |                                         |                                         |                                         |
 16:00  | -                                        | -                                       | Demo                                    | Demo                                    | Demo                                    |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
 
-[6-1A]: 04-server-applications/node-hapi-twitter/sessions.md            "API Building: Sessions"
-[6-1B]: https://github.com/wdi-hk-10/hapi-twitter                        "Lab: Sessions Front-End"
+[6-1A]: 04-server-applications/node-hapi-twitter/users.md                "API Building: Users"
+[6-1B]: https://github.com/wdi-hk-10/hapi-twitter                        "Lab: Users Front-End"
+[6-1C]: 04-server-applications/node-hapi-twitter/sessions.md             "API Building: Sessions"
+[6-1D]: https://github.com/wdi-hk-10/hapi-twitter                        "Lab: Sessions Front-End"
 
-[6-2A]: 04-server-applications/node-hapi-twitter/tweets.md              "API Building: Tweets"
+[6-2A]: 04-server-applications/node-hapi-twitter/tweets.md               "API Building: Tweets"
 [6-2B]: https://github.com/wdi-hk-10/hapi-twitter                        "Lab: Tweets Front-End"
 
 
