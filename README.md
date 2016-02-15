@@ -163,7 +163,7 @@ Time   | [Monday](#w3d1)                          | [Tuesday](#w3d2)            
 ## Unit 2
 
 <a name="week4"></a>
-### Week 4 | Backend Development 
+### Week 4 | Backend Development
 
 Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)                        | [Wednesday](#w3d3)                      | [Thursday](#w4d4)                       | [Friday](#w4d5)                         |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
@@ -200,7 +200,7 @@ Time   | [Monday](#w4d1)                          | [Tuesday](#w4d2)            
 [4-5E]: https://github.com/wdi-hk-10/lab-electronic-life          "Lab: Game of Life"
 
 <a name="week5"></a>
-### Week 5 | Backend Development 
+### Week 5 | Backend Development
 
 Time   | [Monday](#w5d1)                          | [Tuesday](#w5d2)                        | [Wednesday](#w5d3)                      | [Thursday](#w5d4)                       | [Friday](#w5d5)                         |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
@@ -243,19 +243,19 @@ Time   | [Monday](#w6d1)                          | [Tuesday](#w6d2)            
 11:00  | -                                        | -                                       | -                                       |                                         |                                         |
 12:00  | Guest Speaker: Wesley Ng (Casetify)      | LUNCH                                   | LUNCH                                   | LUNCH                                   | LUNCH                                   |
 13:00  | [API Building: Users][6-1A]              | -                                       | -                                       |                                         |                                         |
-14:00  | -                                        | [Lab: Sessions Front-End][6-2B]         | [Lab: Tweets Front-End][6-3B]           |                                         |                                         |
-15:00  | [Lab: Users Front-end][6-1B]             | -                                       | -                                       |                                         |                                         |
+14:00  | -                                        | [Lab: Hapi Sessions][6-2B]              | [Lab: Hapi Tweets][6-3B]                |                                         |                                         |
+15:00  | [Lab: Hapi Users][6-1B]                  | -                                       | -                                       |                                         |                                         |
 16:00  | -                                        | -                                       | -                                       | Demo                                    | Demo                                    |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
 
 [6-1A]: 04-server-applications/node-hapi-twitter/users.md                "API Building: Users"
-[6-1B]: https://github.com/wdi-hk-10/hapi-twitter                        "Lab: Users Front-End"
+[6-1B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
 
 [6-2A]: 04-server-applications/node-hapi-twitter/sessions.md             "API Building: Sessions"
-[6-2B]: https://github.com/wdi-hk-10/hapi-twitter                        "Lab: Sessions Front-End"
+[6-1B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
 
 [6-3A]: 04-server-applications/node-hapi-twitter/tweets.md               "API Building: Tweets"
-[6-3B]: https://github.com/wdi-hk-10/hapi-twitter                        "Lab: Tweets Front-End"
+[6-1B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
 
 
 #### Later
