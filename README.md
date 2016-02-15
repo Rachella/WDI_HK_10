@@ -238,7 +238,7 @@ Time   | [Monday](#w5d1)                          | [Tuesday](#w5d2)            
 
 Time   | [Monday](#w6d1)                          | [Tuesday](#w6d2)                        | [Wednesday](#w6d3)                      | [Thursday](#w6d4)                       | [Friday](#w6d5)                         |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-09:00  | [Build Hapi Doughnuts API][5-5B]         | [R-Lab: Users Front-End][6-1D]          | [R-Lab: Sessions Front-End][6-1D]       | Project Pitch                           | Daily Standup                           |
+09:00  | [Build Hapi Doughnuts API][5-5B]         | [R-Lab: Users Front-End][6-1B]          | [R-Lab: Sessions Front-End][6-2B]       | Project Pitch                           | Daily Standup                           |
 10:00  | -                                        | [API Building: Sessions][6-2A]          | [API Building: Tweets][6-3A]            | WireFrame + Coding Begins               |                                         |
 11:00  | -                                        | -                                       | -                                       |                                         |                                         |
 12:00  | Guest Speaker: Wesley Ng (Casetify)      | LUNCH                                   | LUNCH                                   | LUNCH                                   | LUNCH                                   |
