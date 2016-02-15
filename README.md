@@ -252,10 +252,10 @@ Time   | [Monday](#w6d1)                          | [Tuesday](#w6d2)            
 [6-1B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
 
 [6-2A]: 04-server-applications/node-hapi-twitter/sessions.md             "API Building: Sessions"
-[6-1B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
+[6-2B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
 
 [6-3A]: 04-server-applications/node-hapi-twitter/tweets.md               "API Building: Tweets"
-[6-1B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
+[6-3B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
 
 
 #### Later
