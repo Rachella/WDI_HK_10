@@ -258,6 +258,27 @@ Time   | [Monday](#w6d1)                          | [Tuesday](#w6d2)            
 [6-3B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
 
 
+<a name="unit3"></a>
+## Unit 3
+
+<a name="week7"></a>
+### Week 7 | Project 2 + Ruby on Rails
+
+Time   | [Monday](#w7d1)                          | [Tuesday](#w7d2)                        | [Wednesday](#w7d3)                      | [Thursday](#w7d4)                       | [Friday](#w7d5)                         |
+------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
+09:00  | Daily Standup                            | Daily Standup                           | Daily Standup                           | [Week 4-6 Retrospective][7-4A]          | -                                       |
+10:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
+11:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
+12:00  | LUNCH                                    | LUNCH                                   | *JS CHANGE FREEZE* + LUNCH              | LUNCH                                   | LUNCH                                   |
+13:00  | -                                        | -                                       | Final touch up (HTML & CSS)             | -                                       | -                                       |
+14:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
+15:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
+16:00  | Demo                                     | Demo                                    | Presentation                            | -                                       | -                                       |
+17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
+
+[7-4A]: 15-retrospectives/Retrospectoves-guide.md                 "Week 4-6 Retrospective"
+
+
 #### Later
 - Other Topics
   - Watch [DNS Explained](https://www.youtube.com/watch?v=72snZctFFtA) to how DNS works
