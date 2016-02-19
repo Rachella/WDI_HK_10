@@ -264,20 +264,29 @@ Time   | [Monday](#w6d1)                          | [Tuesday](#w6d2)            
 <a name="week7"></a>
 ### Week 7 | Project 2 + Ruby on Rails
 
-Time   | [Monday](#w7d1)                          | [Tuesday](#w7d2)                        | [Wednesday](#w7d3)                      | [Thursday](#w7d4)                       | [Friday](#w7d5)                         |
------- | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-09:00  | Daily Standup                            | Daily Standup                           | Daily Standup                           | [Week 4-6 Retrospective][7-4A]          | -                                       |
-10:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
-11:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
-12:00  | LUNCH                                    | LUNCH                                   | *JS CHANGE FREEZE* + LUNCH              | LUNCH                                   | LUNCH                                   |
-13:00  | -                                        | -                                       | Final touch up (HTML & CSS)             | -                                       | -                                       |
-14:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
-15:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
-16:00  | Demo                                     | Demo                                    | Presentation                            | -                                       | -                                       |
-17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
+Time   | [Monday](#w7d1)                          | [Tuesday](#w7d2)                        | [Wednesday](#w7d3)                      | [Thursday](#w7d4)                         | [Friday](#w7d5)                               |
+------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | ----------------------------------------- | --------------------------------------------- |
+09:00  | Daily Standup                            | Daily Standup                           | Daily Standup                           | [Week 4-6 Retrospective][7-4A]            | [R-Lab: Arrays & Hashes][7-4E]                |
+10:00  | -                                        | -                                       | -                                       | -                                         | [R-Lab: Ruby Koans][7-4F]                     |
+11:00  | -                                        | -                                       | -                                       | [Intro to Ruby Programming][7-4B]         | [OOP in Ruby][7-5A]                           |
+12:00  | LUNCH                                    | LUNCH                                   | *JS CHANGE FREEZE* + LUNCH              | Guest Speaker: Jaclyn Tsui (Altitude Lab) | Guest Speaker: Paul Lugagne Delpon (Easyship) |
+13:00  | -                                        | -                                       | Final touch up (HTML & CSS)             | [Control Flow in Ruby][7-4C]              | [OOP in Ruby][7-5A]                           |
+14:00  | -                                        | -                                       | -                                       | [Arrays, Hashes & Blocks][7-4D]           | [Lab: Rails Objects][7-5B]                    |
+15:00  | -                                        | -                                       | -                                       | [Lab: Arrays & Hashes][7-4E]              | [Lab: Ruby Apartments][7-5C]                  |
+16:00  | Demo                                     | Demo                                    | Presentation                            | [Lab: Ruby Koans][7-4F]                   | [Lab: Ruby Exercism][7-5D]                    |
+17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                              | Done for Day                                  |
 
-[7-4A]: 15-retrospectives/Retrospectoves-guide.md                 "Week 4-6 Retrospective"
+[7-4A]: 15-retrospectives/Retrospectoves-guide.md                       "Week 4-6 Retrospective"
+[7-4B]: 00-programming/ruby-data-types-variables-lesson                 "Intro to Ruby - Data Types & Variables"
+[7-4C]: 00-programming/ruby-control-flow-lesson                         "Control flow in Ruby"
+[7-4D]: 00-programming/ruby-arrays-hashes-and-blocks-lesson             "Arrays, Hashes, & Blocks"
+[7-4E]: https://github.com/wdi-hk-10/lab-ruby-arrays-and-hashes         "Lab: Arrays & Hashes"
+[7-4F]: https://github.com/wdi-hk-10/ruby_koans                         "Lab: Ruby Koans"
 
+[7-5A]: 00-programming/ruby-oop-classes                                 "OOP in Ruby"
+[7-5B]: https://github.com/wdi-hk-10/ruby_assessment_objects            "Lab: Rails Objects"
+[7-5C]: https://github.com/wdi-hk-10/lab-ruby-oop-apartments            "Lab: Ruby Apartments"
+[7-5D]: http://exercism.io/languages/ruby                               "Lab: Ruby Exercism"
 
 #### Later
 - Other Topics
