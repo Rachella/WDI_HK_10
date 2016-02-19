@@ -54,7 +54,7 @@ Time   | [Monday](#w1d1)                    | [Tuesday](#w1d2)                  
 [1-5A]: 14-assessments/w01d5.md                                         "Assessment"
 [1-5B]: 14-assessments/w01d5-solution.md                                "Assessment Solution"
 [1-5C]: 00-programming/js-fundamental-reviews/checkerboard.js           "Checkerboard - Review"
-[1-5D]: https://github.com/wdi-hk-10/lesson-js-rock-paper-scissors      "Rock, Paper, Scissors - Review"
+[1-5D]: 00-programming/js-fundamental-reviews/rock-paper-scissors.js    "Rock, Paper, Scissors - Review"
 [1-5E]: https://github.com/wdi-hk-10/lab-js-functions                   "Labs: Functions"
 
 #### Week 1 | Monday
