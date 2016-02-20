@@ -239,23 +239,23 @@ Time   | [Monday](#w5d1)                          | [Tuesday](#w5d2)            
 Time   | [Monday](#w6d1)                          | [Tuesday](#w6d2)                        | [Wednesday](#w6d3)                      | [Thursday](#w6d4)                       | [Friday](#w6d5)                         |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
 09:00  | [Build Hapi Doughnuts API][5-5B]         | [R-Lab: Users Front-End][6-1B]          | [R-Lab: Sessions Front-End][6-2B]       | Project Pitch                           | Daily Standup                           |
-10:00  | -                                        | [API Building: Sessions][6-2A]          | [API Building: Tweets][6-3A]            | WireFrame + Coding Begins               |                                         |
+10:00  | -                                        | [API Building: Sessions][6-2A]          | [API Building: Doughnuts][6-3A]         | WireFrame + Coding Begins               |                                         |
 11:00  | -                                        | -                                       | -                                       |                                         |                                         |
 12:00  | Guest Speaker: Wesley Ng (Casetify)      | LUNCH                                   | LUNCH                                   | LUNCH                                   | LUNCH                                   |
 13:00  | [API Building: Users][6-1A]              | -                                       | -                                       |                                         |                                         |
-14:00  | -                                        | [Lab: Hapi Sessions][6-2B]              | [Lab: Hapi Tweets][6-3B]                |                                         |                                         |
+14:00  | -                                        | [Lab: Hapi Sessions][6-2B]              | [Lab: Hapi Doughnuts][6-3B]             |                                         |                                         |
 15:00  | [Lab: Hapi Users][6-1B]                  | -                                       | -                                       |                                         |                                         |
 16:00  | -                                        | -                                       | -                                       | Demo                                    | Demo                                    |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
 
 [6-1A]: 04-server-applications/node-hapi-twitter/users.md                "API Building: Users"
-[6-1B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
+[6-1B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Hapi Users"
 
 [6-2A]: 04-server-applications/node-hapi-twitter/sessions.md             "API Building: Sessions"
-[6-2B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
+[6-2B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Hapi Sessions"
 
-[6-3A]: 04-server-applications/node-hapi-twitter/tweets.md               "API Building: Tweets"
-[6-3B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Users Front-End"
+[6-3A]: 04-server-applications/node-hapi-twitter/tweets.md               "API Building: Doughnuts"
+[6-3B]: https://github.com/wdi-hk-10/hapi-doughnuts-users-sessions       "Lab: Hapi Doughnuts"
 
 
 <a name="unit3"></a>
