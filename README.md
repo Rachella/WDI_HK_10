@@ -296,8 +296,9 @@ Time   | [Monday](#w7d1)                          | [Tuesday](#w7d2)            
   - [Ruby QuickRef](http://www.zenspider.com/Languages/Ruby/QuickRef.html#pseudo-variables)
   - [Try Ruby!!](http://tryruby.org/)
 
+#### Week 7 | Friday
 <a name="w7d5"></a>
-- Rails Readings
+- Rails Weekend Readings!!
   - [Ruby on Rails: Getting Started](http://guides.rubyonrails.org/getting_started.html)
     - This guide is long so please read as much as your brain can handle. :)
 
