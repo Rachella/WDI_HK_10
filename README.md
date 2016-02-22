@@ -271,7 +271,7 @@ Time   | [Monday](#w7d1)                          | [Tuesday](#w7d2)            
 11:00  | -                                        | -                                       | -                                       | [Intro to Ruby Programming][7-4B]         | [OOP in Ruby][7-5A]                           |
 12:00  | LUNCH                                    | LUNCH                                   | *JS CHANGE FREEZE* + LUNCH              | LUNCH                                     | Guest Speaker: Paul Lugagne Delpon (Easyship) |
 13:00  | -                                        | -                                       | Final touch up (HTML & CSS)             | [Control Flow in Ruby][7-4C]              | [OOP in Ruby][7-5A]                           |
-14:00  | -                                        | -                                       | -                                       | [Arrays, Hashes & Blocks][7-4D]           | [Lab: Rails Objects][7-5B]                    |
+14:00  | -                                        | -                                       | -                                       | [Arrays, Hashes & Blocks][7-4D]           | [Lab: Rails Medieval Objects][7-5B]           |
 15:00  | -                                        | -                                       | -                                       | [Lab: Arrays & Hashes][7-4E]              | [Lab: Ruby Apartments][7-5C]                  |
 16:00  | Demo                                     | Demo                                    | Presentation                            | [Lab: Ruby Koans][7-4F]                   | [Lab: Ruby Exercism][7-5D]                    |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                              | Done for Day                                  |
@@ -284,9 +284,22 @@ Time   | [Monday](#w7d1)                          | [Tuesday](#w7d2)            
 [7-4F]: https://github.com/wdi-hk-10/ruby_koans                         "Lab: Ruby Koans"
 
 [7-5A]: 00-programming/ruby-oop-classes                                 "OOP in Ruby"
-[7-5B]: https://github.com/wdi-hk-10/ruby_assessment_objects            "Lab: Rails Objects"
-[7-5C]: https://github.com/wdi-hk-10/lab-ruby-oop-apartments            "Lab: Ruby Apartments"
+[7-5B]: https://github.com/wdi-hk-10/lab-ruby-medieval-objects          "Lab: Rails Medieval Objects"
+[7-5C]: https://github.com/wdi-hk-10/lab-ruby-apartments                "Lab: Ruby Apartments"
 [7-5D]: http://exercism.io/languages/ruby                               "Lab: Ruby Exercism"
+
+#### Week 7 | Thursday
+<a name="w7d4"></a>
+- Ruby Readings
+  - [Ruby in 20 Minutes](http://www.ruby-lang.org/en/documentation/quickstart/)
+  - [Important Language Features And Some Gotchas](http://www.ruby-lang.org/en/documentation/ruby-from-other-languages/)
+  - [Ruby QuickRef](http://www.zenspider.com/Languages/Ruby/QuickRef.html#pseudo-variables)
+  - [Try Ruby!!](http://tryruby.org/)
+
+<a name="w7d5"></a>
+- Rails Readings
+  - [Ruby on Rails: Getting Started](http://guides.rubyonrails.org/getting_started.html)
+    - This guide is long so please read as much as your brain can handle. :)
 
 #### Later
 - Other Topics
