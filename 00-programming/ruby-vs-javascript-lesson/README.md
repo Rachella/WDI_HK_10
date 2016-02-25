@@ -38,7 +38,13 @@
     - [Array Iteration](#array-iteration)
     - [It is a block!!](#it-is-a-block)
   - [Round 7: Symbols](#round-7-symbols)
+    - [The many ways of creating symbols](#the-many-ways-of-creating-symbols)
+    - [Symbols vs Strings](#symbols-vs-strings)
   - [Round 8: Hashes](#round-8-hashes)
+    - [Declaration](#declaration-1)
+    - [Get and Set values](#get-and-set-values)
+    - [Navigate a Hash](#navigate-a-hash)
+    
 
 ## Ruby v JavaScript
 
