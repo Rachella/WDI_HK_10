@@ -495,13 +495,13 @@ puts a.length            # 5
 puts a[a.length - 1]     # 5
 
 a.push 6
-puts a.inspect           # [1, 2, 3, 4, 5, 6]
+p a                      # [1, 2, 3, 4, 5, 6]
 a.pop
-puts a.inspect           # [1, 2, 3, 4, 5]
+p a                      # [1, 2, 3, 4, 5]
 a.unshift 0
-puts a.inspect           # [0, 1, 2, 3, 4, 5]
+p a                      # [0, 1, 2, 3, 4, 5]
 a.shift
-puts a.inspect           # [1, 2, 3, 4, 5]
+p a                      # [1, 2, 3, 4, 5]
 ```
 
 #### This is where the fun begins
@@ -516,9 +516,9 @@ puts a.empty?            # false
 puts [].empty?           # true
 
 a << 6                   # same as :push
-puts a.inspect           # [1, 2, 3, 4, 5, 6]
+p a                      # [1, 2, 3, 4, 5, 6]
 a.delete 6    
-puts a.inspect           # [1, 2, 3, 4, 5]
+p a                      # [1, 2, 3, 4, 5]
 
 puts a.max               # 5
 puts a.min               # 1
@@ -612,13 +612,13 @@ The key takeaway here is that we can construct a symbol out of some String value
 ```ruby
 puts :name.class               # Symbol
 
-puts :name.inspect             # :name
-puts :"Ruby Rocks".inspect     # :"Ruby Rocks"
+p :name                        # :name
+p :"Ruby Rocks"                # :"Ruby Rocks"
 
 a = 'iron'
-puts :'batman'.inspect         # :batman
-puts :"#{a}man".inspect        # :ironman
-puts :'#{a}man'.inspect        # "\#{a}man"
+p :'batman'                    # :batman
+p :"#{a}man"                   # :ironman
+p :'#{a}man'                   # "\#{a}man"
 ```
 
 #### Symbols vs Strings
@@ -677,9 +677,9 @@ h3 = {
   'green lantern': 'Hal Jordan'
 }
 
-puts h1.inspect   # {"superman"=>"Clark Kent", "batman"=>"Bruce Wayne", "green lantern"=>"Hal Jordan"}
-puts h2.inspect   # {:superman=>"Clark Kent", :batman=>"Bruce Wayne", :"green lantern"=>"Hal Jordan"}
-puts h3.inspect   # {:superman=>"Clark Kent", :batman=>"Bruce Wayne", :"green lantern"=>"Hal Jordan"}
+p h1              # {"superman"=>"Clark Kent", "batman"=>"Bruce Wayne", "green lantern"=>"Hal Jordan"}
+p h2              # {:superman=>"Clark Kent", :batman=>"Bruce Wayne", :"green lantern"=>"Hal Jordan"}
+p h3              # {:superman=>"Clark Kent", :batman=>"Bruce Wayne", :"green lantern"=>"Hal Jordan"}
 puts h3.class     # Hash
 ```
 
@@ -721,12 +721,12 @@ rescue
 end
 
 heroes[:flash] = "Barry Allen"
-puts heroes.inspect               # {:superman=>"Clark Kent", :batman=>"Bruce Wayne", :"green lantern"=>"Hal Jordan", :flash=>"Barry Allen"}
+p heroes                          # {:superman=>"Clark Kent", :batman=>"Bruce Wayne", :"green lantern"=>"Hal Jordan", :flash=>"Barry Allen"}
 
 heroes[:ironman] = "Tony Stark"   # Adding Iron Man....
-puts heroes.inspect               # {:superman=>"Clark Kent", :batman=>"Bruce Wayne", :"green lantern"=>"Hal Jordan", :flash=>"Barry Allen", :ironman=>"Tony Stark"}
+p heroes                          # {:superman=>"Clark Kent", :batman=>"Bruce Wayne", :"green lantern"=>"Hal Jordan", :flash=>"Barry Allen", :ironman=>"Tony Stark"}
 heroes.delete :ironman            # Oops... Iron Man is not a DC superhero. Remove it.
-puts heroes.inspect               # {:superman=>"Clark Kent", :batman=>"Bruce Wayne", :"green lantern"=>"Hal Jordan", :flash=>"Barry Allen"}
+p heroes                          # {:superman=>"Clark Kent", :batman=>"Bruce Wayne", :"green lantern"=>"Hal Jordan", :flash=>"Barry Allen"}
 ```
 
 Please note that you can use this notation to access a value in a JavaScript object `heroes.superman` but you **CANNOT** do this in Ruby.
@@ -743,9 +743,9 @@ heroes = {
   'green lantern': 'Hal Jordan'
 }
 
-puts heroes.keys.inspect            # [:superman, :batman, :"green lantern"]
+p heroes.keys                       # [:superman, :batman, :"green lantern"]
 
-puts heroes.values.inspect          # ["Clark Kent", "Bruce Wayne", "Hal Jordan"]
+p heroes.values                     # ["Clark Kent", "Bruce Wayne", "Hal Jordan"]
 
 puts heroes.has_key? :superman      # true
 puts heroes.has_key? :robin         # false
