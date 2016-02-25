@@ -290,6 +290,7 @@ Time   | [Monday](#w7d1)                          | [Tuesday](#w7d2)            
 
 #### Week 7 | Thursday
 <a name="w7d4"></a>
+- [Ruby v JavaScript](00-programming/ruby-vs-javascript-lesson)
 - Ruby Readings
   - [Ruby in 20 Minutes](http://www.ruby-lang.org/en/documentation/quickstart/)
   - [Important Language Features And Some Gotchas](http://www.ruby-lang.org/en/documentation/ruby-from-other-languages/)
