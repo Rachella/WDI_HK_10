@@ -306,7 +306,6 @@ end
 
 eat('sushi')
 # => undefined local variable or method `outer_food'
-# There is no default binding in Ruby
 ```
 
 In Ruby, you have to define a global variable explicitly (**DO NOT** do this without a good reason) with a `$` at the front of the variable name.
