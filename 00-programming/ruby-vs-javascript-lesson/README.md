@@ -280,18 +280,18 @@ eat('sushi', 'ramen', 'okonomiyaki');
 ```
 
 #### Scope 101
-You may recall the global context in JavaScript. If you cannot find a variable within a function, JavaScript will attempt to find it in the global context. 
+You may recall the global scope in JavaScript. If you cannot find a variable within a function, JavaScript will attempt to find it in the global scope. 
 
 *JavaScript*
 ```javascript
-outer_food = 'ramen';
+var outer_food = 'ramen';
 
 function eat(food) {
-  console.log("I am eating " + food + " and " + outer_food);
+  console.log("I am eating " + food + " and " + outer_food);  // this.outer_food works too
 }
 
 eat('sushi');
-// Look Ma! I see Default Binding!
+// Look Ma! I see Global Variable!
 ```
 
 But you cannot do this in Ruby.
@@ -309,7 +309,7 @@ eat('sushi')
 # There is no default binding in Ruby
 ```
 
-In Ruby, there is no `default binding` so you have to define a global variable explicitly (**DO NOT** do this without a good reason) with a `$` at the front of the variable name.
+In Ruby, you have to define a global variable explicitly (**DO NOT** do this without a good reason) with a `$` at the front of the variable name.
 
 *Ruby*
 ```ruby
@@ -320,7 +320,7 @@ def eat(food)
 end
 
 eat('sushi')
-# Look Ma! Global Variable!
+# Look Ma! I see Global Variable in Ruby!
 ```
 
 ### Round 3: Math and Numbers
