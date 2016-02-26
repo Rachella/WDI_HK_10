@@ -32,10 +32,6 @@ class Knight < Human
       "I defend with my #{@shield}"
     end
   end
-
-  def self.class_method
-    @shield
-  end
 end
 
 class Mage < Human
