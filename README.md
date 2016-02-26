@@ -273,7 +273,7 @@ Time   | [Monday](#w7d1)                          | [Tuesday](#w7d2)            
 13:00  | -                                        | -                                       | Final touch up (HTML & CSS)             | [Control Flow in Ruby][7-4C]              | [OOP in Ruby][7-5A]                           |
 14:00  | -                                        | -                                       | -                                       | [Arrays, Hashes & Blocks][7-4D]           | [Lab: Rails Medieval Objects][7-5B]           |
 15:00  | -                                        | -                                       | -                                       | [Lab: Arrays & Hashes][7-4E]              | [Lab: Ruby Apartments][7-5C]                  |
-16:00  | Demo                                     | Demo                                    | Presentation                            | [Lab: Ruby Koans][7-4F]                   | [Lab: Ruby Exercism][7-5D]                    |
+16:00  | Demo                                     | Demo                                    | Presentation                            | [Lab: Ruby Koans][7-4F]                   | -                                             |
 17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                              | Done for Day                                  |
 
 [7-4A]: 15-retrospectives/Retrospectoves-guide.md                       "Week 4-6 Retrospective"
@@ -286,7 +286,6 @@ Time   | [Monday](#w7d1)                          | [Tuesday](#w7d2)            
 [7-5A]: 00-programming/ruby-oop-classes                                 "OOP in Ruby"
 [7-5B]: https://github.com/wdi-hk-10/lab-ruby-medieval-objects          "Lab: Rails Medieval Objects"
 [7-5C]: https://github.com/wdi-hk-10/lab-ruby-apartments                "Lab: Ruby Apartments"
-[7-5D]: http://exercism.io/languages/ruby                               "Lab: Ruby Exercism"
 
 #### Week 7 | Thursday
 <a name="w7d4"></a>
