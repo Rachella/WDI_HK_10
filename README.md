@@ -302,6 +302,45 @@ Time   | [Monday](#w7d1)                          | [Tuesday](#w7d2)            
   - [Ruby on Rails: Getting Started](http://guides.rubyonrails.org/getting_started.html)
     - This guide is long so please read as much as your brain can handle. :)
 
+<a name="week8"></a>
+### Week 8 | SQL DB + Ruby on Rails
+
+Time   | [Monday](#w8d1)                           | [Tuesday](#w8d2)                          | [Wednesday](#w8d3)                       | [Thursday](#w8d4)                        | [Friday](#w8d5)                            |
+------ | ----------------------------------------- | ----------------------------------------- | ---------------------------------------- | ---------------------------------------- | ------------------------------------------ |
+09:00  | [R-Lab: Ruby Apartments][7-5C]            | [Rails Assessment][8-2A]                  | [R-Lab: Find Carmen Sandiego][8-2E]      | [R-Lab: ActiveRecord Finders][8-3D]      | [R-Lab: Modeling Relationshoips][8-4B]     |
+10:00  | [What is MVC?][8-1A]                      | [Intro to Relation DB][8-2B]              | [ActiveRecord and Migrations][8-3A]      | [Modeling Relationships][8-4A]           | [Project 3 Specs][8-5A]                    |
+11:00  | -                                         | -                                         | [Lab: ActiveRecord and Migrations][8-3B] | -                                        | [Layouts, partials, and views][8-5B]       |
+12:00  | LUNCH                                     | Guest Speaker: Matthieu Pirouelle(x:pand) | Guest Speaker: Gram Lok (Carshare)       | LUNCH                                    | Guest Speaker: Jerem Curry (The Economist) |
+13:00  | [Intro to Rails][8-1B]                    | [Lab: ERD Design][8-2C]                   | -                                        | -                                        | -                                          |
+14:00  | -                                         | [SQL: Setup & CRUD][8-2D]                 | [ActiveRecord Methods and Finders][8-3C] | [Lab: Modeling Relationships][8-4B]      | [Lab: Layouts, partials, views][8-5C]      |
+15:00  | [Controllers and Routes in Rails][8-1C]   | -                                         | [Lab: ActiveRecord Finders][8-3D]        | -                                        | -                                          |
+16:00  | Rails Reading!!                           | [Lab: Find Carmen Sandiego][8-2E]         | -                                        | -                                        | [Weekend Lab- TBD][8-5D]                   |
+17:00  | Done for Day                              | Done for Day                              | Done for Day                             | Done for Day                             | Done for Day                               |
+
+[8-1A]: 04-server-applications/rails-mvc-lesson                                      "What is MVC?"
+[8-1B]: 04-server-applications/rails-intro-lesson                                    "Intro to Rails"
+[8-1C]: 04-server-applications/rails-controllers-and-routes-lesson                   "Controllers and Routes"
+
+[8-2A]: #                                                                            "Rails Assessment"
+[8-2B]: 05-databases/data-modeling-intro-lesson                                      "Intro to Relational Data Modeling"
+[8-2C]: 05-databases/data-modeling-erd-design-lab                                    "Lab: ERD Design"
+[8-2D]: 05-databases/sql-setup-insert-update-delete-lesson                           "SQL: Setup & CRUD"
+[8-2E]: https://github.com/wdi-hk-10/lab-carmen-sandiego                             "Lab: Find Carmen Sandiego"
+
+[8-3A]: 04-server-applications/rails-activerecord-models-migrations-lesson           "Building Models with ActiveRecord and Migrations"
+[8-3B]: https://github.com/wdi-hk-10/lab-rails-activerecord-models-migrations        "Lab: ActiveRecord and Migrations"
+[8-3C]: 04-server-applications/rails-activerecord-methods-and-finders-lesson         "ActiveRecord Methods and Finders"
+[8-3D]: https://github.com/wdi-hk-10/lab-sinatra-activerecord-finders                "Lab: ActiveRecord Finders"
+
+[8-4A]: 04-server-applications/rails-activerecord-modeling-relationships-lesson      "Modeling Relationships"
+[8-4B]: https://github.com/wdi-hk-10/lab-rails-relationships                         "Lab: Modeling Relationships"
+
+[8-5A]: projects/project-03.md                                                       "Project 3 Specs"
+[8-5B]: 04-server-applications/rails-layouts-views-lesson                            "Layouts, partials, and views"
+[8-5C]: https://github.com/wdi-hk-10/lab-rails-layouts-views                         "Lab: Layouts, partials, views"
+[8-5D]: #                                                                            "Weekend Lab - TBD"
+
+
 #### Later
 - Other Topics
   - Watch [DNS Explained](https://www.youtube.com/watch?v=72snZctFFtA) to how DNS works
