@@ -340,6 +340,13 @@ Time   | [Monday](#w8d1)                           | [Tuesday](#w8d2)           
 [8-5C]: https://github.com/wdi-hk-10/lab-rails-layouts-views                         "Lab: Layouts, partials, views"
 [8-5D]: #                                                                            "Weekend Lab - TBD"
 
+#### Week 8 | Monday
+<a name="w8d1"></a>
+- Rails Readings
+  - [Ruby on Rails: Getting Started](http://guides.rubyonrails.org/getting_started.html)
+    - If you haven't finished reading this, now this is your chance. :)
+  - [Rails Routing from the Outside in](http://guides.rubyonrails.org/routing.html)
+    - Everything you need to know abour Rails Routes
 
 #### Later
 - Other Topics
