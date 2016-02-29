@@ -210,9 +210,9 @@ Let's see it in action.
 
 ```ruby
 my_banana_stand = BananaStand.new
-my_banana.manager # => nil, we haven't set it
-my_banana.manager = "Tobias" # hey, look manager=, just with a space
-my_banana.manager # => "Tobias"
+my_banana_stand.manager # => nil, we haven't set it
+my_banana_stand.manager = "Tobias" # hey, look manager=, just with a space
+my_banana_stand.manager # => "Tobias"
 ```
 
 That's fantastic. Now if we made another, separate instance, we could have two different banana stands, both instances of our blueprint class.
