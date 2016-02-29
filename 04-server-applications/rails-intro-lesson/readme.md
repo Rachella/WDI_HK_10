@@ -53,7 +53,7 @@ I'll talk through this as I demo, and we'll come back and talk about what each o
 ```ruby
 rails new blog_app -d postgresql
 cd blog_app
-rails generate scaffold posts title:string content:text author:string
+rails generate scaffold post title:string content:text author:string
 rake db:create
 rake db:migrate
 rails server
