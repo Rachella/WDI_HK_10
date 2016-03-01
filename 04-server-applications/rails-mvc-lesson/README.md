@@ -49,7 +49,7 @@ Note the we can have different views that display the same data from the model. 
 
 The controller captures user's actions and informs the model that there are changes to the data. 
 
-### Puting it together
+### Putting it together
 The MVC architecture is a fine example of **separation of concerns** which means that we don't want to clutter the model with the logics of rendering data as these should belong in the view. Likewise, the view does not need to know how to  handle the business logics. In other words, the code will be **less coupled** and will be easier to write and maintain. Here is how the model, view and controller should interact with each other.
 
   ![](images/classic.png)
