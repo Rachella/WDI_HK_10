@@ -298,7 +298,7 @@ As indicated in the response, a new migration is created at ```db/migrate/201507
 ```ruby
 class AddInstrumentToArtists < ActiveRecord::Migration
   def change
-    add_column :artists, :instruments, :string
+    add_column :artists, :instrument, :string
   end
 end
 ```
@@ -355,7 +355,7 @@ As always, if you can't remember the exact syntax, consult the official document
 
 For the last part of class, the guys at Tunr, decided they need more information about the people they represent.  Do the following to make it happen:
 
-- Add another column to your Artists table named "address" that stores string data (be careful with the datatype on this one - it's not what you think)
+- Add another column to your Artists table named "address" that stores string data
 - Add a column with a different data type, and then delete it
 - Update an existing column to have a different name
 - Check your migration results using `psql`
