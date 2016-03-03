@@ -177,8 +177,8 @@ Now in the terminal, you can check that everything is set properly:
 ```ruby
 album1 = Album.create(title: "album1")
 album2 = Album.create(title: "album2")
-genre = Album.create(name: "genre1")
-album2 = Album.create(name: "genre2")
+genre1 = Genre.create(name: "genre1")
+genre2 = Genre.create(name: "genre2")
 
 
 album1.genres
