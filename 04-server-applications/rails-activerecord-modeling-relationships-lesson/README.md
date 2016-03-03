@@ -141,7 +141,7 @@ If you create a has_and_belongs_to_many association, you need to explicitly crea
 To create a join table for albums and genres, we need to add another table in the database, let's create a migration:
 
 ```bash
-rake db:create_migration NAME=create_albums_genres_table
+rails g migration create_albums_genres_table
 ```
 
 Then inside the migration:
