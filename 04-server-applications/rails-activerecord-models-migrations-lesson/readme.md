@@ -319,6 +319,9 @@ In the migration add:
 
 ```ruby
 def change
+  # :table, :old_column, :new_column are just PLACEHOLDER
+  # You should use your own table name and column names!!
+  # DO NOT simply copy and paste this!!
   rename_column :table, :old_column, :new_column
 end
 ```
