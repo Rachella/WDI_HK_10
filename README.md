@@ -338,7 +338,7 @@ Time   | [Monday](#w8d1)                           | [Tuesday](#w8d2)           
 [8-5B]: 04-server-applications/rails-controllers-and-routes-lesson                   "Controllers and Routes"
 [8-5C]: 04-server-applications/rails-layouts-views-lesson                            "Layouts, partials, and views"
 [8-5D]: https://github.com/wdi-hk-10/lab-rails-layouts-views                         "Lab: Layouts, partials, views"
-[8-5E]: #                                                                            "Weekend Lab - TBD"
+[8-5E]: projects/project-02-5.md                                                     "Weekend Lab - Project 2.5"
 
 #### Week 8 | Monday
 <a name="w8d1"></a>
