@@ -22,19 +22,19 @@ In this lesson we will cover the details of rendering views and best practices f
 In Hapi, we have to set up the layout by defining a `layoutPath` property and set `layout` to `true` as part of configuration of the `Vision` module in the server:
 ```javascript
   server.views({
-    engines: {html: require('handlebars')},
+    engines: {html: require('ejs')},
     path: Path.join(__dirname, 'views/templates'),
     layout: true,
     layoutPath: Path.join(__dirname, 'views/layouts')
   });
 ```
-Next, we need to define a `layout.html` file which contains just the `<head>` tag which includes all css and js files plus an empty `<body` tag which includes just a `{{{content}}}` statement. Then when you use `reply.view('index')`, Hapi will render `views/layouts/layout.html` which includes the template file `views/templates/index.html`. The content of the template is injected into the `{{{content}}}` statement in `layout.html`.
+Next, we need to define a `layout.html` file which contains just the `<head>` tag which includes all css and js files plus an empty `<body>` tag which includes just a `<%- content %>` statement. Then when you use `reply.view('index')`, Hapi will render `views/layouts/layout.html` which includes the template file `views/templates/index.html`. The content of the template is injected into the `content` of the `<%- content %>` statement in `layout.html`.
 
 ## Layout in Rails
 
 How layout works in Ruby on Rails is pretty much the same as in Hapi. The only difference is that in Rails, you get everything pretty much for free.
 
-When the app is created, Rails will automatically add a layout `application.html.erb` in `app/views/layouts/application.html.erb`. This layout already contains a `yield` statement (similar to the `{{{content}}}` in Hapi) and all the links to css and js files in the head part of the html document. You **do not** need to do any additional setup for the layout in Rails as Rails knows where it is as long as you keep the file in the default location.
+When the app is created, Rails will automatically add a layout `application.html.erb` in `app/views/layouts/application.html.erb`. This layout already contains a ERB `<%= yield %>` statement (similar to the `<%- content %>` in EJS template) and all the links to css and js files in the head part of the html document. You **do not** need to do any additional setup for the layout in Rails as Rails knows where it is as long as you keep the file in the default location.
 
 In short, if a Rails rendered page were a sandwich, the layout would be the bread, and the views would be the meat. The layout is like a shell our views get piped through to spit out a final HTML document:
 
