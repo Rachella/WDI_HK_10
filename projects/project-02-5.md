@@ -57,6 +57,9 @@ You can either use SQL to directly add some test data to your PostgreSQL DB or y
 ### Create the Rails project
 You should know how to do this by now. If not, review the steps in the [Rails Intro Lesson](../04-server-applications/rails-intro-lesson).
 
+## Your Goal - GO The Distance
+If you cannot completely covert your Hapi project to Rails, **DO NOT** despair and there is no reason to get upset. It is always not easy to use a framework for the first time. But you should spend as much time as you can over the weekend to attempt this. Use Rails guides and google to find answers, even for those areas where we have not covered in class yet. Treat this as a warm-up for Project 3 and a good learning experience.
+
 ## Deliverables
 Just create your own repo to do this. No need to fork from this one.
 
