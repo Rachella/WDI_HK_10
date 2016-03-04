@@ -85,7 +85,7 @@ Fork and clone [this](https://github.com/wdi-hk-10/lesson-rails-controllers-and-
 Let's create a controller.
 
 ```
-  touch app/controllers/home_controller.rb
+  rails g controller home
 ```
 
 
