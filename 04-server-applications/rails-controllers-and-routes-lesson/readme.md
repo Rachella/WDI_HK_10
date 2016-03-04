@@ -80,14 +80,7 @@ All the ruby code inside the block above will be related to defining routes.
 
 ## Demo - Creating routes in a Rails app (15 mins)
 
-Fork and clone (this)[https://github.com/wdi-hk-10/lesson-rails-controllers-and-routes]
-
-First, Let's create a new rails app:
-
-```bash
-rails new routes_and_controllers
-cd routes_and_controllers
-```
+Fork and clone [this](https://github.com/wdi-hk-10/lesson-rails-controllers-and-routes)
 
 Let's create a controller.
 
