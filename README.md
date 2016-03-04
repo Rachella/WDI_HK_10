@@ -314,7 +314,7 @@ Time   | [Monday](#w8d1)                           | [Tuesday](#w8d2)           
 13:00  | -                                         | [Lab: ERD Design][8-2C]                   | -                                        | -                                        | [Layouts, partials, and views][8-5C]       |
 14:00  | [Intro to Rails][8-1B]                    | [SQL: Setup & CRUD][8-2D]                 | [ActiveRecord Methods and Finders][8-3C] | [Lab: Modeling Relationships][8-4B]      | [Lab: Layouts, partials, views][8-5D]      |
 15:00  | -                                         | -                                         | [Lab: ActiveRecord Finders][8-3D]        | -                                        | -                                          |
-16:00  | Rails Reading!!                           | [Lab: Find Carmen Sandiego][8-2E]         | -                                        | -                                        | [Weekend Lab - TBD][8-5E]                  |
+16:00  | Rails Reading!!                           | [Lab: Find Carmen Sandiego][8-2E]         | -                                        | -                                        | [Weekend Lab - Project 2.5][8-5E]                  |
 17:00  | Done for Day                              | Done for Day                              | Done for Day                             | Done for Day                             | Done for Day                               |
 
 [8-1A]: 04-server-applications/rails-mvc-lesson                                      "What is MVC?"
