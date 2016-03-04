@@ -55,7 +55,7 @@ If you are using embedded documents in MongoDB, then you need to translate that 
 You can either use SQL to directly add some test data to your PostgreSQL DB or you can do it via the Rails console. However, there is a better way to do this if you feel like exploring something we haven't fully covered in class. Try to prepare some **seed data** in your project by following [this guide](http://guides.rubyonrails.org/v4.2/active_record_migrations.html#migrations-and-seed-data).
 
 ### Create the Rails project
-You should know how to do this by now. If not, review the steps in the [Rails Intro Lesson](04-server-applications/rails-intro-lesson).
+You should know how to do this by now. If not, review the steps in the [Rails Intro Lesson](../04-server-applications/rails-intro-lesson).
 
 ## Deliverables
 Just create your own repo to do this. No need to fork from this one.
