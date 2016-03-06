@@ -348,6 +348,34 @@ Time   | [Monday](#w8d1)                           | [Tuesday](#w8d2)           
   - [Rails Routing from the Outside in](http://guides.rubyonrails.org/routing.html)
     - Everything you need to know abour Rails Routes
 
+<a name="week9"></a>
+### Week 9 | Ruby on Rails + Project 3
+
+Time   | [Monday](#w9d1)                          | [Tuesday](#w9d2)                        | [Wednesday](#w9d3)                        | [Thursday](#w9d4)                       | [Friday](#w9d5)                                  |
+------ | ---------------------------------------- | --------------------------------------- | ----------------------------------------- | --------------------------------------- | ------------------------------------------------ |
+09:00  | [R-Lab: Layouts, partials, views][8-5C]  | [R-Lab: Rails API App][9-1D]            | [R-Lab: Session / Login][9-2C]            | Project Pitch                           | Daily Standup                                    |
+10:00  | [OOP in Ruby - Revisited][9-1A]          | [Authentication with Devise][9-2A]      | [Deploying to Heroku][9-3A]               | WireFrame + Coding Begins               | -                                                |
+11:00  | [Building and Submitting Forms][9-1B]    | -                                       | -                                         | -                                       | -                                                |
+12:00  | LUNCH                                    | Guest Speaker: Derek Kean               | Guest Speaker: Jaclyn Tsui (Altitude Lab) | LUNCH                                   | LUNCH                                            |
+13:00  | [Rails API][9-1C]                        | [Photo Upload - Paperclip Gem][9-2B]    | [Ruby Web Scraping][9-3B]                 | -                                       | -                                                |
+14:00  | -                                        | -                                       | -                                         | -                                       | -                                                |
+15:00  | [Lab: Rails API][9-1D]                   | [Lab: Session / Login][9-2C]            | -                                         | -                                       | -                                                |
+16:00  | -                                        | -                                       | -                                         | Demo                                    | Demo                                             |
+17:00  | Done for Day                             | Done for Day                            | Done for Day                              | Done for Day                            | -                                                |
+18:00  | -                                        | -                                       | -                                         | -                                       | Guest Speaker: Kannan Chandra-segaran (42 Lab)   |
+
+[9-1A]: 00-programming/ruby-oop-classes                                              "OOP in Ruby - Revisited"
+[9-1B]: 04-server-applications/rails-forms-lesson                                    "Building and Submitting Forms"
+[9-1C]: 04-server-applications/rails-api-lesson                                      "Rails API"
+[9-1D]: https://github.com/wdi-hk-10/lab-rails-api                                   "Lab: Rails API"
+
+[9-2A]: #                                                                            "Authentication with Devise"
+[9-2B]: 04-server-applications/rails-uploader-paperclip                              "Photo Upload - Paperclip Gem"
+[9-2C]: https://github.com/wdi-hk-10/lab-rails-sessions-login-boostrap                "Lab: Authentication with Devise"
+
+[9-3A]: 07-deployment/heroku-intro-lesson                                            "Deploying to Heroku"
+[9-3B]: #                                                                            "Ruby Web Scraping"
+
 #### Later
 - Other Topics
   - Watch [DNS Explained](https://www.youtube.com/watch?v=72snZctFFtA) to how DNS works
