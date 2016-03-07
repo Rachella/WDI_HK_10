@@ -11,7 +11,7 @@ Steps:
 In Terminal,
 
 ```
-$ rails new rails-instagram -BT
+$ rails new rails-instagram -BT -d postgresql
 ```
 
 In `Gemfile`,
@@ -79,31 +79,4 @@ config/secrets.yml
 .DS_Store
 ```
 
-In `config/database.yml`,
-
-```yaml
-default: &default
-  adapter: postgresql
-  host: localhost
-  port: 5432
-  pool: 5
-  timeout: 5000
-
-development:
-  <<: *default
-  database: rails_instagram_development
-
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-test:
-  <<: *default
-  database: rails_instagram_test
-
-production:
-  <<: *default
-  database: db/production.sqlite3
-```
-
-- What do you do after configuring database.yml? Do the databases exist yet?
 - How do you start the server to see if things are working?
