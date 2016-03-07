@@ -381,3 +381,10 @@ Time   | [Monday](#w9d1)                          | [Tuesday](#w9d2)            
 - Other Topics
   - Watch [DNS Explained](https://www.youtube.com/watch?v=72snZctFFtA) to how DNS works
   - Read [20 things I've learned about browsers and the web](http://www.20thingsilearned.com/en-US/home)
+
+
+<a name="guides">
+### GUIDES
+
+- [MVC Guide](https://github.com/ga-students/WDI_HK_10/tree/master/server-applications-guides/rails/01_mvc)
+- [Rails with jQuery Guide](https://github.com/ga-students/WDI_HK_10/tree/master/server-applications-guides/rails/02_rails_jquery)
