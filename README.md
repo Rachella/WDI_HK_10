@@ -353,7 +353,7 @@ Time   | [Monday](#w8d1)                           | [Tuesday](#w8d2)           
 
 Time   | [Monday](#w9d1)                          | [Tuesday](#w9d2)                        | [Wednesday](#w9d3)                        | [Thursday](#w9d4)                       | [Friday](#w9d5)                                  |
 ------ | ---------------------------------------- | --------------------------------------- | ----------------------------------------- | --------------------------------------- | ------------------------------------------------ |
-09:00  | Daily Standup + Project 2.5 Review       | Daily Standup + Project 2.5 Review      | [Daily Standup + Project 2.5 Review       | Project Pitch                           | Daily Standup                                    |
+09:00  | Daily Standup + Project 2.5 Review       | Daily Standup + Project 2.5 Review      | Daily Standup + Project 2.5 Review        | Project Pitch                           | Daily Standup                                    |
 10:00  | [OOP in Ruby - Revisited][9-1A]          | [Authentication with Devise][9-2A]      | [Deploying to Heroku][9-3A]               | WireFrame + Coding Begins               | -                                                |
 11:00  | [Lab - Project 2.5 Continued][9-1B]      | -                                       | [Ruby Web Scraping][9-3B]                 | -                                       | -                                                |
 12:00  | LUNCH                                    | Guest Speaker: Derek Kean               | Guest Speaker: Jaclyn Tsui (Altitude Lab) | LUNCH                                   | LUNCH                                            |
