@@ -141,3 +141,34 @@ end
 Run `rake db:migrate`
 
 The back-end is now ready for use!
+
+#### BUGFIX AS OF 2016 March 8th
+There is a bug that prevents `before_action :authenticate_user!` to work. The following is a bugfix.
+
+In `application_controller.rb`
+
+```
+  def authenticate_current_user
+    render json: {message: "Unauthorize"} if get_current_user.nil?
+  end
+
+  def get_current_user
+    return nil unless cookies[:authHeaders]
+    auth_headers = JSON.parse cookies[:authHeaders]
+
+    expiration_datetime = DateTime.strptime(auth_headers["expiry"], "%s")
+    current_user = User.find_by(uid: auth_headers["uid"])
+
+    if current_user &&
+       current_user.tokens.has_key?(auth_headers["client"]) &&
+       expiration_datetime > DateTime.now
+
+      @current_user = current_user
+    end
+    @current_user
+  end
+```
+
+instead of using `before_action :authenticate_user!`, use `before_action :authenticate_current_user!`
+
+you can read more [here](https://github.com/lynndylanhurley/devise_token_auth/issues/74)
