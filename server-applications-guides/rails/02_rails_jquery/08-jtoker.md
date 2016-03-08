@@ -17,9 +17,10 @@ steps:
 
 1. run `bower install j-toker --save`
 2. In `app/assets/javascripts/application.js`
-    3. add `//= require j-toker/dist/jquery.jtoker`
-    3. add `//= require jquery-cookie/jquery.cookie`
-    3. add `//= require jquery-deparam/jquery-deparam`
+    3. add `//= require jquery-deparam/jquery-deparam.js`
+    3. add `//= require jquery-cookie/jquery.cookie.js`
+    3. add `//= require pubsub-js/src/pubsub.js`
+    3. add `//= require j-toker/dist/jquery.j-toker.js`
 
 ---
 ###Configuring jToker
