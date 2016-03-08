@@ -370,8 +370,8 @@ Time   | [Monday](#w9d1)                          | [Tuesday](#w9d2)            
 [9-1D]: 04-server-applications/rails-forms-lesson                                    "Building and Submitting Forms"
 [9-1E]: projects/project-02-5.md                                                     "Lab - Project 2.5 Continued"
 
-[9-2A]: 02_rails_jquery/07-devise-token-auth.md                                      "Authentication with Devise"
-[9-2B]: https://github.com/ga-students/WDI_HK_10/tree/master/server-applications-guides/rails/gems/paperclip                              "Photo Upload - Paperclip Gem"
+[9-2A]: server-applications-guides/rails/02_rails_jquery/07-devise-token-auth.md     "Authentication with Devise"
+[9-2B]: server-applications-guides/rails/gems/paperclip                              "Photo Upload - Paperclip Gem"
 [9-2C]: projects/project-02-5.md                                                     "Lab - Project 2.5 Continued"
 
 [9-3A]: 07-deployment/heroku-intro-lesson                                            "Deploying to Heroku"
