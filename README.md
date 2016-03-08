@@ -371,7 +371,7 @@ Time   | [Monday](#w9d1)                          | [Tuesday](#w9d2)            
 [9-1E]: projects/project-02-5.md                                                     "Lab - Project 2.5 Continued"
 
 [9-2A]: #                                                                            "Authentication with Devise"
-[9-2B]: 04-server-applications/rails-uploader-paperclip                              "Photo Upload - Paperclip Gem"
+[9-2B]: https://github.com/ga-students/WDI_HK_10/tree/master/server-applications-guides/rails                              "Photo Upload - Paperclip Gem"
 [9-2C]: projects/project-02-5.md                                                     "Lab - Project 2.5 Continued"
 
 [9-3A]: 07-deployment/heroku-intro-lesson                                            "Deploying to Heroku"
