@@ -388,3 +388,4 @@ Time   | [Monday](#w9d1)                          | [Tuesday](#w9d2)            
 
 - [MVC Guide](https://github.com/ga-students/WDI_HK_10/tree/master/server-applications-guides/rails/01_mvc)
 - [Rails with jQuery Guide](https://github.com/ga-students/WDI_HK_10/tree/master/server-applications-guides/rails/02_rails_jquery)
+- [GEMS](https://github.com/ga-students/WDI_HK_10/tree/master/server-applications-guides/rails/gems)
