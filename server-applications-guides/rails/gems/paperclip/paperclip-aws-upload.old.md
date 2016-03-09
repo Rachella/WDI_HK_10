@@ -36,7 +36,7 @@
 In `Gemfile`,
 
 ```ruby
-gem 'aws-sdk'
+gem 'aws-sdk-v1'
 ```
 
 ##### 4. Configure `config/environments/development.rb` and `config/environments/production.rb`
