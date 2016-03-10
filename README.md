@@ -375,13 +375,7 @@ Time   | [Monday](#w9d1)                          | [Tuesday](#w9d2)            
 [9-2C]: projects/project-02-5.md                                                     "Lab - Project 2.5 Continued"
 
 [9-3A]: 07-deployment/heroku-intro-lesson                                            "Deploying to Heroku"
-[9-3B]: #                                                                            "Ruby Web Scraping"
-
-#### Later
-- Other Topics
-  - Watch [DNS Explained](https://www.youtube.com/watch?v=72snZctFFtA) to how DNS works
-  - Read [20 things I've learned about browsers and the web](http://www.20thingsilearned.com/en-US/home)
-
+[9-3B]: server-applications-guides/rails/gems/nokogiri                               "Ruby Web Scraping"
 
 <a name="guides">
 ### GUIDES
@@ -389,3 +383,90 @@ Time   | [Monday](#w9d1)                          | [Tuesday](#w9d2)            
 - [MVC Guide](https://github.com/ga-students/WDI_HK_10/tree/master/server-applications-guides/rails/01_mvc)
 - [Rails with jQuery Guide](https://github.com/ga-students/WDI_HK_10/tree/master/server-applications-guides/rails/02_rails_jquery)
 - [GEMS](https://github.com/ga-students/WDI_HK_10/tree/master/server-applications-guides/rails/gems)
+
+<a name="unit4"></a>
+## Unit 4
+
+<a name="week10"></a>
+### Week 10 | Project 3 + AngularJS
+
+Time   | [Monday](#w10d1)                         | [Tuesday](#w10d2)                       | [Wednesday](#w10d3)                     | [Thursday](#w10d4)                      | [Friday](#w10d5)                        |
+------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
+09:00  | Daily Standup                            | Field Trip                              | Daily Standup                           | [Week 7-9 Retrospective][10-4A]         | [R-Lab: Angular Controller 101][10-4C]  |
+10:00  | -                                        | Field Trip                              | -                                       | -                                       | [Angular Directives][10-5A]             |
+11:00  | -                                        | -                                       | -                                       | [Intro to AngularJS & Setup][10-4B]     | -                                       |
+12:00  | LUNCH                                    | LUNCH                                   | *JS & RUBY CHANGE FREEZE* + LUNCH       | Guest Speaker: Tony Wong (Shopline)     | LUNCH                                   |
+13:00  | -                                        | -                                       | Final touch up (HTML & CSS)             | [Two-Way Binding][10-4B]                | [ng-class and CSS Animation][10-5B]     |
+14:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
+15:00  | -                                        | -                                       | -                                       | [Lab: Angular Controller 101][10-4C]    | [Lab: Angular Directives][10-5C]        |
+16:00  | Demo                                     | Demo                                    | Presentation                            | -                                       | [Weekend Lab: Apps with Angular][10-5D] |
+17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | UXDI & WDI Mixer!! (TBD)                |
+
+[10-4A]: 15-retrospectives/Retrospectoves-guide.md                                  "Week 7-9 Retrospective"
+[10-4B]: 03-front-end-frameworks/angular-controllers-2-way-binding-lesson           "Intro to Angular Setup; Controller Two-Way Binding"
+[10-4C]: https://github.com/wdi-hk-10/lab-angular-controllers-101                    "Lab: Binding Controller and View (/w Hardcoded data)"
+
+[10-5A]: 03-front-end-frameworks/angular-directives-lesson                          "Angular Directives"
+[10-5B]: 03-front-end-frameworks/angular-ng-class-css-animation-lesson              "ng-class and CSS Animation"
+[10-5C]: https://github.com/wdi-hk-10/lab-angular-directives                         "Lab: Angular Directives"
+[10-5D]: https://curran.github.io/screencasts/introToAngular/exampleViewer/#/       "Weekend Lab: Apps with Angular"
+
+<a name="week11"></a>
+### Week 11 | AngularJS + Final Project
+
+Time   | [Monday](#w11d1)                         | [Tuesday](#w11d2)                         | [Wednesday](#w11d3)                     | [Thursday](#w11d4)                      | [Friday](#w11d5)                        |
+------ | ---------------------------------------- | ---------------------------------------   | --------------------------------------- | --------------------------------------- | --------------------------------------- |
+09:00  | [R-Lab: Angular Directives][10-5C]       | [R-Lab: Angular HTTP][11-1B]              | [R-Lab: Front-End Routing][11-2C]       | Project Pitch                           |                                         |
+10:00  | [R-Lab: Apps with Angular][10-5D]        | [Front-End Routing with UI Router][11-2A] | [Ionic Framework][11-3A]                | WireFrame + Coding Begins               |                                         |
+11:00  | [Angular HTTP][11-1A]                    | -                                         | -                                       | -                                       |                                         |
+12:00  | LUNCH                                    | LUNCH                                     | LUNCH                                   | LUNCH                                   |                                         |
+13:00  | -                                        | [Building factories with $http][11-2B]    | -                                       | -                                       |       HOLIDAY: GOOD FRIDAY              |
+14:00  | [Lab: Angular HTTP][11-1B]               | -                                         | -                                       | -                                       |                                         |
+15:00  | -                                        | [Lab: Front-End Routing][11-2C]           | -                                       | -                                       |                                         |
+16:00  | -                                        | -                                         | Demo                                    | Demo                                    |                                         |
+17:00  | Done for Day                             | Done for Day                              | Done for Day                            | Done for Day                            |                                         |
+
+[11-1A]: 03-front-end-frameworks/angular-http-lesson                                "Angular HTTP"
+[11-1B]: https://github.com/wdi-hk-10/lab-angular-http                               "Lab: Angular HTTP"
+
+[11-2A]: 03-front-end-frameworks/angular-ui-router-lesson                           "Front-end Routing with UI Router"
+[11-2B]: 03-front-end-frameworks/angular-resource-factories-lesson                  "Building factories with $http"
+[11-2C]: https://github.com/wdi-hk-10/lab-angular-ui-router                          "Lab: Front-end Routing"
+
+[11-3A]: http://ionicframework.com/getting-started/                                 "Ionic Framework"
+
+[11-4A]: 03-front-end-frameworks/angular-custom-directives-lesson                   "Writing Custom Directives"
+
+<a name="week12"></a>
+### Week 12 | Final Project
+
+Time   | [Monday](#w12d1)                         | [Tuesday](#w12d2)                       | [Wednesday](#w12d3)                     | [Thursday](#w12d4)                      | [Friday](#w12d5)                        |
+------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
+09:00  |                                          | Daily Standup                           | Daily Standup                           | Daily Standup                           | Daily Standup                           |
+10:00  |                                          | -                                       | -                                       | -                                       | -                                       |
+11:00  |                                          | -                                       | -                                       | -                                       | -                                       |
+12:00  |                                          | UX + WDI Mixer                          | LUNCH                                   | LUNCH                                   | LUNCH                                   |
+13:00  |       HOLIDAY: EASTER MONDAY             | Presenatation Practice #1               | -                                       | -                                       | Presenatation Practice #2               |
+14:00  |                                          | -                                       | -                                       | -                                       | -                                       |
+15:00  |                                          | -                                       | -                                       | -                                       | -                                       |
+16:00  |                                          | Demo                                    | Demo                                    | Demo                                    | Demo                                    |
+17:00  |                                          | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
+
+<a name="week13"></a>
+### Week 13 | Final Project + Wrapping up
+
+Time   | [Monday](#w13d1)                         | [Tuesday](#w13d2)                       | [Wednesday](#w13d3)                     | [Thursday](#w13d4)                      | [Friday](#w13d5)                        |
+------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
+09:00  |                                          | Daily Standup                           | Daily Standup                           | Daily Standup                           | -                                       |
+10:00  |                                          | -                                       | -                                       | -                                       | -                                       |
+11:00  |                                          | -                                       | -                                       | -                                       | -                                       |
+12:00  |                                          | LUNCH                                   | LUNCH                                   | CHANGE FREEZE + LUNCH                   | -                                       |
+13:00  |      HOLIDAY: CHING MING FESTIVAL        | Presenatation Practice #3               | -                                       | Presenatation Rehearsal                 | -                                       |
+14:00  |                                          | -                                       | -                                       | -                                       | [Final Retrospective][13-5A]            |
+15:00  |                                          | -                                       | -                                       | -                                       | Wrapping Up                             |
+16:00  |                                          | Demo                                    | Demo                                    | -                                       | End of WDI-10                           |
+17:00  |                                          | Done for Day                            | Done for Day                            | FINAL PRESENTATION 7-10pm               | -                                       |
+
+[13-5A]: 15-retrospectives/Retrospectoves-guide.md                       "Final Retrospective"
+
+
