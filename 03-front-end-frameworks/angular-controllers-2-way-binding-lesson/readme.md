@@ -92,7 +92,7 @@ First, let's get Angular from [Google's CDN](https://developers.google.com/speed
  <head>
    <meta charset="utf-8">
    <title>Intro to Angular</title>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
  </head>
 ```
 
@@ -146,58 +146,30 @@ Now, lets stub out a new controller and plug it into our module:
 touch js/homeController.js
 ```
 
+Here we use a variable `myApp` to store a reference to our module, which does not have dependency to other modules. Then we use the `controller` method to register a controller to the `myApp` module. The first argument is the name of the controller (the convention is to use camel case, like the name of a constructor function). The second argument is an array which can take **an arbitary number of elements**. If the array has `n` elements, the first `n-1` elements of the array are used to define the **dependencies** of the controller, i.e. the other modules this controller depends on. The last element of the array is **always** a function which is the actual contructor function of your controller.
+
 ```javascript
 // When only the name of the module is passed in,
 // the 'module' method returns the specified module.
-angular.module('IntroToAngularApp')
-    .controller('HomeController', HomeController);
+var myApp = angular.module('IntroToAngularApp', []);
 
-// This is the function definition for our controller.
-// Note that we capitalize it as it is used as a constructor function!
-function HomeController() {
-
-}
+myApp.controller('HomeController', ['$scope', function($scope) {
+  $scope.awesome = true;
+}]);
 ```
 
-Now, there are two acceptable methods for defining controllers.  They are commonly referred to as the:
+You may notice this interesting variable called `$scope`. `$scope` is a built-in service provided by Angular which allows a controller to gain access to the view. You should always add this as a dependency when you define your controller.
 
-- _$scope_ method
-- _controllerAs_ method
-
-Now, they're the same idea – essentially a way to craft a constructor function for each controller you decide to make. Angular started by using $scope, which you can see an example of here:
+There is an alternative way to do the above. In this alternative implementaton, we have to explicitly declare the constructor function for the controller and we have to pass the function reference to the `module` method (see the second parameter).
 
 ```javascript
-// When only the name of the module is passed in,
-// the 'module' method returns the specified module.
 angular.module('IntroToAngularApp')
-    .controller('HomeController', HomeController);
+       .controller('HomeController', HomeController);
 
-// This is the function definition for our controller.
-// Note that we capitalize it as it is used as a constructor function!
 function HomeController($scope) {
   $scope.awesome = true;
 }
 ```
-
-However, as the industry started using Angular more and more in production, people started realizing that despite the name, $scope wasn't scoped very well.
-
-A lot of professionals have since moved on to doing it a little differently, and a little simpler.
-
-```javascript
-// When only the name of the module is passed in,
-// the 'module' method returns the specified module.
-angular.module('IntroToAngularApp')
-    .controller('HomeController', HomeController);
-
-// This is the function definition for our controller.
-// Note that we capitalize it as it is used as a constructor function!
-function HomeController() {
-  this.awesome = true;
-  return this;
-}
-```
-
-The nice thing is that they're not very different, but that the latter looks far more like a normal constructor function you're used to.
 
 Later, we'll see how you can let controllers just connect models and the views - like we're used to - but since we don't have a model, let's just hardcode some junk in there.
 
@@ -207,12 +179,13 @@ Take five minutes and add some data into your `HomeController`. Any sort of data
 
 - - -
 ```js
-function HomeController() {
-  this.awesome = true;
-  this.numbers = [4, 8, 15, 16, 23, 42];
+var myApp = angular.module('IntroToAngularApp', []);
+
+myApp.controller('HomeController', ['$scope', function($scope) {
+  $scope.awesome = true;
+  $scope.numbers = [4, 8, 15, 16, 23, 42];
   // etc, etc.
-  return this;
-}
+}]);
 ```
 
 ## Connecting Controller To The View - Codealong (10 mins)
@@ -224,7 +197,7 @@ The last step here is to connect our controller to the view. We attach any contr
   <head>
     <meta charset="utf-8">
     <title>Intro to Angular</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/homeController.js"></script>
   </head>
@@ -234,15 +207,13 @@ Now:
 
 ```html
 <body>
-  <section ng-controller="HomeController as home">
-    {{home.awesome}}
+  <section ng-controller="HomeController">
+    {{awesome}}
   </section>
 </body>
 ```
 
 When you render the page, it should actually render! That's awesome – that means we're working with data that's coming from our controller, and that's the core building block to more complex apps!
-
-> Note: Keep in mind, while `HomeController` is so named because that's what we called it in the file, the `home` in this example is just a variable we're choosing on the spot. Pick something obvious that makes sense, but it can be anything.
 
 ## Independent Practice (10 minutes)
 

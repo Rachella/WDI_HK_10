@@ -404,11 +404,11 @@ Time   | [Monday](#w10d1)                         | [Tuesday](#w10d2)           
 
 [10-4A]: 15-retrospectives/Retrospectoves-guide.md                                  "Week 7-9 Retrospective"
 [10-4B]: 03-front-end-frameworks/angular-controllers-2-way-binding-lesson           "Intro to Angular Setup; Controller Two-Way Binding"
-[10-4C]: https://github.com/wdi-hk-10/lab-angular-controllers-101                    "Lab: Binding Controller and View (/w Hardcoded data)"
+[10-4C]: https://github.com/wdi-hk-10/lab-angular-controllers-101                   "Lab: Binding Controller and View (/w Hardcoded data)"
 
 [10-5A]: 03-front-end-frameworks/angular-directives-lesson                          "Angular Directives"
 [10-5B]: 03-front-end-frameworks/angular-ng-class-css-animation-lesson              "ng-class and CSS Animation"
-[10-5C]: https://github.com/wdi-hk-10/lab-angular-directives                         "Lab: Angular Directives"
+[10-5C]: https://github.com/wdi-hk-10/lab-angular-directives                        "Lab: Angular Directives"
 [10-5D]: https://curran.github.io/screencasts/introToAngular/exampleViewer/#/       "Weekend Lab: Apps with Angular"
 
 <a name="week11"></a>
@@ -427,11 +427,11 @@ Time   | [Monday](#w11d1)                         | [Tuesday](#w11d2)           
 17:00  | Done for Day                             | Done for Day                              | Done for Day                            | Done for Day                            |                                         |
 
 [11-1A]: 03-front-end-frameworks/angular-http-lesson                                "Angular HTTP"
-[11-1B]: https://github.com/wdi-hk-10/lab-angular-http                               "Lab: Angular HTTP"
+[11-1B]: https://github.com/wdi-hk-10/lab-angular-http                              "Lab: Angular HTTP"
 
 [11-2A]: 03-front-end-frameworks/angular-ui-router-lesson                           "Front-end Routing with UI Router"
 [11-2B]: 03-front-end-frameworks/angular-resource-factories-lesson                  "Building factories with $http"
-[11-2C]: https://github.com/wdi-hk-10/lab-angular-ui-router                          "Lab: Front-end Routing"
+[11-2C]: https://github.com/wdi-hk-10/lab-angular-ui-router                         "Lab: Front-end Routing"
 
 [11-3A]: http://ionicframework.com/getting-started/                                 "Ionic Framework"
 
