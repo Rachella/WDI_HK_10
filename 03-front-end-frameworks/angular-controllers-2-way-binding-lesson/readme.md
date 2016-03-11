@@ -222,7 +222,7 @@ In pairs, for the next 10 minutes, work together to take the random data you put
 
 Data Binding, in the context of MVC, is the synchronization of data between Model and View. As you have seen previously in Rails and Hapi, we use things called `templates` as our views. Templates are HTML files where we can use other programming languages to populate data within, such as `ejs` for Embedded JavaScript and `erb` for Embedded Ruby. So far, what we have seen are just **one way binding** in which once we bound a model status (value) to the view, that value inside the view will never change unless we **render the view again** or if we use jQuery code to do that explicitly.
 
-![](images\one-way-binding.jpg)
+![](images/one-way-binding.jpg)
 
 In AngularJS, we have **Two-Way Binding**. This just means:
   - When data inside a model change, the view will get updated.
@@ -230,7 +230,7 @@ In AngularJS, we have **Two-Way Binding**. This just means:
 
 Here is how it works:
 
-![](images\two-way-binding.jpg)
+![](images/two-way-binding.jpg)
 
 The implication is that we no longer need to use jQuery to directly modify our view. We just need to update the model and the view will be automatically update by Angular.
 
