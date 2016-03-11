@@ -99,7 +99,9 @@ First, let's get Angular from [Google's CDN](https://developers.google.com/speed
 Now, we set up a module. Go to your `app.js` file, and all it takes is this little line:
 
 ```js
-// Define a new module. The first argument is what we want to call our app, the second is an array of dependencies (which we don't need at the moment, so there are none)
+// Define a new module. The first argument is what we want to call our app, the second is an array of dependencies.
+// The second parameter is required if we are creating new module.
+// So if there are no dependencies, we still need to pass in an empty array.
 angular.module('IntroToAngularApp', []);
 ```
 
@@ -145,12 +147,14 @@ Now, lets stub out a new controller and plug it into our module:
 touch js/homeController.js
 ```
 
-Here we use a variable `myApp` to store a reference to our module, which does not have dependency to other modules. Then we use the `controller` method to register a controller to the `myApp` module. The first argument is the name of the controller (the convention is to use camel case, like the name of a constructor function). The second argument is an array which can take **an arbitary number of elements**. If the array has `n` elements, the first `n-1` elements of the array are used to define the **dependencies** of the controller, i.e. the other modules this controller depends on. The last element of the array is **always** a function which is the actual contructor function of your controller.
+Here we use a variable `myApp` to store a reference to our module. Note that we **do not** pass in the second parameter again as this optional parameter is **ONLY** required when we want to create a new module. You can read about this somewhat pecuilar behavuor in the official documentation of the [angular.module](https://docs.angularjs.org/api/ng/function/angular.module) method.
+
+Next we can use the `controller` method to register a controller to the `myApp` module. The first argument is the name of the controller (the convention is to use camel case, like the name of a constructor function). The second argument is an array which can take **an arbitary number of elements**. If the array has `n` elements, the first `n-1` elements of the array are used to define the **dependencies** of the controller, i.e. the other modules this controller depends on. The last element of the array is **always** a function which is the actual contructor function of your controller.
 
 ```javascript
 // When only the name of the module is passed in,
 // the 'module' method returns the specified module.
-var myApp = angular.module('IntroToAngularApp', []);
+var myApp = angular.module('IntroToAngularApp');
 
 myApp.controller('HomeController', ['$scope', function($scope) {
   $scope.awesome = true;
@@ -178,7 +182,7 @@ Take five minutes and add some data into your `HomeController`. Any sort of data
 
 - - -
 ```js
-var myApp = angular.module('IntroToAngularApp', []);
+var myApp = angular.module('IntroToAngularApp');
 
 myApp.controller('HomeController', ['$scope', function($scope) {
   $scope.awesome = true;
@@ -224,16 +228,19 @@ Data Binding, in the context of MVC, is the synchronization of data between Mode
 
 ![](images/one-way-binding.jpg)
 
-In AngularJS, we have **Two-Way Binding**. This just means:
-  - When data inside a model change, the view will get updated.
-  - When data in the view change, the changes will be propagated back to the model.
-
-Here is how it works:
+In AngularJS, we have **Two-Way Binding**. The following figure describes how it works:
 
 ![](images/two-way-binding.jpg)
 
+The template (HTML + AngularJS code) is compiled into a View object. And then:
+  - When data inside a model change, the view will get updated.
+  - When data in the view change, the changes will be propagated back to the model.
+
 The implication is that we no longer need to use jQuery to directly modify our view. We just need to update the model and the view will be automatically update by Angular.
 
+### AngularJS Stop Watch - Demo (30 mins)
+
+In order to demonstrate Two-Way Binding, we will revisit an AngularJS version of the simple stop watch example we have previously used in Week 2. You can get the code by `git clone` the [AngularJS Stop Watc repo](https://github.com/wdi-hk-10/lesson-angular-stop-watch) and spend 5 - 10 minutes trying to read through the code and annotations within. Then we will discuss this in class.
 
 
 ## Conclusion (5 mins)
