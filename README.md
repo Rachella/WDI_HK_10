@@ -411,6 +411,19 @@ Time   | [Monday](#w10d1)                         | [Tuesday](#w10d2)           
 [10-5C]: https://github.com/wdi-hk-10/lab-angular-directives                        "Lab: Angular Directives"
 [10-5D]: https://curran.github.io/screencasts/introToAngular/exampleViewer/#/       "Weekend Lab: Apps with Angular"
 
+#### Week 10 | Thursday
+<a name="w10d4"></a>
+- AngularJS Reading
+  - [Thinking in AngularJS for jQuery folks](http://stackoverflow.com/questions/14994391/thinking-in-angularjs-if-i-have-a-jquery-background)
+- Hey, we have AngularJS videos too! (The API used may be a bit **dated** but please pay attention to the concepts)
+  - [Design Principles of AngularJS](https://youtu.be/HCR7i5F5L8c) (40 minutes)
+  - [AngularJS Fundamentals](https://youtu.be/i9MHigUZKEM) (71 minutes)
+
+#### Week 10 | Friday
+<a name="w10d5"></a>
+- Weekend Fun
+  - [The Official AngularJS Tutorial](https://docs.angularjs.org/tutorial/index)
+
 <a name="week11"></a>
 ### Week 11 | AngularJS + Final Project
 

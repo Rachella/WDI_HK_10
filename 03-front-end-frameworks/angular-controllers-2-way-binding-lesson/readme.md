@@ -7,7 +7,6 @@
 - Build a very basic controller with fake data
 - Render basic controller data in the view
 - Bind basic data with a controller variable
-- Explain the differences and similarities between $scope and controllerAs
 
 ### Preparation
 
@@ -25,7 +24,7 @@ AngularJS provides the following benefits when used to develop web apps:
 - Makes us more productive when developing web apps because it provides features, such as data binding, that requires less code from the developer
 - Was designed with testing in mind
 
-#### The Components of AngularJS
+### The Components of AngularJS
 
 ![angular_components](https://cloud.githubusercontent.com/assets/25366/8970275/a1ab2ee2-35fd-11e5-8b23-65f4159ff7d6.jpg)
 
@@ -133,7 +132,7 @@ If Angular's working, it'll add our numbers together and spit out a 2 on the pag
 Open it up in a browser to check. And remember – if it doesn't work, always check your browser's console for errors!
 
 
-## A Very Basic Controller - Codealong (15 mins)
+### A Very Basic Controller - Codealong (15 mins)
 
 So, in Angular's flavor of MVC, controllers are intended to primarily:
 
@@ -188,7 +187,7 @@ myApp.controller('HomeController', ['$scope', function($scope) {
 }]);
 ```
 
-## Connecting Controller To The View - Codealong (10 mins)
+### Connecting Controller To The View - Codealong (10 mins)
 
 The last step here is to connect our controller to the view. We attach any controllers to some div or HTML tag in our view. But first, make sure to include any newly created JS files.
 
@@ -215,9 +214,27 @@ Now:
 
 When you render the page, it should actually render! That's awesome – that means we're working with data that's coming from our controller, and that's the core building block to more complex apps!
 
-## Independent Practice (10 minutes)
+### Independent Practice (10 minutes)
 
 In pairs, for the next 10 minutes, work together to take the random data you put into your controllers earlier and show them in the view. After, experiment with making a new controller from scratch, including it in your HTML, and showing that in the view, too – it'll give you a little practice with all the setup.
+
+## Data Binding
+
+Data Binding, in the context of MVC, is the synchronization of data between Model and View. As you have seen previously in Rails and Hapi, we use things called `templates` as our views. Templates are HTML files where we can use other programming languages to populate data within, such as `ejs` for Embedded JavaScript and `erb` for Embedded Ruby. So far, what we have seen are just **one way binding** in which once we bound a model status (value) to the view, that value inside the view will never change unless we **render the view again** or if we use jQuery code to do that explicitly.
+
+![](images\one-way-binding.jpg)
+
+In AngularJS, we have **Two-Way Binding**. This just means:
+  - When data inside a model change, the view will get updated.
+  - When data in the view change, the changes will be propagated back to the model.
+
+Here is how it works:
+
+![](images\two-way-binding.jpg)
+
+The implication is that we no longer need to use jQuery to directly modify our view. We just need to update the model and the view will be automatically update by Angular.
+
+
 
 ## Conclusion (5 mins)
 - How do we define a new module when starting an application?
