@@ -26,33 +26,29 @@ Our end goal for this lesson is to build ourselves a simple little todo app. Sho
 
 We have a lot to get through – we'll have to list an array of todos, demonstrate some simple hiding & showing mechanisms, and bind some changing data via a form.
 
-## Set up your app - Independent Practice (5 mins)
+## Set up your app - Independent Practice (10 mins)
 
-Since you guys are killers at setting up Angular apps from yesterday, take five minutes to make empty JS and CSS folders, make an `app.js` and a `todosController.js` and get set up. Don't forget an index, with sourced JS files! Make those files, go go go!
+Since you guys are killers at setting up Angular apps from yesterday, take 10 minutes to make empty JS and CSS folders, make an `app.js` (remember what you need to put inside?) and a `todosController.js` (leave this open, we will work on it next) and get set up. Don't forget an index.html and linked it with JS and CSS files! Make those files, go go go!
 
 ## ng-repeat - Codealong (20 minutes)
 
-Let's start filling in our `todosController` a little bit - add in some initial seed data:
+Let's start filling in our `todosController` a little bit - add in some initial seed data. Here we assume the module is called `TodoApp` but you can name it anyway you like:
 
 ```js
-angular
-    .module("todoApp")
-    .controller("TodosController", TodosController);
+var todoApp = angular.module('TodoApp');
 
-function TodosController(){
-  // this is our hardcoded seed data
-  this.all = [
-      {task: "build an awesome todo list", done: false},
-      {task: "get super good at Angular", done: false},
-      {task: "party on code", done: false},
-      {task: "tackle the bonus challenges for this lesson", done: false},
-      {task: "take a nap", done: false}
+todoApp.controller('TodosController', ['$scope', function($scope){
+  $scope.todos = [
+    {task: "build an awesome todo list", done: false},
+    {task: "become a AngularJS master", done: false},
+    {task: "have a Shoyu ramen for dinner", done: false},
+    {task: "watch Daredevil Season 2 Episode 1 tonight", done: false},
+    {task: "buy a cup of coffee", done: false}
   ];
-
-}
+}]);
 ```
 
-This is great - we've got an array of simple objects. Granted, `.all` is whatever we want it to be, but calling it that makes it feel almost 'ActiveRecordy', doesn't it? Totally your choice, though.
+This is great - we've got an array of simple objects. We called our list of tasks as `todos` and this is just a variable name. You can call it whatever you like.
 
 Now, let's start filling out the view with this data; head over to `index.html`.
 
@@ -68,32 +64,27 @@ Now, let's start filling out the view with this data; head over to `index.html`.
 Now, how do we get the data our controller has access to?
 
 ```html
-<body ng-controller="TodosController as todos">
+<body ng-controller="TodosController">
   <header>
     <h1>Angular Todo App</h1>
-    <h3>You have {{todos.all.length}} todos to do!</h3>
+    <h3>You have {{todos.length}} todos to do!</h3>
   </header>
 </body>
 ```
-
-<img width="752" alt="screen shot 2015-07-31 at 3 45 04 am" src="https://cloud.githubusercontent.com/assets/25366/9005855/8e7bee44-3736-11e5-9276-d930778b197a.png">
 
 Beautiful! But we need more. How do we actually list out our todos? `ng-repeat`.
 
 ```html
 <ul id='todos'>
-  <li ng-repeat="todo in todos.all">
+  <li ng-repeat="todo in todos">
     {{todo.task}}
   </li>
 </ul>
 ```
 
-<img width="752" alt="screen shot 2015-07-31 at 3 49 11 am" src="https://cloud.githubusercontent.com/assets/25366/9005933/1e6c49cc-3737-11e5-8f4d-3dd46a471c34.png">
-
-
 Let's walk through that. First, hello `ng-repeat`! This is used for iterating over repeating elements. Rather than our old-fashioned `for` loop, Angular uses `ng-repeat` on the element we want to iterate over. Sort of like Ruby (or JavaScript's forEach), we say:
 
-> "For each item in `todos.all`, call the one we're on `todo`."
+> "For each item in `todos`, call the one we're on `todo`."
 
 Then, inside that element, we have access to `{{todo.whateverAttributesTodoHas}}`.
 
@@ -111,20 +102,18 @@ Super simple - this does nothing, yet, but we need it to add to our list when w
 
 Maybe something like:
 ```js
-//this will add our new function as a property on our controller, so we can use it in the view
-this.add = addTodo;
-
-// this just adds a new object to our array, with defaults for now
-function addTodo(){
-  this.all.push({task: "something", done: false});
-}
+  // This will add our new function as a property on our controller, so we can use it in the view
+  // it just adds a new object to our array, with defaults for now
+  $scope.addTodo = function() {
+    $scope.todos.push({task: "do something", done: false});
+  }
 ```
 
-By including the `this.addTodo = addTodo;` line, we now can use that function in our view, when we want to. So check out this other useful form directive:
+We now can use that function referred as `addTodo` in our view when we want to. So check out this other useful form directive called `ng-submit`:
 
 
 ```html
-      <form id='add-todo' ng-submit="todos.add()">
+      <form id='add-todo' ng-submit="addTodo()">
         <input type="text" placeholder='I need to...'>
       </form>
 ```
@@ -144,15 +133,15 @@ But first, let's think of it like this: we're going to be adding a new todo to o
 So maybe let's make a `newTodo` object in our controller:
 
 ```js
-this.newTodo = {task: '', done: false};
+$scope.newTodo = {task: '', done: false};
 ```
 
-Now we know that in both the controller, and now, the view, if we access the `.newTodo`, we can share data. This is where another awesome directive comes into play – `ng-model`.
+Now we know that in both the controller, and now, the view, if we access the `newTodo`, we can share data. This is where another awesome directive comes into play – `ng-model`.
 
 In `index.html`:
 ```html
-<form id='add-todo' ng-submit="todos.add()">
-  <input type="text" placeholder='I need to...' ng-model="todos.newTodo.task">
+<form id='add-todo' ng-submit="addTodo()">
+  <input type="text" placeholder='I need to...' ng-model="newTodo.task">
 </form>
 ```
 
@@ -161,35 +150,37 @@ What does `ng-model` do? It binds the data not just from the controller to the v
 Don't believe me? Let's watch it happen.
 
 ```html
-<form id='add-todo' ng-submit="todos.add()">
-  <input type="text" placeholder='I need to...' ng-model="todos.newTodo.task">
+<form id='add-todo' ng-submit="addTodo()">
+  <input type="text" placeholder='I need to...' ng-model="newTodo.task">
 </form>
-<p>About to add todo: <strong>{{todos.newTodo.task}}</strong></p>
+<p>About to add todo: <strong>{{newTodo.task}}</strong></p>
 ```
 
-You can see, it keeps the data synced, nearly in realtime. That's _powerful._
+You can see, it keeps the data synced, nearly in realtime. That's _powerful_.
 
 The last step is update our `todos.add()` function to utilize this new knowledge. Just like in the view, how do you think we access that newTodo in our controller?
 
 ```js
-function addTodo(){
-  this.all.push({task: this.newTodo.task, done: false});
-  // this last piece isn't necessary, but nicely resets the task to an empty string, which will clear the textbox because the view is bound to the data
-  this.newTodo.task = '';
-}
+  $scope.addTodo = function() {
+    $scope.todos.push({task: $scope.newTodo.task, done: false});
+    $scope.newTodo.task = '';
+  }
 ```
 
-## ng-hide Codealong (5 mins)
+Can you guess why we need to do this last line inside the function: `$scope.newTodo.task = '';`?
+
+
+## ng-if Codealong (5 mins)
 
 We're pretty much at capacity for now, but there's one other awesome useful directive you might want to try.
 
 As an example, let's say we think the paragraph that says "About to add todo: blah blah" only should show when `newTodo` isn't empty. Normally, we'd use some sort of if/else statement...
 
 ```html
-<form id='add-todo' ng-submit="todos.add()">
-  <input type="text" placeholder='I need to...' ng-model="todos.newTodo.task">
+<form id='add-todo' ng-submit="addTodo()">
+  <input type="text" placeholder='I need to...' ng-model="newTodo.task">
 </form>
-<p ng-if='todos.newTodo.task'>About to add todo: <strong>{{todos.newTodo.task}}</strong></p>
+<p ng-if='newTodo.task'>About to add todo: <strong>{{todos.newTodo.task}}</strong></p>
 ```
 
 Boom. Beautiful. Play with it, watch it go!
