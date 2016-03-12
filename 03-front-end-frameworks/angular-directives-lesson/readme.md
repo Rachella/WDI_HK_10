@@ -170,7 +170,7 @@ The last step is update our `todos.add()` function to utilize this new knowledge
 Can you guess why we need to do this last line inside the function: `$scope.newTodo.task = '';`?
 
 
-## ng-if Codealong (5 mins)
+## ng-if, ng-show and ng-hide Codealong (5 mins)
 
 We're pretty much at capacity for now, but there's one other awesome useful directive you might want to try.
 
@@ -180,10 +180,22 @@ As an example, let's say we think the paragraph that says "About to add todo: bl
 <form id='add-todo' ng-submit="addTodo()">
   <input type="text" placeholder='I need to...' ng-model="newTodo.task">
 </form>
-<p ng-if='newTodo.task'>About to add todo: <strong>{{todos.newTodo.task}}</strong></p>
+<p ng-if='newTodo.task'>About to add todo: <strong>{{newTodo.task}}</strong></p>
 ```
 
 Boom. Beautiful. Play with it, watch it go!
+
+Alternatively, you can also use `ng-show`:
+
+```html
+<form id='add-todo' ng-submit="addTodo()">
+  <input type="text" placeholder='I need to...' ng-model="newTodo.task">
+</form>
+<p ng-show='newTodo.task'>About to add todo: <strong>{{newTodo.task}}</strong></p>
+```
+
+By this time, you should not be too surprised that there is another directive called `ng-hide` as well. Can you guess what it will do?
+
 
 ## Conclusion (5 mins)
 
