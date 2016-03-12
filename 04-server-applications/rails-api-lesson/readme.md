@@ -109,14 +109,14 @@ resources :bowties, :defaults => { :format => ‘json’ }
 By the way, we could set the default :format, like shown here, but if you do not set it, Rails will consider it as a html request if user forgets to pass any format.
 
 
-Anyway, let's assume we use the namespace: the next error we will get is `ActionController::RoutingError: uninitialized constant API` because we haven't defined a "thing" called API anywhere - so far, we're just referring to it in our `routes.rb` file. We can fix this error by doing the following:
+Anyway, let's assume we use the namespace: the next error we will get is `ActionController::RoutingError: uninitialized constant Api` because we haven't defined a "thing" called API anywhere - so far, we're just referring to it in our `routes.rb` file. We can fix this error by doing the following:
 
 * create a directory called "api" inside the controllers directory.
 * inside our "api" directory, create a new file called "bowties_controller.rb".
 * Now we need to write our controller.  It should look like this:
 
     ```ruby
-    module API
+    module Api
       class BowtiesController < ApplicationController
       end
     end
@@ -124,12 +124,12 @@ Anyway, let's assume we use the namespace: the next error we will get is `Action
 
 * "Whoa! What is a module?", you ask? A module is just a collection of methods and/or constants (and Ruby classes--you know, like Rails controllers--_are_ constants, so there!).
 
-Now, if we try to visit `localhost:3000/api/bowties`, we no longer get that `UninitializedConstant API` error message. Instead, it tells us that the index action could not be found for our `API::BowtiesController`.
+Now, if we try to visit `localhost:3000/api/bowties`, we no longer get that `UninitializedConstant Api` error message. Instead, it tells us that the index action could not be found for our `Api::BowtiesController`.
 
 You know how to fix that! Take **30 seconds** to make that error go away.
 
   ```ruby
-  module API
+  module Api
     class BowtiesController < ApplicationController
       def index
       end
@@ -140,7 +140,7 @@ You know how to fix that! Take **30 seconds** to make that error go away.
 The next error we should get is something about a missing template. Remember that a Rails controller's default behavior is to render an HTML view template. But that's not what we want in this case. When someone sends a GET request to `/api/bowties`, we want to respond with JSON so let's make that happen by adding the following to our controller:
 
   ```ruby
-  module API
+  module Api
     class BowtiesController < ApplicationController
 
       def index
