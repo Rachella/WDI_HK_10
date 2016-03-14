@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="CssAnimeApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular CSS Animation</title>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="app.js"></script>
+    <script src="js/CssAnimeController.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <section id="main" class="container-fluid" ng-controller="CssAnimeController">
+      <header>
+        <h1>AWWWWARD<sup>TM</sup></h1>
+      </header>
+      <section id="winner-form">
+        <form>
+          <div class="form-group">
+            <label for="newWinnersName">And the award goes to...</label>
+            <input type="text" class="form-control" id="newWinnersName" placeholder="e.g. Tom Hanks">
+          </div>
+          <button type="submit" class="btn bth-default">Add New Winner</button>
+        </form>
+      </section>
+      <section id="search-form">
+        <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="searchWinnerName">search winner</label>
+            <input type="text" class="form-control" id="searchWinnerName" placeholder="e.g. Tom Hanks">
+          </div>
+          <button type="submit" class="btn btn-default">Search</button>
+          <div class="form-group pull-right">
+            <button type="button" class="btn btn-info">Bold</button>
+            <button type="button" class="btn btn-info">Italics</button>
+          </div>
+        </form>
+      </section>
+      <section id="winner-list">
+        <ul id="winners" class="list-group">
+          <li class="list-group-item" ng-repeat="winner in winners">
+            {{winner.name}}
+          </li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</html>

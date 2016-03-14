@@ -1,0 +1,27 @@
+{
+  "name": "angular-css-anime",
+  "authors": [
+    "Willie Tong <tongsinyin@gmail.com>"
+  ],
+  "description": "",
+  "main": "app.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6",
+    "angular-animate": "^1.5.0"
+  }
+}

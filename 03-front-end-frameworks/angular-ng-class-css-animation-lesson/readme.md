@@ -26,7 +26,7 @@ Second, we're going to play add some subtle animation to our style with CSS tran
 >
 > That's it. Simple, but it's cool to see ahead of time.
 
-Now, go check out the [starter code](https://github.com/wdi-hk-9/lesson-angular-ng-class-css-animation) and see what we're working with. We've built a pretty basic Angular app using stuff you've mostly already seen.
+For this lesson, you can choose to follow along by using the [starter code](starter-code) or you can look at the finished project from [this lesson repo](https://github.com/wdi-hk-10/lesson-angular-award-winners).
 
 Take a few minutes and browse through the code that's there and investigate how it works and what it's doing.
 
@@ -194,14 +194,6 @@ form {
 
 The `all` lets you specify which CSS properties you want affected. You could list them out or cheat like we did there; the `300ms` says the transition should last that long, in milliseconds (or seconds); and the `ease-in-out` is one of a few choices that you can research to allow for _easing_, so the animation looks less robotic.
 
-Finally, to make this all work, you **DO NOT** need to write any fancy JavaScript code. You just need to prepare the above CSS and then include the `ngAnimate` module as an dependency when you define your app module, like this:
-
-```javascript
-angular.module("CssAnimeApp", ['ngAnimate']);
-```
-
-Believe it or not, that's it!!
-
 ## CSS Animation Demo (10 minutes)
 
 Now before we try it ourselves, let's see an animation. Animations can be triggered, remember, and by default, are triggered when an object appears (or when a class is applied) to an object.
@@ -215,14 +207,8 @@ We do that by creating a special `@keyframes` rule, and just like a function in 
   0% {
     opacity: 0;
   }
-  20% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.5;
-  }
   70% {
-    opacity: 0.7;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
@@ -255,6 +241,39 @@ There are a lot of CSS properties to play with and a lot of possibilities.  For 
 - Trying changing both opacity and color when fading in
 - How could you make something fade _out_?
 - Most importantly – **what simple animations could you add to help guide a user to know what to do with this page?** How could you use animation to show them how the interface works?
+
+## The ngAnimate CSS class (20 mins)
+
+The final step to make things even more interesting is to use the AngularJS `ngAnimate` CSS class.
+
+If you take a look at the CSS file you can see these: 
+
+```css
+.list-group-item.ng-enter,
+.list-group-item.ng-leave {
+  transition: 500ms ease-in all;
+  position: relative;
+  display: block;
+}
+
+.list-group-item.ng-enter,
+.list-group-item.ng-leave.ng-leave-active {
+  left: 500px;
+}
+
+.list-group-item.ng-enter.ng-enter-active,
+.list-group-item.ng-leave {
+  left: 0;
+}
+```
+
+`ng-enter`, `ng-leave`, `ng-leave-active` and `ng-enter-active` are some examples of the `ngAnimate` CSS class. To make then work we **DO NOT** need to write any fancy JavaScript code. You just need to prepare the above CSS and then include the `ngAnimate` module as an dependency when you define your app module in the `app.js` file, like this:
+
+```javascript
+angular.module("CssAnimeApp", ['ngAnimate']);
+```
+
+Believe it or not, that's it!!
 
 ## Conclusion (5 mins)
 - What's the difference between CSS transitions and animations? Where might you use one or the other?

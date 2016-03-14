@@ -1,0 +1,98 @@
+body {
+  background: aqua;
+}
+
+#main {
+  margin: 0 auto;
+  width: 50%;
+}
+
+header > h1 {
+  font-family: "Marker Felt";
+  letter-spacing: 3px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.error {
+  border-color: red;
+  color: red;
+}
+.success {
+  border-color: green;
+  color: green;
+}
+
+#winner-form > form {
+  background: white;
+  padding: 50px;
+  width: 50%;
+  -ms-transform: rotate(-7deg); /* IE 9 */
+  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+  transform: rotate(-7deg);
+
+  position: relative;
+  left:-1rem;
+  top: 0rem;
+  transition: all 300ms ease-in-out;
+}
+
+#winner-form > form:hover {
+  top: -0.618rem;
+  left: -0.382rem;
+  -ms-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+#search-form {
+  margin-top: 40px;
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #ddd;
+  border-color: #ddd;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+  box-shadow: none;
+  padding: 20px;
+}
+
+.list-group-item.ng-enter,
+.list-group-item.ng-leave {
+  transition: 500ms ease-in all;
+  position: relative;
+  display: block;
+}
+
+.list-group-item.ng-enter,
+.list-group-item.ng-leave.ng-leave-active {
+  left: 500px;
+}
+
+.list-group-item.ng-enter.ng-enter-active,
+.list-group-item.ng-leave {
+  left: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ul > li {
+  animation-duration: 300ms;
+  animation-name: fadeIn;
+}
