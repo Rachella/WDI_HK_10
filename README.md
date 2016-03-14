@@ -392,8 +392,8 @@ Time   | [Monday](#w9d1)                          | [Tuesday](#w9d2)            
 
 Time   | [Monday](#w10d1)                         | [Tuesday](#w10d2)                       | [Wednesday](#w10d3)                     | [Thursday](#w10d4)                      | [Friday](#w10d5)                        |
 ------ | ---------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-09:00  | Daily Standup                            | Field Trip                              | Daily Standup                           | [Week 7-9 Retrospective][10-4A]         | [R-Lab: Angular Controller 101][10-4C]  |
-10:00  | -                                        | Field Trip                              | -                                       | -                                       | [Angular Directives][10-5A]             |
+09:00  | Daily Standup                            | Daily Standup                           | Daily Standup                           | [Week 7-9 Retrospective][10-4A]         | [R-Lab: Angular Controller 101][10-4C]  |
+10:00  | -                                        | -                                       | -                                       | -                                       | [Angular Directives][10-5A]             |
 11:00  | -                                        | -                                       | -                                       | [Intro to AngularJS & Setup][10-4B]     | -                                       |
 12:00  | LUNCH                                    | LUNCH                                   | *JS & RUBY CHANGE FREEZE* + LUNCH       | Guest Speaker: Tony Wong (Shopline)     | LUNCH                                   |
 13:00  | -                                        | -                                       | Final touch up (HTML & CSS)             | [Two-Way Binding][10-4B]                | [ng-class and CSS Animation][10-5B]     |
