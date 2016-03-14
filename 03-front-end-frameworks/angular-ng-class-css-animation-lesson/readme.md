@@ -43,18 +43,18 @@ We need a true/false statement that will tell us if it's an "error" or not. For 
 We've got this:
 
 ```html
-<input type="text" id="new-winner-name" ng-model="awards.newWinner.name" ... >
+<input type="text" class="form-control" id="newWinnersName" placeholder="e.g. Tom Hanks">
 ```
 
 Adding `ngClass` is as easy as:
 
 ```html
-<input type="text" id="new-winner-name" ng-model="awards.newWinner.name" ng-class="{'error': awards.newWinner.name.length <= 4}" ... >
+<input type="text" class="form-control" id="newWinnersName" placeholder="e.g. Tom Hanks" ng-class="{'error': newWinner.name.length < 4}">
 ```
 
 Let's pull that out:
 ```js
-ng-class="{'error': awards.newWinner.name.length <= 4}"
+ng-class="{'error': newWinner.name.length < 4}"
 ```
 
 `ng-class` is just an attribute we add, a directive like we've seen before. In the quotes is a javascript object, where the key is the class name and the value is an expression that evaluates to `true` or `false`.
@@ -89,6 +89,47 @@ Now, go crazy. You have 10 minutes - start experimenting with your own `ngClass`
 Play with it and you'll start seeing how powerful it is. Let's see what you come up with!
 
 - - -
+
+## More Completed Example (20 mins)
+
+In the completed version, this is how the input text field looks like:
+
+```html
+  <input type="text" class="form-control" id="newWinnersName" placeholder="e.g. Tom Hanks" 
+         ng-model="newWinner.name"
+         ng-class="validation"
+         ng-change="validateForm()">
+```
+
+Here we have bound the input text field to the `name` property of a `newWinner` object in the controller. We have an `ngClass` expression called `validation`. Finally, we also used the `ngChange` directive. This directive will evaluate its expression not just after the change but **DURING** the change. Note that `ngChange` requires the presence of `ngModel`.
+
+In our Controller, we have defined the `newWinner` and `validation` objects.`validateForm` is a function where the `ngChange` directive will evaluate whenever the user is making changes. **Can you spend the next 5 minutes reading `validateForm` and then explain what it is trying to do?**
+
+```javascript
+  // the input text field is bound to the name property here
+  $scope.newWinner = {name: ''};
+
+  // the validation expression where we will toggle the state of the 2 properties
+  $scope.validation = {
+    'error': false,
+    'success': false
+  };
+
+  // Do you understand what this function is doing?
+  $scope.validateForm = function () {
+    if ($scope.newWinner.name.length === 0) {
+      $scope.validation.error = false;
+      $scope.validation.success = false;
+    }
+    else if ($scope.newWinner.name.length < 4){
+      $scope.validation.error = true;
+      $scope.validation.success = false;
+    } else {
+      $scope.validation.error = false;
+      $scope.validation.success = true;
+    }
+  };
+```
 
 ## CSS Transitions - Intro (10 mins)
 
@@ -153,6 +194,14 @@ form {
 
 The `all` lets you specify which CSS properties you want affected. You could list them out or cheat like we did there; the `300ms` says the transition should last that long, in milliseconds (or seconds); and the `ease-in-out` is one of a few choices that you can research to allow for _easing_, so the animation looks less robotic.
 
+Finally, to make this all work, you **DO NOT** need to write any fancy JavaScript code. You just need to prepare the above CSS and then include the `ngAnimate` module as an dependency when you define your app module, like this:
+
+```javascript
+angular.module("CssAnimeApp", ['ngAnimate']);
+```
+
+Believe it or not, that's it!!
+
 ## CSS Animation Demo (10 minutes)
 
 Now before we try it ourselves, let's see an animation. Animations can be triggered, remember, and by default, are triggered when an object appears (or when a class is applied) to an object.
@@ -166,8 +215,14 @@ We do that by creating a special `@keyframes` rule, and just like a function in 
   0% {
     opacity: 0;
   }
-  80% {
+  20% {
+    opacity: 0.2;
+  }
+  50% {
     opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
   }
   100% {
     opacity: 1;
@@ -180,8 +235,8 @@ Of course, nearly any properties can be changed and nearly any percentages can b
 But now that we've got a defined animation, we need to use it:
 
 ```css
-ol li {
-  animation-duration: 800ms;
+ul > li {
+  animation-duration: 300ms;
   animation-name: fadeIn;
 }
 ```

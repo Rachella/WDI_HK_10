@@ -141,7 +141,7 @@ So, in Angular's flavor of MVC, controllers are intended to primarily:
 1. Respond to user actions.
 2. Provide data to the view (occasionally referred to the view-model).
 
-Now, lets stub out a new controller and plug it into our module:
+Now, let's stub out a new controller and plug it into our module:
 
 ```bash
 touch js/homeController.js
@@ -217,6 +217,13 @@ Now:
 ```
 
 When you render the page, it should actually render! That's awesome – that means we're working with data that's coming from our controller, and that's the core building block to more complex apps!
+
+#### Advanced Topic: But how does it work?
+
+With Javascript in play, our browser is naturally event-driven. For example, when you have an onClick event listener placed on a button, you also have an event handler that can update the DOM in some way. The 'magic' behind Angular, the way that it seemingly knows to update the DOM when need be, is due to the fact that it extends the traditional js event-loop by extending it with angular context.
+
+Every time you use Angular to bind something in the UI, whether it be via handlebars or any ngDirective, you are telling your related Angular module that they are extensions of your angular context and to watch them for changes by adding them to the $watch list. This event loop is known as the $digest cycle and whenever there is a change in Angular context ($scope), Angular will go through _ALL_ of its context and update any model(s) with a value that has been updated, a concept known as "dirty-checking."
+
 
 ### Independent Practice (10 minutes)
 
