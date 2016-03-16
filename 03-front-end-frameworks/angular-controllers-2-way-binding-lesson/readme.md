@@ -16,8 +16,6 @@
 
 ## Intro - What is AngularJS and Why Should You Learn it? (20 mins)
 
-![](images/angular-concepts.png)
-
 Angular is An open source JS framework maintained by Google - maybe you've heard of them?  It was created nearly 6 years ago - its longevity is a testament to its capability and usefulness.  AngularJS is one of the most widely adopted MVC JS frameworks in use today and is a valuable job skill to put on your resume.
 
 AngularJS provides the following benefits when used to develop web apps:
@@ -26,6 +24,8 @@ AngularJS provides the following benefits when used to develop web apps:
 - Was designed with testing in mind
 
 ### Dependency Injection
+
+![](images/angular-concepts.png)
 
 Before we talk about Dependency Injection, we need to define *Denpendency*. You have seen this word before when you set up `bower` packages or `npm` modules. These are package managers which deal with *dependencies among the modules of a sofware*. We need that because most modules require other modules to do the work for them, for example, one would not just write a library to send HTTP requests these days (well, if you want to waste your time like that, be my guest). You *always* want to use an existing module so that you can stay away from the nitty-critty details of the (mostly boring) HTTP protocols and work on more interesting stuff.
 
