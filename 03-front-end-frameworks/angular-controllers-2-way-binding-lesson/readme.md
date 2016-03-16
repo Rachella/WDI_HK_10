@@ -16,6 +16,7 @@
 
 ## Intro - What is AngularJS and Why Should You Learn it? (20 mins)
 
+![](images/angular-concepts.png)
 
 Angular is An open source JS framework maintained by Google - maybe you've heard of them?  It was created nearly 6 years ago - its longevity is a testament to its capability and usefulness.  AngularJS is one of the most widely adopted MVC JS frameworks in use today and is a valuable job skill to put on your resume.
 
@@ -23,6 +24,62 @@ AngularJS provides the following benefits when used to develop web apps:
 - Enables us to organize and structure Single Page Apps using the popular MVC design pattern
 - Makes us more productive when developing web apps because it provides features, such as data binding, that requires less code from the developer
 - Was designed with testing in mind
+
+### Dependency Injection
+
+Before we talk about Dependency Injection, we need to define *Denpendency*. You have seen this word before when you set up `bower` packages or `npm` modules. These are package managers which deal with *dependencies among the modules of a sofware*. We need that because most modules require other modules to do the work for them, for example, one would not just write a library to send HTTP requests these days (well, if you want to waste your time like that, be my guest). You *always* want to use an existing module so that you can stay away from the nitty-critty details of the (mostly boring) HTTP protocols and work on more interesting stuff.
+
+We can apply the same concept in a smaller scale when we are just coding on a software component. Here we are talking about *dependencies among objects or functions*. If JS object A needs JS object B to work then A is dependent on B. Here is a brief excerpt from the [Dependency Injection section of the Angular JS official guide](https://docs.angularjs.org/guide/di):
+
+>
+> There are only three ways a component (object or function) can get a hold of its dependencies:
+>
+>   1. The component can create the dependency, typically using the new operator.
+>   2. The component can look up the dependency, by referring to a global variable.
+>   3. The component can have the dependency passed to it where it is needed.
+>
+
+For the first option, it will look like the below example where we need to pass in engine-related parameters to the `Car` constructor function so that we can create an Engine object inside.
+
+```javascript
+var Car = function(brand, engine_components) {
+  this.brand = brand;
+  this.engine = new Engine(engine_components);
+  // may call other functions in the engine to initialize it
+}
+```
+
+For the second option, we may have a global function that returns `Engine` objects based on some parameters passed:
+
+```javascript
+var getEngine = function(engine_components) {
+  var engine;
+  // Assemble an engine based on the components
+  // call other functions in the engine to initialize it
+  return engine;
+}
+
+var Car = function(brand, engine_components) {
+  this.brand = brand;
+  this.engine = getEngine(engine_components);
+}
+```
+
+For the third option, which is the preferable one, the `Car` constructor function simply got the `Engine` object handed to it:
+
+```javascript
+var Car = function(brand, engine) {
+  this.brand = brand;
+  this.engine = engine;
+}
+
+var engine1 = new Engine(......);  // need a bunch of parameters!!
+var car1 = new Car('toyota', engine);
+```
+
+The third option sounds great but whoever calls the `Car` constructor function *STILL need to create the engine*. AngularJS has a solution for that. It has an component called the [injector](https://docs.angularjs.org/api/ng/function/angular.injector) which helps you to locate a component, create it and then **INJECT** into the module (you always start writing a module in AngularJS!!) you are working on. We will see how this works in later sections.
+
+If you want to read more about this, read the [Dependency Injection section of the Angular JS official guide](https://docs.angularjs.org/guide/di).
 
 ### The Components of AngularJS
 

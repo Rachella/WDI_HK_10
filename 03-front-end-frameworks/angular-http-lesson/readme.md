@@ -35,7 +35,7 @@ Once you have some, do a quick `GET` request to `http://localhost:3000/president
 
 ## Demo of Starter Code (5 mins)
 
-Okay, so we've included a bunch of [starter](https://github.com/wdi-hk-9/lesson-angular-http) code that looks quite a bit like the code you've already written. There's a controller, with some hardcoded data, listing out some of the Presidents in the United States. Hopefully [Wikipedia](https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States) is accurate, 'cuz who knows stuff like that off the top of their head?
+Okay, so we've included a bunch of [starter](https://github.com/wdi-hk-10/lesson-angular-http) code that looks quite a bit like the code you've already written. There's a controller, with some hardcoded data, listing out some of the Presidents in the United States. Hopefully [Wikipedia](https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States) is accurate, 'cuz who knows stuff like that off the top of their head?
 
 It's our job to mush together this little API we have, and our Angular application.
 

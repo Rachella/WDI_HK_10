@@ -409,7 +409,7 @@ Time   | [Monday](#w10d1)                         | [Tuesday](#w10d2)           
 [10-5A]: 03-front-end-frameworks/angular-directives-lesson                          "Angular Directives"
 [10-5B]: 03-front-end-frameworks/angular-ng-class-css-animation-lesson              "ng-class and CSS Animation"
 [10-5C]: https://github.com/wdi-hk-10/lab-angular-directives                        "Lab: Angular Directives"
-[10-5D]: https://curran.github.io/screencasts/introToAngular/exampleViewer/#/       "Weekend Lab: Apps with Angular"
+[10-5D]: https://github.com/wdi-hk-10/lab-angular-weekend                           "Weekend Lab: Apps with Angular"
 
 #### Week 10 | Thursday
 <a name="w10d4"></a>
@@ -423,6 +423,7 @@ Time   | [Monday](#w10d1)                         | [Tuesday](#w10d2)           
 <a name="w10d5"></a>
 - Weekend Fun
   - [The Official AngularJS Tutorial](https://docs.angularjs.org/tutorial/index)
+  - [Just some more AngularJS examples](https://curran.github.io/screencasts/introToAngular/exampleViewer/#/)
 
 <a name="week11"></a>
 ### Week 11 | AngularJS + Final Project
