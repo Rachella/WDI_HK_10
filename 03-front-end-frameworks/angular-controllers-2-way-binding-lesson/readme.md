@@ -23,11 +23,11 @@ AngularJS provides the following benefits when used to develop web apps:
 - Makes us more productive when developing web apps because it provides features, such as data binding, that requires less code from the developer
 - Was designed with testing in mind
 
-### Dependency Injection
+### Angular Concept: Dependency Injection (15 mins)
 
 ![](images/angular-concepts.png)
 
-Before we talk about Dependency Injection, we need to define *Denpendency*. You have seen this word before when you set up `bower` packages or `npm` modules. These are package managers which deal with *dependencies among the modules of a sofware*. We need that because most modules require other modules to do the work for them, for example, one would not just write a library to send HTTP requests these days (well, if you want to waste your time like that, be my guest). You *always* want to use an existing module so that you can stay away from the nitty-critty details of the (mostly boring) HTTP protocols and work on more interesting stuff.
+Dependency Injection is one of the central ideas in AngularJS. It is how the framework wires and clues all the components together. Before we talk about Dependency Injection, we need to define *Denpendency*. You have seen this word before when you set up `bower` packages or `npm` modules. These are package managers which deal with *dependencies among the modules of a sofware*. We need that because most modules require other modules to do the work for them, for example, one would not just write a library to send HTTP requests these days (well, if you want to waste your time like that, be my guest). You *always* want to use an existing module so that you can stay away from the nitty-critty details of the (mostly boring) HTTP protocols and work on more interesting stuff.
 
 We can apply the same concept in a smaller scale when we are just coding on a software component. Here we are talking about *dependencies among objects or functions*. If JS object A needs JS object B to work then A is dependent on B. Here is a brief excerpt from the [Dependency Injection section of the Angular JS official guide](https://docs.angularjs.org/guide/di):
 
@@ -145,15 +145,20 @@ In your starter folder, you'll see some empty files and a couple of folders.
 First, let's get Angular from [Google's CDN](https://developers.google.com/speed/libraries/#angularjs) and paste into script tag in the ```<head>```.
 
 ```html
- <head>
-   <meta charset="utf-8">
-   <title>Intro to Angular</title>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
- </head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
 ```
 
 
-Now, we set up a module. Go to your `app.js` file, and all it takes is this little line:
+Now, we set up a module. Go to your `app.js` file in the `js` folder, and all it takes is this little line:
 
 ```js
 // Define a new module. The first argument is what we want to call our app, the second is an array of dependencies.
@@ -171,9 +176,12 @@ Now, back in our HTML, make sure your `app.js` is included in a script tag, and 
   <head>
     <meta charset="utf-8">
     <title>Intro to Angular</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     <script src="js/app.js"></script>
   </head>
+  <body>
+  </body>
+</html>
 ```
 
 Since we defined it in `app.js` with a name of `IntroToAngularApp`, we just reference what we named it here. This tells the HTML to use that module.
