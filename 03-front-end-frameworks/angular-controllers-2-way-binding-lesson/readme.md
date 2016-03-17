@@ -12,7 +12,7 @@
 
 - Have a thorough understanding of JS
 - Know how to build JS constructor functions
-- 'git clone' the starter code [repo](https://github.com/wdi-hk-10/lesson-angular-intro)
+- `git clone` the starter code [repo](https://github.com/wdi-hk-10/lesson-angular-intro)
 
 ## Intro - What is AngularJS and Why Should You Learn it? (20 mins)
 
