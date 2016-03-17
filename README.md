@@ -400,7 +400,7 @@ Time   | [Monday](#w10d1)                         | [Tuesday](#w10d2)           
 14:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
 15:00  | -                                        | -                                       | -                                       | [Lab: Angular Controller 101][10-4C]    | [Lab: Angular Directives][10-5C]        |
 16:00  | Demo                                     | Demo                                    | Presentation                            | -                                       | [Weekend Lab: Apps with Angular][10-5D] |
-17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | UXDI & WDI Mixer!! (TBD)                |
+17:00  | Done for Day                             | Done for Day                            | Done for Day                            | Done for Day                            | UXDI & WDI Mixer!!                      |
 
 [10-4A]: 15-retrospectives/Retrospectoves-guide.md                                  "Week 7-9 Retrospective"
 [10-4B]: 03-front-end-frameworks/angular-controllers-2-way-binding-lesson           "Intro to Angular Setup; Controller Two-Way Binding"
@@ -432,7 +432,7 @@ Time   | [Monday](#w10d1)                         | [Tuesday](#w10d2)           
 
 Time   | [Monday](#w11d1)                         | [Tuesday](#w11d2)                         | [Wednesday](#w11d3)                     | [Thursday](#w11d4)                      | [Friday](#w11d5)                        |
 ------ | ---------------------------------------- | ---------------------------------------   | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-09:00  | [R-Lab: Angular Directives][10-5C]       | [R-Lab: Angular HTTP][11-1B]              | [R-Lab: Front-End Routing][11-2C]       | Project Pitch                           |                                         |
+09:00  | [R-Lab: Angular Directives][10-5C]       | [R-Lab: Angular HTTP][11-1B]              | [R-Lab: Front-End Routing][11-2C]       | Project Pitch (with UXDI)               |                                         |
 10:00  | [R-Lab: Apps with Angular][10-5D]        | [Front-End Routing with UI Router][11-2A] | [Ionic Framework][11-3A]                | WireFrame + Coding Begins               |                                         |
 11:00  | [Angular HTTP][11-1A]                    | -                                         | -                                       | -                                       |                                         |
 12:00  | LUNCH                                    | LUNCH                                     | LUNCH                                   | LUNCH                                   |                                         |
