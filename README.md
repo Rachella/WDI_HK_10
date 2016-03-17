@@ -467,6 +467,7 @@ Time   | [Monday](#w12d1)                         | [Tuesday](#w12d2)           
 15:00  |                                          | -                                       | -                                       | -                                       | -                                       |
 16:00  |                                          | Demo                                    | Demo                                    | Demo                                    | Demo                                    |
 17:00  |                                          | Done for Day                            | Done for Day                            | Done for Day                            | Done for Day                            |
+18:00  | -                                        | -                                       | -                                       | -                                       | Stage Rehearsal                         |
 
 <a name="week13"></a>
 ### Week 13 | Final Project + Wrapping up
