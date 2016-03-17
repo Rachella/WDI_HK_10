@@ -414,6 +414,8 @@ Time   | [Monday](#w10d1)                         | [Tuesday](#w10d2)           
 #### Week 10 | Thursday
 <a name="w10d4"></a>
 - AngularJS Reading
+  - [AngularJS Introduction](https://docs.angularjs.org/guide/introduction) (Official Guide)
+  - [AngularJS Concepts](https://docs.angularjs.org/guide/concepts) (Official Guide)
   - [Thinking in AngularJS for jQuery folks](http://stackoverflow.com/questions/14994391/thinking-in-angularjs-if-i-have-a-jquery-background)
 - Hey, we have AngularJS videos too! (The API used may be a bit **dated** but please pay attention to the concepts)
   - [Design Principles of AngularJS](https://youtu.be/HCR7i5F5L8c) (40 minutes)
