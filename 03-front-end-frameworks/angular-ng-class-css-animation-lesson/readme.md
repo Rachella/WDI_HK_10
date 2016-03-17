@@ -26,7 +26,7 @@ Second, we're going to play add some subtle animation to our style with CSS tran
 >
 > That's it. Simple, but it's cool to see ahead of time.
 
-For this lesson, you can choose to follow along by using the [starter code](starter-code) or you can look at the finished project from [this lesson repo](https://github.com/wdi-hk-10/lesson-angular-award-winners).
+For this lesson, you can choose to follow along by using the [starter-code branch of the lesson repo](https://github.com/wdi-hk-10/lesson-angular-award-winners/tree/starter-code) or you can look at the finished project from [the master branch of the repo](https://github.com/wdi-hk-10/lesson-angular-award-winners).
 
 Take a few minutes and browse through the code that's there and investigate how it works and what it's doing.
 
