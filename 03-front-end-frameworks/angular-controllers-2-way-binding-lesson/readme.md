@@ -312,7 +312,7 @@ The implication is that we no longer need to use jQuery to directly modify our v
 
 ### AngularJS Stop Watch - Demo (30 mins)
 
-In order to demonstrate Two-Way Binding, we will revisit an AngularJS version of the simple stop watch example we have previously used in Week 2. You can get the code by `git clone` the [AngularJS Stop Watc repo](https://github.com/wdi-hk-10/lesson-angular-stop-watch) and spend 5 - 10 minutes trying to read through the code and annotations within. Then we will discuss this in class.
+In order to demonstrate Two-Way Binding, we will revisit an AngularJS version of the simple stop watch example we have previously used in Week 2. You can get the code by `git clone` the [AngularJS Stop Watch repo](https://github.com/wdi-hk-10/lesson-angular-stop-watch) and spend 5 - 10 minutes trying to read through the code and annotations within. Then we will discuss this in class.
 
 
 ## Conclusion (5 mins)
