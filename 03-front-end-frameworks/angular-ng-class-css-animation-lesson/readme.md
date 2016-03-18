@@ -49,7 +49,7 @@ We've got this:
 Adding `ngClass` is as easy as:
 
 ```html
-<input type="text" class="form-control" id="newWinnersName" placeholder="e.g. Tom Hanks" ng-class="{'error': newWinner.name.length < 4}">
+<input type="text" class="form-control" id="newWinnersName" placeholder="e.g. Tom Hanks" ng-model="newWinner.name" ng-class="{'error': newWinner.name.length < 4}">
 ```
 
 Let's pull that out:
