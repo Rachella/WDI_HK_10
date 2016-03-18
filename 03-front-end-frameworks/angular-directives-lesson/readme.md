@@ -22,7 +22,7 @@ There are a few you'll be using all the time that we're gonna walk through toget
 
 Our end goal for this lesson is to build ourselves a simple little todo app. Shocking, it's true, but it'll be a great way to demonstrate both directives and interacting with controllers.
 
-> Note: Show students the finished app from the [lesson repo](https://github.com/wdi-hk-10/lesson-angular-todos).
+> Note: Show students the finished app from the [lesson repo](https://github.com/wdi-hk-10/lesson-angular-todos) | [version 2 by denis](https://github.com/wdi-hk-10/lesson-angular-todos-v2)
 
 We have a lot to get through – we'll have to list an array of todos, demonstrate some simple hiding & showing mechanisms, and bind some changing data via a form.
 
