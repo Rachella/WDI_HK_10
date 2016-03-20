@@ -24,11 +24,11 @@ Now, real quick – we might want a little seed data. Take a minute and make som
 
 ```json
 [
-  {"name": "George Washington", "start": 1789, "end": 1797 },
-  {"name": "John Adams", "start": 1797, "end": 1801 },
-  {"name": "Thomas Jefferson", "start": 1801, "end": 1809 },
-  {"name": "James Madison", "start": 1809, "end": 1817 }
-]
+  {name: 'George Washington', start: 1789, end: 1797 },
+  {name: 'John Adams', start: 1797, end: 1801 },
+  {name: 'Thomas Jefferson', start: 1801, end: 1809 },
+  {name: 'James Madison', start: 1809, end: 1817 }
+];
 ```
 
 Once you have some, do a quick `GET` request to `http://localhost:3000/presidents` and make sure you've got some JSON.
@@ -51,18 +51,14 @@ The simplest starting point will be to switch our hardcoded array of presidents 
 Step one – **let's delete our hardcoded data.** In `presidentsController.js`:
 
 ```diff
-angular.module('ThePresidentsApp', [])
-  .controller('PresidentsController', PresidentsController);
-
-function PresidentsController(){
--  this.all = [
+-  $scope.presidents = [
 -    {name: 'George Washington', start: 1789, end: 1797 },
 -    {name: 'John Adams', start: 1797, end: 1801 },
 -    {name: 'Thomas Jefferson', start: 1801, end: 1809 },
 -    {name: 'James Madison', start: 1809, end: 1817 }
--  ]
-+  this.all = [];
-}
+-  ];
+
++  $scope.presidents = [];
 ```
 
 With a little setup, we'll do a GET request to our API, and assign `this.all` to the array we get back. To do that, we're going to have to use an Angular library called `$http`.
@@ -71,12 +67,13 @@ With a little setup, we'll do a GET request to our API, and assign `this.all` to
 
 Angular dependencies – like libraries or plugins that other people have built – are defined first in our module (unless they come with Angular by default), and then _injected_ into any controllers that need to use them.
 
-`$http` happens to come with Angular, so we only need to _inject_ it into our controller. We do that with a simple command, and then by simply passing an argument to our controller function.
+`$http` happens to come with Angular, so we only need to _inject_ it into our controller by declaring the dependency and then by simply passing an argument to our controller function.
 
 In `js/presidentsController.js`:
 ```js
-PresidentsController.$inject = ['$http'];
-function PresidentsController($http){
+var thePresidentsApp = angular.module('ThePresidentsApp');
+
+thePresidentsApp.controller('PresidentsController', ['$scope', '$http', function PresidentsController($scope, $http){
   // ...
 ```
 
