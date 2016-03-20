@@ -73,125 +73,51 @@ In `js/presidentsController.js`:
 ```js
 var thePresidentsApp = angular.module('ThePresidentsApp');
 
-thePresidentsApp.controller('PresidentsController', ['$scope', '$http', function PresidentsController($scope, $http){
+thePresidentsApp.controller('PresidentsController', ['$scope', '$http', function($scope, $http){
   // ...
 ```
 
-The first tells the controller we intend to use this library called `$http`, the second allows us to pass the library in and gives it the name $http. Think of it just like any other argument in a function – because it's the first argument, and we called it $http, we can use it inside our function using that name.
+There are 2 occurences of `$http` in the controller declaration. The first tells the controller we intend to use this library called `$http`, the second allows us to pass the library in and gives it the name **$http**. Think of it just like any other argument in a function, such as **$scope** which you are already quite familiar with.
 
 ### Using $http is just AJAX!
 
-`$http` is not very different than how we've used AJAX in the past, especially with JQuery. Let's see it all, then walk through it. In `js/presidentsController.js` again:
+`$http` is not very different than how we've used AJAX in the past, especially with jQuery. Let's see it all, then walk through it. In `js/presidentsController.js` again:
 
 ```js
-PresidentsController.$inject = ['$http'];
+thePresidentsApp.controller('PresidentsController', ['$scope', '$http', function($scope, $http){
+  $scope.presidents = [];
 
-function PresidentsController($http){
-  var self = this;
-  self.all = [];
+  getPresidents();
 
   function getPresidents(){
     $http
       .get('http://localhost:3000/presidents')
       .then(function(response){
-        self.all = response.data.presidents;
+        $scope.presidents = response.data.presidents;
     });
   }
-
-  getPresidents();
-
-// ...
+  
+  // ...
 }
 ```
+There are a few important things to note. First we have defined a regular JavaScript function `getPresidents` and inside we use `$http` to retrieve the president json data. **Question:** Do you know why we need to call this function **ONCE** inside the controller function?
 
-There are a few important things to note. Let's cut it down first just to $http:
-
+Finally, let's check out what is going on with $http:
 ```js
-function PresidentsController($http){
 // ...
-
-  function getPresidents(){
     $http
       .get('http://localhost:3000/presidents')
       .then(function(response){
-        self.all = response.data.presidents;
+        $scope.presidents = response.data.presidents;
     });
-  }
-
-  getPresidents();
-
 // ...
-}
 ```
 
-We call `$http`, then our favorite HTTP verb, `.get`. There's one for `.post`, too. It's asynchronous, so we'll use `.then` to make sure when it's _done_ it'll do what we want. And what we want is just to overwrite our `.all` array with the response we get back.
+We call `$http`, then our favorite HTTP verb, `.get`. There's one for `.post`, too. It's asynchronous, so we'll use `.then` to make sure when it's _done_ it'll do what we want. And what we want is just to overwrite our `.presidents` array with the response we get back.
 
 Feel free to `console.log(response)` and see everything that comes back. `.data` is just the data, `.presidents` is the key inside our JSON holding an array of presidents.
 
 That's all we're doing in that function. Afterwords, we literally just run the function, which runs when we first load up the app. Easy.
-
-**Now before we move on and you try it yourself, there's an important detail to note.** We've suddenly gone from:
-
-```js
-function PresidentsController($http){
-  this.all = [];
-  // ...
-```
-to
-```js
-function PresidentsController($http){
-  var self = this;
-  self.all = [];
-  // ...
-```
-
-**Why?** The answer is JavaScript's _scope_. As you've seen in the past few weeks, `this` means different things depending on how many layers deep your code is.
-
-In the previous example, which function is `this` scoped to?
-
-```js
-function PresidentsController($http){
-// ...
-
-  function getPresidents(){
-    $http
-      .get('http://localhost:3000/presidents')
-      .then(function(response){
-        // Where is 'this' scoped to?
-        this.all = response.data.presidents;
-    });
-  }
-// ...
-}
-```
-
-We're 3 functions deep when we call `this.all` – `this` is no longer referring to our controller, it's referring to the function inside `.then`. If you left it that way, you'd never see any data, because to see it in the view, that data needs to be attached directly to our _controller_.
-
-So what's a simple way to make sure we're scoped to the right place? A tiny little variable. The variable you choose is up to you, it's just preference. So if we do:
-
-```js
-function PresidentsController($http){
-  var self = this;
-  self.all = [];
-// ...
-
-  function getPresidents(){
-    $http
-      .get('http://localhost:3000/presidents')
-      .then(function(response){
-        self.all = response.data.presidents;
-    });
-  }
-
-  getPresidents();
-
-// ...
-}
-```
-
-Now we can trust we're talking to the right scope.
-
-Try refreshing your browser, let's see if it worked!
 
 <img width="752"  src="https://cloud.githubusercontent.com/assets/25366/9017871/7cf4a79e-378e-11e5-85d8-d018f0a7ab21.png">
 
@@ -205,5 +131,6 @@ We'll be walking around helping you if you get stuck. In the last few minutes we
 ## Conclusion (5 mins)
 - How do you inject dependencies into an Angular controller?
 - How do you use $http to do a GET request?
-- Why did we start using `self` instead of `this`?
 - How do you do a POST request?
+- How do you do a DELETE request?
+- How do you do a PUT request?
