@@ -74,7 +74,8 @@ In `js/presidentsController.js`:
 var thePresidentsApp = angular.module('ThePresidentsApp');
 
 thePresidentsApp.controller('PresidentsController', ['$scope', '$http', function($scope, $http){
-  // ...
+  // ... code not shown here
+}
 ```
 
 There are 2 occurences of `$http` in the controller declaration. The first tells the controller we intend to use this library called `$http`, the second allows us to pass the library in and gives it the name **$http**. Think of it just like any other argument in a function, such as **$scope** which you are already quite familiar with.
