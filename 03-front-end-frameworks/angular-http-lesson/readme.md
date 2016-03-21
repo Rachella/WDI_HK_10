@@ -129,6 +129,13 @@ Now that we've got GETing down, it's up to you to try POSTing. Just like any RES
 
 We'll be walking around helping you if you get stuck. In the last few minutes we can see how many people got it!
 
+### Bonus (need more time if the class likes to attempt this)
+
+Try these too if you are interested:
+
+  1. Delete a president from the list. Believe it or not, it is **VERY** easy to do.
+  2. Update a president. This is quite tricky because at this stage we are still stuck in one HTML file and it is still possible to implement this function using the existing HTML form. How can you do this?
+
 ## Conclusion (5 mins)
 - How do you inject dependencies into an Angular controller?
 - How do you use $http to do a GET request?
