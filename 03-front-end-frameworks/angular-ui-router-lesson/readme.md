@@ -8,7 +8,7 @@
 
 - Build a basic Angular app
 - Interact with an API
-- Download the [starter code](https://github.com/wdi-hk-9/lesson-angular-ui-router)
+- Download the [starter code](https://github.com/wdi-hk-10/lesson-angular-ui-router)
 
 ## Intro (5 mins)
 
