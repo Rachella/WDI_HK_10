@@ -211,23 +211,20 @@ For example, if we wanted to be able to easily access only the first name of our
 Better yet, if you wanted to make `firstName` behave like a property instead of having to execute a function, try this on for size:
 
 ```javascript
-function Character($resource) {
-
+lightsaberApp.factory('Character', ['$resource', function($resource) {
   var CharacterResource = $resource('http://localhost:3000/characters/:id', {id: '@_id'}, {
     'update': { method:'PUT' }
   });
 
-    Object.defineProperty(CharacterResource.prototype, 'firstName', {
-    get: function(){
-      if (this.name) {
-        if (this.name.indexOf(" ") === -1) return this.name;
-        return this.name.slice(0, this.name.indexOf(" "));
-      }
+  CharacterResource.prototype.firstName = function() {
+    if (this.name) {
+      if (this.name.indexOf(" ") === -1) return this.name;
+      return this.name.slice(0, this.name.indexOf(' '));
     }
-  })
+  }
 
   return CharacterResource;
-}
+}]);
 ```
 
 Now you can bind `firstName` to your view without having to invoke it as a function?!
