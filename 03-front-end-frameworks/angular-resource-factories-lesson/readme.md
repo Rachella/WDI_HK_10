@@ -21,7 +21,7 @@ When you inject a dependency into a module, e.g.
 
 ```javascript
 angular
-  .module("lightsaberApp", ['ngResource']);
+  .module("LightsaberApp", ['ngResource']);
 ```
 
 The injector service needs to know how it should insert these objects. It does this by using **recipes**.
@@ -91,7 +91,7 @@ However, in some cases the factory gives you a little bit more flexibility becau
 
 Building from the lesson where we used the `$resource` service, we now want to refactor our code to use a custom service, specifically a factory.
 
-Inside the starter-code/app/front-end/ directory, let's first start by making a new directory and a new js file for our new component:
+Inside the `lightsaberapp` directory, let's first start by making a new directory and a new js file for our new component:
 
 ```bash
 mkdir js/resources
@@ -109,13 +109,11 @@ Now, let's add this script to the head of `index.html` file before we forget!
 Inside this file, let's add some boilerplate code for our factory service:
 
 ```js
-angular
-  .module('lightsaberApp')
-  .factory('Character', Character);
+var lightsaberApp = angular.module("LightsaberApp");
 
-Character.$inject = ['$resource'];
-function Character($resource) {
-}
+lightsaberApp.factory('Character', ['$resource', function($resource) {
+  // ....
+}]);
 ```
 
 This looks almost exactly the same as a controller module.
@@ -125,41 +123,43 @@ This looks almost exactly the same as a controller module.
 In order to use this factory in our MainController, we want to include it as a dependency.
 
 ```javascript
-MainController.$inject = ['$resource', 'Character']
-function MainController($resource, Character){
+lightsaberApp.controller("MainController", ['$scope', '$resource', 'Character', 
+  function($scope, $resource, Character) {
+    //....
+  }
+]);
 ```
 
 Let's test that this has been injected correctly by just returning something from inside the factory:
 
 ```javascript
-function Character($resource) {
+lightsaberApp.factory('Character', ['$resource', function($resource) {
   return {
-    test: "Testing"
+    name: "Obi-Wan Kenobi"
   }
-}
+}]);
 ```
 
 Now let's assign it to a view model in our `MainController`
 
 ```javascript
-function MainController($resource, Character){
-  var self = this;
-  self.test = Character;
-  ...
+  //...
+  $scope.jedi = Character;
+  //...
 ```
 
 And finally bind it on our page so that we can see if something was returned:
 
 ```html
-<main ng-controller="MainController as main">
-  {{ main.test.test }}
+<main ng-controller="MainController">
+  {{ jedi.name }}
 ```
 
-You should see your string output!
+You should see the name of this old Jedi at the top of the page!!
 
 #### Removing `$resource` from the controller
 
-We can remove the test code from `index.html` and `MainController` now and we can move this code:
+We can remove the previous test code from `index.html` and `MainController` now. And we also need to remove these code from `MainController`:
 
 ```javascript
 // Obtain our resource class
@@ -168,17 +168,25 @@ var Character = $resource('http://localhost:3000/characters/:id', {id: '@_id'}, 
 });
 ```
 
-Into the factory, like so:
+Then open `js/character.js` and change the factory definition like this: 
 
 ```javascript
-function Character($resource) {
+lightsaberApp.factory('Character', ['$resource', function($resource) {
   return $resource('http://localhost:3000/characters/:id', {id: '@_id'}, {
     'update': { method:'PUT' }
   });
-}
+}]);
 ```
 
-We can now remove the `$resource` dependency from `MainController` and it should still work.
+Finally, we can now remove the `$resource` dependency from `MainController` and it should still work.
+
+```javascript
+lightsaberApp.controller("MainController", ['$scope', 'Character', 
+  function($scope, Character) {
+    //...
+  }
+]);
+```
 
 #### Adding virtual properties
 
