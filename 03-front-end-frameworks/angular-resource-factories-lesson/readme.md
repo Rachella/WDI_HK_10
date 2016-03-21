@@ -237,7 +237,7 @@ lightsaberApp.factory('Character', ['$resource', function($resource) {
 Now you can bind `firstName` to your view without having to invoke it as a function!!
 
 ```html
-<h1 ng-show="main.selectedCharacter">{{ main.selectedCharacter.firstName }}</h1>
+<h1 ng-show="selectedCharacter">{{ selectedCharacter.firstName }}</h1>
 ```
 
 You now have the ability to create client-side resource models that mimic pretty much the model on the server!
