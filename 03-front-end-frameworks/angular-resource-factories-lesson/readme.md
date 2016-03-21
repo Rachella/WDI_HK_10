@@ -89,6 +89,8 @@ However, in some cases the factory gives you a little bit more flexibility becau
 
 ## Delivering a Service - Codealong (45 mins)
 
+First thing first, get the code from this [lesson repo](https://github.com/wdi-hk-10/lesson-angular-resources-factories).
+
 Building from the lesson where we used the `$resource` service, we now want to refactor our code to use a custom service, specifically a factory.
 
 Inside the `lightsaberapp` directory, let's first start by making a new directory and a new js file for our new component:
