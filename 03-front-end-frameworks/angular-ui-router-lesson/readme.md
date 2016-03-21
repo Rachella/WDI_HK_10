@@ -44,19 +44,23 @@ $ http-server .
 
 From now on, rather than opening the HTML file directly, we can navigate to ``http://0.0.0.0:8080`` or ``http://localhost:8080``.
 
-#### UI-Router
+### Step One: Get ui-router
 
-We'll need the UI-Router source. It's not an official, core library, and it's not hosted on Google's site. CDNJS has it (https://cdnjs.com/libraries/angular-ui-router), or you can download it from GitHub and include it yourself.
+We'll need the UI-Router source. It's not an official, core library, and it's not hosted on Google's site. CDNJS has it (https://cdnjs.com/libraries/angular-ui-router), or you can download it from GitHub and include it yourself. But then you can also use `bower` too:
 
-Assuming the latter, let's make sure our script tag is _after_ including Angular, and before we try to use it.
+```bash
+bower install angular --save
+bower install angular-ui-router --save
+```
+
+Then we need to include both files plus our code in our HTML:
 
 ```html
-<script src="js/angular.js"></script>
-<!-- new router script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-<!-- end new router script -->
-<script src="js/main.js"></script>
-<script src="js/TodosController.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/TodosController.js"></script>
+		<link rel="stylesheet" href="css/style.css">
 ```
 
 ### Step Two: Adding a Dependency
@@ -67,14 +71,16 @@ Because we're adding in a new library, it'll be a dependency – we'll need to m
 ```javascript
 // in app.js
 angular
-  .module('todoApp', ['ui.router']);
+  .module('TodosApp', ['ui.router']);
 ```
 
 ``'ui.router'`` just happens to be what the library is called in it's source. Most libraries will tell you what to write here in their documentation, and if you need more than one, just list them like any array.
 
-### Philosophically, WTF is Routing?
+#### Wait, what? Routing at the frontend?
 
-A route, in general, is just the path you take to get somewhere. That's not specific to web development, but it's one of those words we've latched on because it's a good description – when you're changing URL, when that location bar changes, you're on a new route.
+We have previously looked at routing in the Ruby on Rails lessons. Rails has a `router` component which intercepts user requests and decides which controller method should be invoked to handle a request. Here we are looking at a `router` for AngularJS. So does it mean we have routes in both frontend and backend? What is a route exactly?
+
+A route, in general, is just the path you take to get somewhere. That's not specific to backend web development, but it's one of those words we've latched on because it's a good description – when you're changing URL, when that location bar changes, you're on a new route.
 
 Our router just sets up which routes we want to exist and points our code where to make it happen.
 
@@ -89,7 +95,7 @@ In ``app.js``, we had this:
 ```javascript
 // in app.js
 angular
-  .module('todoApp', ['ui.router']);
+  .module('TodosApp', ['ui.router']);
 ```
 
 Let's add on to it:
@@ -97,7 +103,7 @@ Let's add on to it:
 ```javascript
 // in app.js
 angular
-  .module('todoApp', ['ui.router']);
+  .module('TodosApp', ['ui.router'])
   .config(MainRouter);
 ```
 
@@ -140,7 +146,7 @@ Now, before our route can work, we've got to extract some of our view into that 
 Go over to our ``index.html``, and we'll see we've already got a container for our main list.
 
 ```html
-<div class="wrapper" ng-controller="TodosController as todos"><!-- a bunch of list-related view stuff --></div>
+<div class="wrapper" ng-controller="TodosController"><!-- a bunch of list-related view stuff --></div>
 ```
 
 Grab everything inside that div and make a _new_ file. You can call it whatever you like but make it obvious. For this exercise, we'll call it ``home.html``
@@ -154,10 +160,12 @@ And paste all that view code inside. Now you've got a partial, and all we have l
 In that ``div.wrapper``, on our ``index.html``, we'll add a new directive: ``ui-view``.
 
 ```html
-<div class="wrapper" ui-view ng-controller="TodosController as todos"><!-- a bunch of list-related view stuff --></div>
+<div class="wrapper" ui-view ng-controller="TodosController"><!-- a bunch of list-related view stuff --></div>
 ```
 
 And since our route is a default route at ``/``, and our ``templateUrl`` is already ``home.html``, it should actually work!
+
+Now you can visit your application again, but this time, please go to this URL instead: ```http://localhost:8080/#/```
 
 ### Step Six: One More State!
 
@@ -186,14 +194,16 @@ We'll need another partial for ``archive.html`` and for that one, instead of lis
 Our new partial will be almost exactly the same as our last so duplicate that file. Inside, find our ``ng-repeat``:
 
 ```html
-<li ng-repeat="todo in todos.todoList">
+<li ng-repeat="todo in remainingTodos()">
 ```
 
-and switch that sucker out:
+and change that expression inside `ng-repeat` to:
 
 ```html
-<li ng-repeat="todo in todos.completedTodos()">
+<li ng-repeat="todo in completedTodos()">
 ```
+
+You can now check out the new page at: ```http://localhost:8080/#/archive```
 
 We're 10 seconds away from seeing something awesome. We need one more thing.
 
@@ -216,7 +226,7 @@ You already have a little CSS in your ``style.css`` to make it look nice, someth
 ```css
 nav.tabs {
   background: #4d5d70;
-  max-width: 55%;
+  max-width: 70%;
   margin: 0 auto;
 }
 nav.tabs a {
