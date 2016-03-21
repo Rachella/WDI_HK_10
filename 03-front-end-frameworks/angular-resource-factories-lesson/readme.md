@@ -195,22 +195,6 @@ Now that our new resource class is a function, we can attach extra functionality
 For example, if we wanted to be able to easily access only the first name of our character, we could write our `Character` resource like this:
 
 ```javascript
-  function Character($resource) {
-    var UserResource = $resource('http://jsonplaceholder.typicode.com/users/:id', {id: '@id'});
-
-    CharacterResource.prototype.firstName = function(){
-      if (this.name) {
-        if (this.name.indexOf(" ") === -1) return this.name;
-        return this.name.slice(0, this.name.indexOf(' '));
-      }
-    }
-    return CharacterResource;
-  }
-```
-
-Better yet, if you wanted to make `firstName` behave like a property instead of having to execute a function, try this on for size:
-
-```javascript
 lightsaberApp.factory('Character', ['$resource', function($resource) {
   var CharacterResource = $resource('http://localhost:3000/characters/:id', {id: '@_id'}, {
     'update': { method:'PUT' }
@@ -227,7 +211,28 @@ lightsaberApp.factory('Character', ['$resource', function($resource) {
 }]);
 ```
 
-Now you can bind `firstName` to your view without having to invoke it as a function?!
+Better yet, if you wanted to make `firstName` behave like a property instead of having to execute a function, try this on for size:
+
+```javascript
+lightsaberApp.factory('Character', ['$resource', function($resource) {
+  var CharacterResource = $resource('http://localhost:3000/characters/:id', {id: '@_id'}, {
+    'update': { method:'PUT' }
+  });
+
+  Object.defineProperty(CharacterResource.prototype, 'firstName', {
+    get: function(){
+      if (this.name) {
+        if (this.name.indexOf(" ") === -1) return this.name;
+        return this.name.slice(0, this.name.indexOf(" "));
+      }
+    }
+  });
+
+  return CharacterResource;
+}]);
+```
+
+Now you can bind `firstName` to your view without having to invoke it as a function!!
 
 ```html
 <h1 ng-show="main.selectedCharacter">{{ main.selectedCharacter.firstName }}</h1>
@@ -240,7 +245,7 @@ You now have the ability to create client-side resource models that mimic pretty
 In a real-world app, it's fairly rare that we'd want to retrieve every record in a database table like we have been doing with this code:
 
 ```javascript
-this.characters = Character.query();
+$scope.characters = Character.query();
 ```
 
 Imagine if there was 1,000,000 Jedis?! We might need to add some custom code in our resource
