@@ -123,6 +123,8 @@ Because in Angular we're not really changing locations (single-page apps, here),
 
 ```javascript
 function MainRouter($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/');  // if no matching path, always route to the root
+  
   $stateProvider
     .state('home', {
       url: "/",
