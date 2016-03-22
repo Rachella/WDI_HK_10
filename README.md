@@ -395,7 +395,7 @@ Time   | [Monday](#w10d1)                         | [Tuesday](#w10d2)           
 09:00  | Daily Standup                            | Daily Standup                           | Daily Standup                           | [Week 7-9 Retrospective][10-4A]         | [R-Lab: Angular Controller 101][10-4C]  |
 10:00  | -                                        | -                                       | -                                       | -                                       | [Angular Directives][10-5A]             |
 11:00  | -                                        | -                                       | -                                       | [Intro to AngularJS & Setup][10-4B]     | -                                       |
-12:00  | LUNCH                                    | LUNCH                                   | *JS & RUBY CHANGE FREEZE* + LUNCH       | Guest Speaker: Tony Wong (Shopline)     | Guest Speaker: Derek Keane (TBD)        |
+12:00  | LUNCH                                    | LUNCH                                   | *JS & RUBY CHANGE FREEZE* + LUNCH       | Guest Speaker: Tony Wong (Shopline)     | LUNCH                                   |
 13:00  | -                                        | -                                       | Final touch up (HTML & CSS)             | [Two-Way Binding][10-4B]                | [ng-class and CSS Animation][10-5B]     |
 14:00  | -                                        | -                                       | -                                       | -                                       | -                                       |
 15:00  | -                                        | -                                       | -                                       | [Lab: Angular Controller 101][10-4C]    | [Lab: Angular Directives][10-5C]        |
@@ -436,7 +436,7 @@ Time   | [Monday](#w11d1)                         | [Tuesday](#w11d2)           
 10:00  | [R-Lab: Apps with Angular][10-5D]        | [Building factories with $http][11-2A]    | [Ionic Framework][11-3A]                | WireFrame + Coding Begins               |                                         |
 11:00  | [Angular HTTP][11-1A]                    | -                                         | -                                       | -                                       |                                         |
 12:00  | LUNCH                                    | LUNCH                                     | LUNCH                                   | LUNCH                                   |                                         |
-13:00  | -                                        | [Front-End Routing with UI Router][11-2B] | -                                       | -                                       |       HOLIDAY: GOOD FRIDAY              |
+13:00  | -                                        | [Front-End Routing with UI Router][11-2B] | [AngularJS Tutorial][11-3B]             | -                                       |       HOLIDAY: GOOD FRIDAY              |
 14:00  | [Lab: Angular HTTP][11-1B]               | -                                         | -                                       | -                                       |                                         |
 15:00  | -                                        | [Lab: Front-End Routing][11-2C]           | -                                       | -                                       |                                         |
 16:00  | -                                        | -                                         | Demo                                    | Demo                                    |                                         |
@@ -450,6 +450,7 @@ Time   | [Monday](#w11d1)                         | [Tuesday](#w11d2)           
 [11-2C]: https://github.com/wdi-hk-10/lab-angular-ui-router                         "Lab: Front-end Routing"
 
 [11-3A]: http://ionicframework.com/getting-started/                                 "Ionic Framework"
+[11-3B]: https://docs.angularjs.org/tutorial                                        "AngularJS Tutorial"
 
 [11-4A]: 03-front-end-frameworks/angular-custom-directives-lesson                   "Writing Custom Directives"
 
