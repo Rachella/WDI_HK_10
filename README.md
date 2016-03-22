@@ -433,10 +433,10 @@ Time   | [Monday](#w10d1)                         | [Tuesday](#w10d2)           
 Time   | [Monday](#w11d1)                         | [Tuesday](#w11d2)                         | [Wednesday](#w11d3)                     | [Thursday](#w11d4)                      | [Friday](#w11d5)                        |
 ------ | ---------------------------------------- | ---------------------------------------   | --------------------------------------- | --------------------------------------- | --------------------------------------- |
 09:00  | [R-Lab: Angular Directives][10-5C]       | [R-Lab: Angular HTTP][11-1B]              | [R-Lab: Front-End Routing][11-2C]       | Project Pitch (with UXDI)               |                                         |
-10:00  | [R-Lab: Apps with Angular][10-5D]        | [Front-End Routing with UI Router][11-2A] | [Ionic Framework][11-3A]                | WireFrame + Coding Begins               |                                         |
+10:00  | [R-Lab: Apps with Angular][10-5D]        | [Building factories with $http][11-2A]    | [Ionic Framework][11-3A]                | WireFrame + Coding Begins               |                                         |
 11:00  | [Angular HTTP][11-1A]                    | -                                         | -                                       | -                                       |                                         |
 12:00  | LUNCH                                    | LUNCH                                     | LUNCH                                   | LUNCH                                   |                                         |
-13:00  | -                                        | [Building factories with $http][11-2B]    | -                                       | -                                       |       HOLIDAY: GOOD FRIDAY              |
+13:00  | -                                        | [Front-End Routing with UI Router][11-2B] | -                                       | -                                       |       HOLIDAY: GOOD FRIDAY              |
 14:00  | [Lab: Angular HTTP][11-1B]               | -                                         | -                                       | -                                       |                                         |
 15:00  | -                                        | [Lab: Front-End Routing][11-2C]           | -                                       | -                                       |                                         |
 16:00  | -                                        | -                                         | Demo                                    | Demo                                    |                                         |
@@ -445,8 +445,8 @@ Time   | [Monday](#w11d1)                         | [Tuesday](#w11d2)           
 [11-1A]: 03-front-end-frameworks/angular-http-lesson                                "Angular HTTP"
 [11-1B]: https://github.com/wdi-hk-10/lab-angular-http                              "Lab: Angular HTTP"
 
-[11-2A]: 03-front-end-frameworks/angular-ui-router-lesson                           "Front-end Routing with UI Router"
-[11-2B]: 03-front-end-frameworks/angular-resource-factories-lesson                  "Building factories with $http"
+[11-2A]: 03-front-end-frameworks/angular-resource-factories-lesson                  "Building factories with $http"
+[11-2B]: 03-front-end-frameworks/angular-ui-router-lesson                           "Front-end Routing with UI Router"
 [11-2C]: https://github.com/wdi-hk-10/lab-angular-ui-router                         "Lab: Front-end Routing"
 
 [11-3A]: http://ionicframework.com/getting-started/                                 "Ionic Framework"
