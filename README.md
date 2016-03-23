@@ -437,7 +437,7 @@ Time   | [Monday](#w11d1)                         | [Tuesday](#w11d2)           
 11:00  | [Angular HTTP][11-1A]                    | -                                         | -                                       | -                                       |                                         |
 12:00  | LUNCH                                    | LUNCH                                     | LUNCH                                   | LUNCH                                   |                                         |
 13:00  | -                                        | [Front-End Routing with UI Router][11-2B] | [AngularJS Tutorial][11-3B]             | -                                       |       HOLIDAY: GOOD FRIDAY              |
-14:00  | [Lab: Angular HTTP][11-1B]               | -                                         | -                                       | -                                       |                                         |
+14:00  | [Lab: Angular HTTP][11-1B]               | -                                         | [Rails-Angular-Bower-Devise][11-3C]     | -                                       |                                         |
 15:00  | -                                        | [Lab: Front-End Routing][11-2C]           | -                                       | -                                       |                                         |
 16:00  | -                                        | -                                         | Demo                                    | Demo                                    |                                         |
 17:00  | Done for Day                             | Done for Day                              | Done for Day                            | Done for Day                            |                                         |
@@ -451,6 +451,7 @@ Time   | [Monday](#w11d1)                         | [Tuesday](#w11d2)           
 
 [11-3A]: http://ionicframework.com/getting-started/                                 "Ionic Framework"
 [11-3B]: https://docs.angularjs.org/tutorial                                        "AngularJS Tutorial"
+[11-3C]: https://github.com/ga-students/WDI_HK_10/tree/master/server-applications-guides/rails/03_rails_angular "Rails Angular Guide"
 
 [11-4A]: 03-front-end-frameworks/angular-custom-directives-lesson                   "Writing Custom Directives"
 
