@@ -32,7 +32,7 @@ Steps:
 
 ####Step 1) Generating The Necessary Files
 
-Whenever you want a MVC dealing with authentication, you would need to edit/create routes, controller, model, migration. Devise-Token-Auth does this for you in 1 command 
+Whenever you want a MVC dealing with authentication, you would need to edit/create routes, controller, model, migration. Devise-Token-Auth does this for you in 1 command
 
 `rails g devise_token_auth:install [USER_CLASS] [MOUNT_PATH]`
 
@@ -60,7 +60,7 @@ Following are the files that will be created/edited
 
 ####Step 2) Configuring The Model Base On Needs
 
-In `app/models/USER_CLASS.rb` you will see 
+In `app/models/USER_CLASS.rb` you will see
 
 ```ruby
  devise :database_authenticatable, :registerable,
@@ -140,3 +140,34 @@ end
 Run `rake db:migrate`
 
 The back-end is now ready for use!
+
+#### BUGFIX AS OF 2016 March 8th
+There is a bug that prevents `before_action :authenticate_user!` to work. The following is a bugfix.
+
+In `application_controller.rb`
+
+```
+  before_action :get_current_user
+
+  def authenticate_user!
+    render json: {message: "Unauthorize"} if current_user.nil?
+  end
+
+  def get_current_user
+    return nil unless cookies[:authHeaders]
+    auth_headers = JSON.parse cookies[:authHeaders]
+
+    expiration_datetime = DateTime.strptime(auth_headers["expiry"], "%s")
+    current_user = User.find_by(uid: auth_headers["uid"])
+
+    if current_user &&
+       current_user.tokens.has_key?(auth_headers["client"]) &&
+       expiration_datetime > DateTime.now
+
+      @current_user = current_user
+    end
+    @current_user
+  end
+```
+
+you can read more [here](https://github.com/lynndylanhurley/devise_token_auth/issues/74)

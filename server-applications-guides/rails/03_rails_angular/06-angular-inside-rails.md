@@ -9,12 +9,11 @@ Steps:
 
 1. Install Angular using Bower
 2. Use Angular in Rails. Add Angular dependencies in `app/assets/javascripts/application.js`
-3. Remove Turbolink!
-4. Configure `application.html.erb` to make sure that our app is a "one-page app"
-5. Configure Angular.js routes and dependencies
-7. Add `localhost:3000/#/` route
+3. Configure `application.html.erb` to make sure that our app is a "one-page app"
+4. Configure Angular.js routes and dependencies
+5. Add `localhost:3000/#/` route
 6. Add Angular controller `StaticPagesCtrl`
-6. Add Angular view for `localhost:3000/#/`
+7. Add Angular view for `localhost:3000/#/`
 
 In Terminal,
 
@@ -33,7 +32,7 @@ Check `bower.json` to make sure both `angular` and `angular-route` are in the de
     "angular": "*",
     "angular-route": "~1.4.4"
   }
-} 
+}
 ```
 
 In `app/assets/javascripts/application.js`, add before `//= require_tree .`
@@ -45,17 +44,6 @@ In `app/assets/javascripts/application.js`, add before `//= require_tree .`
 ...
 
 //= require_tree .
-```
-
-- Make sure `turbolinks` is removed
-
-```html
-<head>
-  <title>RailsBasicTemplate</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
 ```
 
 In `app/views/layouts/application.html.erb`, add `ng-app` and `ng-view` in `application.html.erb`

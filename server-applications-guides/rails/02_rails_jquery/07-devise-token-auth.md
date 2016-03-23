@@ -148,8 +148,10 @@ There is a bug that prevents `before_action :authenticate_user!` to work. The fo
 In `application_controller.rb`
 
 ```
-  def authenticate_current_user
-    render json: {message: "Unauthorize"} if get_current_user.nil?
+  before_action :get_current_user
+
+  def authenticate_user!
+    render json: {message: "Unauthorize"} if current_user.nil?
   end
 
   def get_current_user
@@ -168,7 +170,5 @@ In `application_controller.rb`
     @current_user
   end
 ```
-
-instead of using `before_action :authenticate_user!`, use `before_action :authenticate_current_user!`
 
 you can read more [here](https://github.com/lynndylanhurley/devise_token_auth/issues/74)

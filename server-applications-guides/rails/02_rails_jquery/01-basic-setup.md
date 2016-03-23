@@ -11,7 +11,7 @@ Steps:
 In Terminal,
 
 ```
-$ rails new rails-instagram -BT -d postgresql
+$ rails new rails-instagram -BT -d postgresql --skip-turbolinks
 ```
 
 In `Gemfile`,
@@ -19,15 +19,16 @@ In `Gemfile`,
 ```ruby
 source 'https://rubygems.org'
 
-ruby '2.2.2'
-gem 'rails', '4.2.3'
+ruby '2.2.2' # change the version if needed
+gem 'rails', '4.2.3' # change the version if needed
 
 gem 'pg'
-gem 'jbuilder', '~> 2.0'
+gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+
+gem 'jquery-rails'
+gem 'jbuilder', '~> 2.0'
 gem 'unicorn'
-# gem 'bcrypt', '~> 3.1.7'
-# gem 'active_hash'
 
 group :development do
   gem "web-console"
@@ -39,9 +40,9 @@ group :development, :test do
   gem "awesome_print"
   gem "bundler-audit", require: false
   gem "byebug"
+  gem "pry-rails"
   gem "dotenv-rails"
   gem "factory_girl_rails"
-  gem "pry-rails"
   gem "rspec-rails", "~> 3.0"
 end
 ```
@@ -64,10 +65,6 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
-
-# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
-config/initializers/secret_token.rb
-config/secrets.yml
 
 ## Environment normalisation:
 /.bundle

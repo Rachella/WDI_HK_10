@@ -6,9 +6,9 @@ Steps:
 1. Configure routes
 2. Check routes
 3. Add the home page with `static_pages#index`
-  - Add `static_pages` controller 
-  - Add `index` action 
-  - Add `index` view 
+  - Add `static_pages` controller
+  - Add `index` action
+  - Add `index` view
 
 In `config/routes.rb`,
 

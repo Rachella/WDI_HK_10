@@ -1,4 +1,5 @@
-## Learning Rails + Angular.js with Instagram
+## Learning Rails + jQuery with Instagram
+
 #### Initial Setup
 
 Steps:
@@ -10,7 +11,7 @@ Steps:
 In Terminal,
 
 ```
-$ rails new rails-instagram -BT
+$ rails new rails-instagram -BT -d postgresql --skip-turbolinks
 ```
 
 In `Gemfile`,
@@ -18,15 +19,16 @@ In `Gemfile`,
 ```ruby
 source 'https://rubygems.org'
 
-ruby '2.2.2'
-gem 'rails', '4.2.3'
+ruby '2.2.2' # change the version if needed
+gem 'rails', '4.2.3' # change the version if needed
 
 gem 'pg'
-gem 'jbuilder', '~> 2.0'
+gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+
+gem 'jquery-rails'
+gem 'jbuilder', '~> 2.0'
 gem 'unicorn'
-# gem 'bcrypt', '~> 3.1.7'
-# gem 'active_hash'
 
 group :development do
   gem "web-console"
@@ -38,9 +40,9 @@ group :development, :test do
   gem "awesome_print"
   gem "bundler-audit", require: false
   gem "byebug"
+  gem "pry-rails"
   gem "dotenv-rails"
   gem "factory_girl_rails"
-  gem "pry-rails"
   gem "rspec-rails", "~> 3.0"
 end
 ```
@@ -64,10 +66,6 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 
-# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
-config/initializers/secret_token.rb
-config/secrets.yml
-
 ## Environment normalisation:
 /.bundle
 /vendor/bundle
@@ -78,31 +76,4 @@ config/secrets.yml
 .DS_Store
 ```
 
-In `config/database.yml`,
-
-```yaml
-default: &default
-  adapter: postgresql
-  host: localhost
-  port: 5432
-  pool: 5
-  timeout: 5000
-
-development:
-  <<: *default
-  database: rails_instagram_development
-
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-test:
-  <<: *default
-  database: rails_instagram_test
-
-production:
-  <<: *default
-  database: db/production.sqlite3
-```
-
-- What do you do after configuring database.yml? Do the databases exist yet?
 - How do you start the server to see if things are working?
