@@ -488,4 +488,10 @@ Time   | [Monday](#w13d1)                         | [Tuesday](#w13d2)           
 
 [13-5A]: 15-retrospectives/Retrospectoves-guide.md                       "Final Retrospective"
 
+### The Workshops
+
+#### 13 April 2016
+
+- [JavaScript Constructors and Prototypes](00-programming/js-cinstructors-and-prototypes)
+  - [Prototypes explained using... Star Wars](00-programming/js-cinstructors-and-prototypes/jedi-vs-sith.js)
 
